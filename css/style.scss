@@ -1,6 +1,5 @@
 body {
 	background-color: black;
-	background: linear-gradient(55.96deg, #3A338A 21.39%, #C42F72 100%);
 	font-family: system-ui, sans-serif;
 }
 
@@ -57,9 +56,11 @@ body {
 	}
 	&__h1 {
 		z-index: 1;
+		color: white;
 	}
 	&__h2 {
 		z-index: 1;
+		color: white;
 	}
 	&__button {
 		z-index: 1;
@@ -72,11 +73,13 @@ body {
 		border-radius: 0.325520833vw; /* 10px */
 		color: white;
 	}
-	
-
 }
 
-
+.s2 {
+	&__benefit--text {
+		color: white;
+	}
+}
 
 
 

@@ -4,26 +4,29 @@ body {
 	font-family: system-ui, sans-serif;
 }
 
-header {
+
+.header {
 	margin: 0 auto;
 	width: 64.7135417vw;
 	height: 7.2463768vh; /* 135px */
 	display: flex;
 	align-items: center;
 	gap: 1.953125vw; /* 60px */
+
+	&__link {
+		color: white;
+		text-decoration: none;
+		font-weight: 400;
+		font-size: max(12px, 0.9765625vw);
+	}
+	
+	&__logo {
+		margin: 0 auto;
+		width: 6.77083333vw;
+	}
 }
 
-.header__link {
-	color: white;
-	text-decoration: none;
-	font-weight: 400;
-	font-size: max(12px, 0.9765625vw);
-}
 
-.header__logo {
-	margin: 0 auto;
-	width: 6.77083333vw;
-}
 
 .s1 {
 	position: relative;

@@ -53,8 +53,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
-video {
+.s1__video {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -69,8 +68,14 @@ video {
   -webkit-filter: grayscale(1) brightness(0.45) contrast(1.05);
           filter: grayscale(1) brightness(0.45) contrast(1.05);
 }
-
-button {
+.s1__h1 {
+  z-index: 1;
+}
+.s1__h2 {
+  z-index: 1;
+}
+.s1__button {
+  z-index: 1;
   background-color: #C42F75;
   background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
   margin-top: 2.34375vw;

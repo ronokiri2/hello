@@ -1,6 +1,17 @@
+@font-face {
+	font-weight: 700; /* bold */
+	font-family: 'Hero New';
+	src: url('../fonts/Hero-New-Bold.woff2');
+}
+@font-face {
+	font-weight: 400; /* regular / normal */
+	font-family: 'Hero New';
+	src: url('../fonts/Hero-New-Regular.woff2');
+}
+
 body {
-	background-color: white;
-	font-family: system-ui, sans-serif;
+	background-color: grey;
+	font-family: 'Hero New', system-ui, sans-serif;
 }
 
 

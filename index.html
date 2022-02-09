@@ -5,16 +5,22 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hello KION</title>
-	<link rel="stylesheet" href="minified/minified-reset.css">
-	<link rel="stylesheet" href="minified/minified-style.css">
+
+	<!--1 файл - обнуление css. 
+		2 файл - css для смартфонов. 
+		3 файл - css для десктопов. 
+		Разделение нужно для ускорения загрузки css на смартфонах.
+		Это минифицированные css с префиксами -->
+	<link rel="stylesheet" href="minified/reset.min.css">
+	<link rel="stylesheet" href="minified/mobile.style.min.css">
+	<link rel="stylesheet" href="minified/desktop.style.min.css">
 </head>
 
 
-<!-- проставить ширину и высоту в картинки
-	добавить  decoding="async" картинкам -->
+<!-- добавить  decoding="async" картинкам -->
 
-
-<body style="background-color:black; font-family: system-ui, sans-serif;">
+<!-- проставить бэкграунд колор блэк в инлайн штмл, чтобы не видеть блинка -->
+<body>
 
 
 <!-- прелоадер -->
@@ -313,7 +319,7 @@
 
 				<div class="s3__header">
 					<img class="s3__header--logo" decoding="async" src="media/s3__logo.png">
-					<p   class="s3__header--text">KION — это онлайн-кинотеатр, который вы полюбите. В KION можно смотреть фильмы и сериалы лучших российских и зарубежных студий.</p>
+					<h3   class="s3__header--text">KION — это онлайн-кинотеатр, который вы полюбите. В KION можно смотреть фильмы и сериалы лучших российских и зарубежных студий.</>
 				</div>
 
 
@@ -334,8 +340,72 @@
 				<button class="s3__button">Смотреть KION ORIGINALS</button>
 		</section>
 
-	</main>
+		<section class="s4">
+			<h4 class="">KION — это онлайн-кинотеатр, который вы полюбите</h4>
+			<p class="">В KION можно смотреть фильмы и сериалы лучших российских и зарубежных студий - без рекламы и в отличном качестве, в любое время и там, где вам удобно.</p>
+		</section>
 
+		<section class="s5">
+			<h5 class="">Смотрите кино на большом... или на маленьком экране!</h5>
+			<p class="">Выбирайте фильмы, сериалы и ТВ и смотрите на любом устройстве. Начните смотреть на телевизоре и продолжите с той же секунды на планшете или смартфоне. Или без установки приложения - с любого компьютера на www.kion.ru.</p>
+		</section>
+
+		<section class="s6">
+			<h6 class="">200+ телеканалов уже в вашей подписке</h6>
+			<p class="">Высокое качество изображения HD и 4K. Удобный каталог и интерактивная телепрограмма. Работает дома, на даче, в пути - везде, где есть интернет.</p>
+		</section>
+
+		<section class="s7">
+			<h6 class="">Удобный и безопасный детский профиль</h6>
+			<p class="">Включайте мультфильмы для своего ребенка и не беспокойтесь: весь взрослый контент будет защищен паролем.</p>
+		</section>
+
+		<section class="s8">
+			<h6 class="">Для тех, кто хочет больше</h6>
+			<p class="">Мы подумали о тех, кто не пропускает ни одной новинки, и объединили доступ к 4 популярным онлайн-кинотеатрам в одной суперподписке — всего за 549 рублей в месяц!</p>
+			<button class="s8__button">Смотреть KION TOP</button>
+		</section>
+
+		<section class="s9">
+			<h6 class="">Если вдруг у вас остались вопросы:</h6>
+			<details>
+				<summary>Что такое KION</summary>
+				<p>More info about the details.</p>
+			</details>
+			<details>
+				<summary>Где я могу смотреть?</summary>
+				<p>More info about the details.</p>
+			</details>			
+			<details>
+				<summary>Сколько стоит сервис?</summary>
+				<p>Единая подписка KION стоит 199 р. в месяц. В стоимость подписки входит неограниченное количество просмотров кино и сериалов в отличном качестве на 5 устройствах.</p>
+			</details>			
+			<details>
+				<summary>Можно ли смотреть бесплатно?</summary>
+				<p>More info about the details.</p>
+			</details>			
+			<details>
+				<summary>Есть ли в сервисе реклама?</summary>
+				<p>More info about the details.</p>
+			</details>			
+			<details>
+				<summary>Что такое «KION ТОП»?</summary>
+				<p>More info about the details.</p>
+			</details>
+			<details>
+				<summary>Нужно ли для просмотра специальное устройство?</summary>
+				<p>More info about the details.</p>
+			</details>
+		</section>
+	</main>
+	
+	<footer class="footer">
+		<a class="footer__link" href="#">KION Originals</a>
+		<a class="footer__link" href="#">Подписка</a>
+		<a class="footer__logo" href="#"><img decoding="async" src="media/kion.svg"></a>
+		<a class="footer__link" href="#">Поддержка</a>
+		<a class="footer__link" href="#">FAQ</a>
+	</footer>
 
 	<script type="text/javascript" src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера на чистом js -->
 	<script type="text/javascript" src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->

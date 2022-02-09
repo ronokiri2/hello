@@ -279,17 +279,13 @@
 
 	<main>
 		<section class="s1">
-			<!-- Контейнер для видео нужен, потому что на смартфонах не будет видео.
-				Но даже используя медиа запрос с display:none на теге video,
-				браузер все равно начнет загружать видео.
-				Чтобы браузер не загружал видео, нужно поставить медиа-запрос
-				на родителя video. Поэтому тут есть контейнер для видео. -->
-			<div class="s1__video-container">
-				<video class="s1__video" autoplay muted loop>
-					<source src="media/videoplayback.mp4" type="video/mp4">
-				</video>
-			</div>
-			
+			<video class="s1__video" autoplay muted loop>
+			<!-- видео загрузится только на десктопах для оптимизации 
+				с помошью videohider.js
+				display none не работает, все равно скачивает
+				<source src="media/videoplayback.mp4" type="video/mp4" media="screen and (min-width:700px)"> -->
+			</video>
+
 			<h1 class="s1__h1">Онлайн-кинотеатр</h1>
 			<h2 class="s1__h2">Оригинальные сериалы KION — новинки каждый месяц</h2>
 			<button class="s1__button">Смотри 30 дней бесплатно</button>
@@ -407,7 +403,8 @@
 		<a class="footer__link" href="#">FAQ</a>
 	</footer>
 
-	<script type="text/javascript" src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера на чистом js -->
+	<script type="text/javascript" src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера -->
+	<script type="text/javascript" src="js/videohider.js"></script> <!-- загрузить видео если не смартфон-->
 	<script type="text/javascript" src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->
 	<script type="text/javascript" src="js/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
 	<!-- <script type="text/javascript" src="js/scrollAnimation.js"></script> моя анимация по скроллу -->

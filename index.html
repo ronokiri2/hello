@@ -279,34 +279,32 @@
 
 	<main>
 		<section class="s1">
-			<video class="s1__video" autoplay muted loop>
-			<!-- видео загрузится только на десктопах для оптимизации 
-				с помошью videohider.js
-				display none не работает, все равно скачивает
-				<source src="media/videoplayback.mp4" type="video/mp4" media="screen and (min-width:700px)"> -->
-			</video>
+			<div class="s1__wrapper">
+				<video class="s1__video"  muted loop>
+					<source src="media/videoplayback.mp4" type="video/mp4" media="screen and (min-width:700px)"> 
+				</video>
 
-			<h1 class="s1__h1">Онлайн-кинотеатр</h1>
-			<h2 class="s1__h2">Оригинальные сериалы KION — новинки каждый месяц</h2>
-			<button class="s1__button">Смотри 30 дней бесплатно</button>
-		</section>
+				<h1 class="s1__h1">Онлайн-кинотеатр</h1>
+				<h2 class="s1__h2">Оригинальные сериалы KION — новинки каждый месяц</h2>
+				<button class="s1__button">Смотри 30 дней бесплатно</button>
+				<img class="s1__img" src="media/mts.svg">
+			</div>
 
-		<section class="s2">
-			<div class="s2__benefit">
-				<img class="s2__benefit--image" decoding="async" src="media/benefit1.svg">
-				<p   class="s2__benefit--text">Более 180+ каналов</p>
+			<div class="s1__benefit">
+				<img class="s1__benefit--image" decoding="async" src="media/benefit1.svg">
+				<p   class="s1__benefit--text">Более 180+ каналов</p>
 			</div>
-			<div class="s2__benefit">
-				<img class="s2__benefit--image" decoding="async" src="media/benefit2.svg">
-				<p   class="s2__benefit--text">Доступно на всех устройствах</p>
+			<div class="s1__benefit">
+				<img class="s1__benefit--image" decoding="async" src="media/benefit2.svg">
+				<p   class="s1__benefit--text">Доступно на всех устройствах</p>
 			</div>
-			<div class="s2__benefit">
-				<img class="s2__benefit--image" decoding="async" src="media/benefit3.svg">
-				<p   class="s2__benefit--text">Оригинальные сериалы</p>
+			<div class="s1__benefit">
+				<img class="s1__benefit--image" decoding="async" src="media/benefit3.svg">
+				<p   class="s1__benefit--text">Оригинальные сериалы</p>
 			</div>
-			<div class="s2__benefit">
-				<img class="s2__benefit--image" decoding="async" src="media/benefit4.svg">
-				<p   class="s2__benefit--text">3 месяца бесплатно</p>
+			<div class="s1__benefit">
+				<img class="s1__benefit--image" decoding="async" src="media/benefit4.svg">
+				<p   class="s1__benefit--text">3 месяца бесплатно</p>
 			</div>
 		</section>
 
@@ -404,7 +402,7 @@
 	</footer>
 
 	<script type="text/javascript" src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера -->
-	<script type="text/javascript" src="js/videohider.js"></script> <!-- загрузить видео если не смартфон-->
+	<!-- <script type="text/javascript" src="js/videohider.js"></script> загрузить видео если не смартфон -->
 	<script type="text/javascript" src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->
 	<script type="text/javascript" src="js/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
 	<!-- <script type="text/javascript" src="js/scrollAnimation.js"></script> моя анимация по скроллу -->

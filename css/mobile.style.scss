@@ -14,7 +14,90 @@ body {
 	font-family: 'Hero New', system-ui, sans-serif;
 }
 
+header {
+	display: flex;
+	justify-content: space-around;
+}
+
+.header__link {
+	display: none;
+}
+
+.header__logo {
+	width: 31.25vw;
+	margin: 9px auto;
+}
+
+.s1 {
+	background: linear-gradient(180deg, #010516 0%, #072F64 49.72%, #010516 100%);
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		height: 160vw; /* 512px */
+		width: 87.5vw;
+		margin: 0 auto;
+		background-color: black;
+		border-radius: 12.5vw;
+	}
 
 
+	&__video {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		object-fit: cover;
+		border-radius: 12.5vw;
+		filter: grayscale(1) brightness(0.45) contrast(1.05);
+	}
+	
+	&__h1 {
+		z-index: 1;
+		color: white;
+		font-weight: 800;
+		font-size: 6.25vw;
+		text-transform: uppercase;
+	}
+	&__h2 {
+		z-index: 1;
+		color: white;
+		font-size: 4.375vw;
+		text-align: center;
+		margin-bottom: 7.8125vw;
+	}
+	&__button {
+		z-index: 1;
+		color: white;
+		background-color: #C42F75;
+		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
+		margin-top: 25px;
+		// padding: 11px 18.5px; /* 11px 18.5px */
+		width: 71.875vw; /* 230px */
+		height: 13.125vw; /* 42px */
+		font-weight: 400;
+		font-size: 4.375vw; /* 14px */
+		border-radius: 0.325520833vw; /* 10px */
+		text-align: center;
+		margin-bottom: 25.625vw; /* 82px */
+	}
+	&__img {
+		z-index: 1;
+		width: 45.625vw; /* 146px */
+		margin-bottom: 3.4375vw; /* 11px */
+	}
+
+
+
+
+
+}
 
 

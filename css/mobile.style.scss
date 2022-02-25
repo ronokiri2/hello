@@ -14,20 +14,25 @@ body {
 	font-family: 'Hero New', system-ui, sans-serif;
 }
 
-header {
+.header {
 	display: flex;
 	justify-content: space-around;
+
+	&__left {
+		display: none;
+	}
+	&__right {
+		display: none;
+	}
+	&__logo {
+		width: 31.25vw;
+		margin: 2.8125vw auto; /* 9px */
+		display: flex; /* чтобы высота была равна высоте картинки */
+	}
+
 }
 
-.header__link {
-	display: none;
-}
 
-.header__logo {
-	width: 31.25vw;
-	margin: 9px auto;
-	display: flex; /* чтобы высота была равна высоте картинки */
-}
 
 .s1 {
 	background: linear-gradient(180deg, #010516 0%, #072F64 49.72%, #010516 100%);
@@ -67,6 +72,7 @@ header {
 		font-size: 6.25vw; /* 20px */
 		line-height: 8.75vw; /* 28px */
 		text-transform: uppercase;
+		letter-spacing: 0.07em;
 	}
 	&__h2 {
 		z-index: 1;
@@ -74,7 +80,6 @@ header {
 		font-size: 4.375vw; /* 14px */
 		line-height: 6.25vw; /* 20px */
 		text-align: center;
-		margin-bottom: 7.8125vw;
 	}
 	&__button {
 		z-index: 1;
@@ -82,7 +87,7 @@ header {
 		background-color: #C42F75;
 		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
 
-		margin-top: 25px;
+		margin-top: 7.8125vw;
 		// padding: 11px 18.5px; /* 11px 18.5px */
 		width: 71.875vw; /* 230px */
 		height: 13.125vw; /* 42px */

@@ -274,15 +274,22 @@
 	<main>
 		<section class="s1">
 			<header class="header">
-				<a class="header__link" href="#">KION Originals</a>
-				<a class="header__link" href="#">Подписка</a>
+				<div class="header__left">
+					<a class="header__left--link" href="#">KION Originals</a>
+					<a class="header__left--link" href="#">Подписка</a>
+				</div>
+				
 				<a class="header__logo" href="#"><img decoding="async" src="media/kion.svg"></a>
-				<a class="header__link" href="#">Поддержка</a>
-				<a class="header__link" href="#">FAQ</a>
+				
+				<div class="header__right">
+					<a class="header__right--link" href="#">Поддержка</a>
+					<a class="header__right--link" href="#">FAQ</a>
+				</div>
+				
 			</header>
 
 			<div class="s1__wrapper">
-				<video class="s1__video"  muted loop>
+				<video class="s1__video" autoplay muted loop>
 					<source src="media/videoplayback.mp4" type="video/mp4" media="screen and (min-width:700px)"> 
 				</video>
 
@@ -296,7 +303,7 @@
 			<div class="s1__benefits">
 				<div class="s1__benefit">
 					<img class="s1__benefit--image1" decoding="async" src="media/benefit1.svg">
-					<p   class="s1__benefit--text">Более 180+ каналов</p>
+					<p   class="s1__benefit--text">Более <span>180+</span> каналов</p>
 				</div>
 				<div class="s1__benefit">
 					<img class="s1__benefit--image2" decoding="async" src="media/benefit2.svg">
@@ -312,7 +319,7 @@
 				</div>
 			</div>
 		</section>
-
+<!-- 
 		<section class="s3">
 				<img class="s3__svg-perehod" decoding="async" src="media/SVGPerehod.svg">
 
@@ -404,7 +411,7 @@
 		<a class="footer__logo" href="#"><img decoding="async" src="media/kion.svg"></a>
 		<a class="footer__link" href="#">Поддержка</a>
 		<a class="footer__link" href="#">FAQ</a>
-	</footer>
+	</footer> -->
 
 	<script type="text/javascript" src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера -->
 	<!-- <script type="text/javascript" src="js/videohider.js"></script> загрузить видео если не смартфон -->

@@ -26,6 +26,7 @@ header {
 .header__logo {
 	width: 31.25vw;
 	margin: 9px auto;
+	display: flex; /* чтобы высота была равна высоте картинки */
 }
 
 .s1 {
@@ -63,13 +64,15 @@ header {
 		z-index: 1;
 		color: white;
 		font-weight: 800;
-		font-size: 6.25vw;
+		font-size: 6.25vw; /* 20px */
+		line-height: 8.75vw; /* 28px */
 		text-transform: uppercase;
 	}
 	&__h2 {
 		z-index: 1;
 		color: white;
-		font-size: 4.375vw;
+		font-size: 4.375vw; /* 14px */
+		line-height: 6.25vw; /* 20px */
 		text-align: center;
 		margin-bottom: 7.8125vw;
 	}
@@ -78,6 +81,7 @@ header {
 		color: white;
 		background-color: #C42F75;
 		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
+
 		margin-top: 25px;
 		// padding: 11px 18.5px; /* 11px 18.5px */
 		width: 71.875vw; /* 230px */
@@ -88,6 +92,34 @@ header {
 		text-align: center;
 		margin-bottom: 25.625vw; /* 82px */
 	}
+	// &__button2 {
+	// 	z-index: 1;
+	// 	color: white;
+	// 	background: rgb(195,47,119);
+	// 	background-image: linear-gradient(
+	// 		90deg,
+	// 		hsl(331deg 61% 47%) 0%,
+	// 		hsl(333deg 63% 48%) 10%,
+	// 		hsl(335deg 64% 48%) 20%,
+	// 		hsl(336deg 65% 48%) 30%,
+	// 		hsl(338deg 66% 48%) 40%,
+	// 		hsl(340deg 66% 48%) 50%,
+	// 		hsl(342deg 66% 48%) 60%,
+	// 		hsl(344deg 66% 49%) 70%,
+	// 		hsl(346deg 65% 49%) 80%,
+	// 		hsl(348deg 65% 49%) 90%,
+	// 		hsl(351deg 64% 50%) 100%
+	// 		);
+	// 	margin-top: 25px;
+	// 	// padding: 11px 18.5px; /* 11px 18.5px */
+	// 	width: 71.875vw; /* 230px */
+	// 	height: 13.125vw; /* 42px */
+	// 	font-weight: 400;
+	// 	font-size: 4.375vw; /* 14px */
+	// 	border-radius: 0.325520833vw; /* 10px */
+	// 	text-align: center;
+	// 	margin-bottom: 25.625vw; /* 82px */
+	// }
 	&__img {
 		z-index: 1;
 		width: 45.625vw; /* 146px */
@@ -95,9 +127,46 @@ header {
 	}
 
 
+	&__benefits {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 19.6875vw; /* 63px */
+	}
 
+	&__benefit {
+		width: 46.875vw; /* 150px */
+		min-height: 46.875vw; /* 150px */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
+	&__benefit--image1 {
+		width: 22.5vw; /* 72px */
+	}
+	&__benefit--image2 {
+		width: 22.8125vw; /* 73px */
+	}
+	&__benefit--image3 {
+		width: 18.125vw; /* 58px */
+	}
+	&__benefit--image4 {
+		width: 18.125vw; /* 58px */
+	}
 
+	&__benefit--text {
+		color: white;
+		font-weight: 600;
+		text-align: center;
+		font-size: 4.375vw; /* 14px */
+		line-height: 6.25vw; /* 20px */
+		min-height: 18.75vw; /* 60px */
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		margin-top: 5vw; /* 16px */
+	}
 }
 
 

@@ -147,3 +147,57 @@ body {
 }
 
 
+.s2 {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__svg-perehod {
+		width: 100vw;
+	}
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&--logo {
+			margin-top: 24.6875vw; /* 79px */
+			width: 56.25vw;
+		}
+
+		&--text {
+			width: 87.5vw;
+			margin-top: 9.0625vw; /* 29px */
+			text-align: center;
+			font-size: 4.375vw; /* 14px */
+			line-height: 6.25vw; /* 20px */
+		}
+	}
+
+	&__posters {
+		margin-top: 3.25vw; /* 39px */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&--poster {
+			width: 87.5vw; /* 280px */
+			border-radius: 2.09375vw; /* 6.7px */
+			margin-top: 12.5vw; /* 40px */
+		}
+	}
+
+	&__button {
+		width: 71.875vw; /* 230px */
+		height: 13.125vw; /* 42px */
+		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
+		border-radius: 1.25vw; /* 4px */
+		color: white;
+		text-align: center;
+		font-size: 4.375vw; /* 14px */
+		font-weight: 500; /* medium */
+		margin-top: 20.3125vw; /* 65px */
+	}
+}

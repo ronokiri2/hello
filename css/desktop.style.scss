@@ -212,7 +212,6 @@
 	}
 
 	.s4 {
-		position: relative;
 
 		&__header {
 			width: 66.1132812vw; /* 2031px */
@@ -232,4 +231,37 @@
 		}
 	}
 
+
+	.s5 {
+
+		&__header {
+			width: 66.1132812vw; /* 2031px */
+			font-size: 3.25520833vw; /* 100px */
+			margin-top: 4.55729166667vw; // 140px
+		}
+
+		&__text {
+			width: 68.4244792vw; /* 2102px */
+			font-size: 1.62760417vw; /* 50px */
+			margin-top: 1.26953125vw;  /* 39px */
+		}
+
+		&__tv {
+
+			&--row {
+				
+			}
+
+			&--channel {
+				
+			}
+
+			&--image {
+			
+			}
+		}
+
+		
+	
+	}
 }

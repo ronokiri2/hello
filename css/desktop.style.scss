@@ -171,4 +171,51 @@
 
 	}
 
+
+
+
+	.s3 {
+		padding-top: 10.4492188vw; /* 321px */
+	
+
+		&__header {
+			width: 66.1132812vw; /* 2031px */
+			font-size: 3.25520833vw; /* 100px */
+		}
+
+		&__text {
+			width: 68.4244792vw; /* 2102px */
+			font-size: 1.62760417vw; /* 50px */
+			margin-top: 1.26953125vw;  /* 39px */
+		}
+
+
+		&__images {
+			margin-top: 5.33854167vw; /* 164px */
+			margin-left: 12.9231771vw; /* 397px */
+			width: 89.453125vw; /* 2748px */
+			height: 27.8645833vw; /* 856px */
+
+			&--image {
+				width: 20.6054688vw; /* 633px */
+				border-radius: 0.651041667vw; /* 20px */
+			}
+	
+			&--column {
+
+				img {
+					height: 12.7604167vw; /* 392px */
+				}
+			}
+		}
+
+
+
+
+
+
+
+	}
+
+
 }

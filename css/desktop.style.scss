@@ -1,3 +1,5 @@
+ /* установить минимальный шрифт, чтобы можно было отмасштабировать текст */
+
 @media (min-width: 700px) {
 	
 	
@@ -116,10 +118,56 @@
 				font-size:1.953125vw;
 			}
 		}
+	}
 
 
+
+
+
+
+
+	.s2 {
+
+		&__svg-perehod {
+			width: 100vw; /* 818px */
+		}
+
+		&__header {
+			&--logo {
+				margin-top: 8.91927083vw; /* 274px */
+				width: 26.6276042vw; /* 818px */
+			}
+			&--text {
+				margin-top: 2.47395833vw; /* 76px */
+				font-size: 1.62760417vw; /* 50px */
+				line-height: 2.60416667vw; /* 80px */
+				width: 71.3541667vw; /* 2192px */
+			}
+		}
+		
+		&__posters {
+			margin-top: 0.78125vw; /* 24px */
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 58.3333333vw; /* 1792px */
+
+			&--poster {
+				margin-top: 3.90625vw; /* 120px */
+				width: 27.2135417vw; /* 836px */
+				border-radius: 0.651041667vw; /* 20px */
+			}
+		}
+
+		&__button {
+			margin-top: 4.8828125vw; /* 150px */
+			width: 21.1588542vw; /* 650px */
+			height: 3.90625vw; /* 120px */
+			border-radius: 0.325520833vw; /* 10px */
+			font-size: 1.30208333vw; /* 40px */
+			font-weight: 400; /* medium */
+		}
 
 	}
-	
 
 }

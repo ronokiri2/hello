@@ -326,8 +326,55 @@
 			}
 
 		}
+	}
 
-		
-	
+	.s6 {
+		border-radius: 3.25520833vw;
+		width: 89.453125vw;
+		height: 51.8554688vw;
+		margin: 15.2994792vw auto 0 auto;
+
+		&__header {
+			width: 41.6666667vw; /* 2031px */
+			font-size: 3.25520833vw; /* 100px */
+			margin-top: 4.55729166667vw; // 140px
+		}
+
+		&__text {
+			width: 68.4244792vw; /* 2102px */
+			font-size: 1.62760417vw; /* 50px */
+			margin-top: 1.26953125vw;  /* 39px */
+		}
+	}
+
+
+	.s7 {
+
+		&__logo {
+			margin-top: 15.2669271vw;
+			width: 30.2734375vw;
+		}
+
+		&__header {
+			width: 58.59375; /* 1800px */
+			font-size: 3.25520833vw; /* 100px */
+			margin-top: 2.21354167vw;
+		}
+
+		&__text {
+			width: 77.9296875vw;
+			font-size: 1.62760417vw; /* 50px */
+			margin-top: 1.26953125vw;  /* 39px */
+		}
+
+		&__button {
+			margin-top: 4.8828125vw; /* 150px */
+			width: 21.1588542vw; /* 650px */
+			height: 3.90625vw; /* 120px */
+			border-radius: 0.325520833vw; /* 10px */
+			font-size: 1.30208333vw; /* 40px */
+			font-weight: 400; /* medium */
+			margin-bottom: 9.765625vw; /* 300px */
+		}
 	}
 }

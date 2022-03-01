@@ -10,7 +10,7 @@
 }
 
 body {
-	background-color: grey;
+	background-color:#010516;
 	font-family: 'Hero New', system-ui, sans-serif;
 }
 
@@ -403,4 +403,87 @@ body {
 			width: 12.8125vw;
 		}
 	}
+}
+
+
+.s6 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: blue;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/media/spanchbob.png);
+	background-size: cover;
+	background-position: center;
+	width: 87.5vw;
+	height: 160vw;
+	margin: 22.1875vw auto 0 auto;
+	border-radius: 12.5vw;
+
+	&__header {
+		width: 87.5vw; /* 280px */
+		font-weight: bold;
+		font-size: 7.5vw; /* 24px */
+		line-height: 140%; /* 34px */
+		text-align: center;
+		color: white;
+		margin: 19.6875vw auto 0 auto; /* 63px */
+	}
+
+	&__text {
+		width: 87.5vw; /* 280px */
+		font-weight: 400; /* normal */
+		font-size: 4.375vw; /* 14px */
+		line-height: 140%; /* 20px */
+		text-align: center;
+		color: white;
+		margin: 8.75vw auto 0 auto; /* 28px */
+	}
+
+}
+
+
+
+.s7 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	// &__logo {
+
+	// }
+
+	&__header {
+		width: 87.5vw; /* 280px */
+		font-weight: bold;
+		font-size: 7.5vw; /* 24px */
+		line-height: 140%; /* 34px */
+		text-align: center;
+		color: white;
+		margin: 19.6875vw auto 0 auto; /* 63px */
+	}
+
+	&__text {
+		width: 87.5vw; /* 280px */
+		font-weight: 400; /* normal */
+		font-size: 4.375vw; /* 14px */
+		line-height: 140%; /* 20px */
+		text-align: center;
+		color: white;
+		margin: 8.75vw auto 0 auto; /* 28px */
+	}
+
+	&__button {
+		width: 71.875vw; /* 230px */
+		height: 13.125vw; /* 42px */
+		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
+		border-radius: 1.25vw; /* 4px */
+		color: white;
+		text-align: center;
+		font-size: 4.375vw; /* 14px */
+		font-weight: 500; /* medium */
+		margin-top: 20.3125vw; /* 65px */
+		margin-bottom: 29.6875vw; /* 95px */
+	}
+
 }

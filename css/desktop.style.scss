@@ -388,4 +388,43 @@
 			width: 18.3268229vw;
 		}
 	}
+
+
+	.s9 {
+		padding-bottom: 16.015625vw;
+		border-radius: 0 0 3.25520833vw 3.25520833vw;
+		&__header {
+			font-weight: 700;
+			font-size: 3.25520833vw; /* 100px */
+			margin-top: 8.203125vw;
+			margin-bottom: 3.35286458vw;
+		}
+
+		details {
+			width: 66.1132812vw;
+			min-height: 5.859375vw;
+			border-radius: 0.651041667vw;
+			background: #EBECF0;
+			box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFFFFF;
+			padding-left: 2.63671875vw;
+			
+
+			summary {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				min-height: 5.859375vw;
+				color: #141414;
+				font-weight: 700;
+				font-size: 2.1484375vw;
+			}
+
+			p {
+				font-size: 1.62760417vw;
+				line-height: 140%;
+				color: #141414;
+				margin-bottom: 2.44140625vw;
+			}
+		}
+	}
 }

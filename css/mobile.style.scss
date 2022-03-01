@@ -515,7 +515,13 @@ body {
 	flex-direction: column;
 	align-items: center;
 
-
+	details {
+		width: 87.5vw;
+		min-height: 5.859375vw;
+		box-shadow: -5px -5px 20px #FFFFFF, 5px 5px 20px #BABECC;
+		margin-top: 0.651041667vw;
+		list-style: none;
+	}
 
 
 }

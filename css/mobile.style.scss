@@ -483,7 +483,39 @@ body {
 		font-size: 4.375vw; /* 14px */
 		font-weight: 500; /* medium */
 		margin-top: 20.3125vw; /* 65px */
-		margin-bottom: 29.6875vw; /* 95px */
 	}
+
+}
+
+
+
+.s8 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: blue;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/media/startbg.png);
+	background-size: cover;
+	background-position: center;
+	width: 87.5vw;
+	height: 160vw;
+	margin: 22.1875vw auto 0 auto;
+	border-radius: 12.5vw;
+
+	&__logo {
+		width: 87.5vw; /* 280px */
+		margin: 19.6875vw auto 0 auto; /* 63px */
+	}
+}
+
+
+.s9 {
+	background-color: #EBECF0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+
 
 }

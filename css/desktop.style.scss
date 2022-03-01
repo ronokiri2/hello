@@ -374,7 +374,18 @@
 			border-radius: 0.325520833vw; /* 10px */
 			font-size: 1.30208333vw; /* 40px */
 			font-weight: 400; /* medium */
-			margin-bottom: 9.765625vw; /* 300px */
+		}
+	}
+
+
+	.s8 {
+		border-radius: 3.25520833vw;
+		width: 89.453125vw;
+		height: 51.8554688vw;
+		margin: 4.55729167vw auto 11.6536458vw auto;
+
+		&__logo {
+			width: 18.3268229vw;
 		}
 	}
 }

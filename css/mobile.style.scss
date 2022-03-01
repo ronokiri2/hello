@@ -10,7 +10,7 @@
 }
 
 body {
-	background-color:#010516;
+	background: linear-gradient(89deg, #3A3D91 0.92%, #393289 32.37%, #C12E7D 73.27%, #C62E68 98.43%, #CC2D50 121.71%);
 	font-family: 'Hero New', system-ui, sans-serif;
 }
 
@@ -407,18 +407,23 @@ body {
 
 
 .s6 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: blue;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/media/spanchbob.png);
-	background-size: cover;
-	background-position: center;
-	width: 87.5vw;
-	height: 160vw;
-	margin: 22.1875vw auto 0 auto;
-	border-radius: 12.5vw;
+	background-color: #141414;
+	padding-top: 22.1875vw;
+	
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: blue;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/media/spanchbob.png);
+		background-size: cover;
+		background-position: center;
+		width: 87.5vw;
+		height: 160vw;
+		margin: 0 auto;
+		border-radius: 12.5vw;
+	}
 
 	&__header {
 		width: 87.5vw; /* 280px */
@@ -445,13 +450,13 @@ body {
 
 
 .s7 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	background-color: #141414;
 
-	// &__logo {
-
-	// }
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	&__header {
 		width: 87.5vw; /* 280px */
@@ -490,17 +495,22 @@ body {
 
 
 .s8 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: blue;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/media/startbg.png);
-	background-size: cover;
-	background-position: center;
-	width: 87.5vw;
-	height: 160vw;
-	margin: 22.1875vw auto 0 auto;
-	border-radius: 12.5vw;
+	padding-top: 22.1875vw;
+	background-color: #141414;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: blue;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/media/startbg.png);
+		background-size: cover;
+		background-position: center;
+		width: 87.5vw;
+		height: 160vw;
+		margin: 0 auto;
+		border-radius: 12.5vw;
+	}
 
 	&__logo {
 		width: 87.5vw; /* 280px */
@@ -523,5 +533,23 @@ body {
 		list-style: none;
 	}
 
+
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+
+	&__left {
+		display: none;
+	}
+	&__right {
+		display: none;
+	}
+	&__logo {
+		width: 31.25vw;
+		margin: 2.8125vw auto; /* 9px */
+		display: flex; /* чтобы высота была равна высоте картинки */
+	}
 
 }

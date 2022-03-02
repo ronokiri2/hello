@@ -116,14 +116,14 @@ ScrollTrigger.matchMedia({
 		ScrollTrigger.create({
 			trigger: ".js1",
 			start: "top top", 
-			end: "+300%",
+			end: "+200%",
 			pin: ".js1"
 		});
 
 		ScrollTrigger.create({
 			trigger: ".js2",
 			start: "top top", 
-			end: "+300%",
+			end: "+200%",
 			pin: ".js2"
 		});
 
@@ -141,19 +141,19 @@ ScrollTrigger.matchMedia({
 			pin: ".js4"
 		});
 
-		ScrollTrigger.create({
-			trigger: ".js5",
-			start: "top top", 
-			end: "+40%",
-			pin: ".js5"
-		});
+		// ScrollTrigger.create({
+		// 	trigger: ".js5",
+		// 	start: "top top", 
+		// 	end: "+40%",
+		// 	pin: ".js5"
+		// });
 
-		ScrollTrigger.create({
-			trigger: ".js6",
-			start: "top top", 
-			end: "+40%",
-			pin: ".js6"
-		});
+		// ScrollTrigger.create({
+		// 	trigger: ".js6",
+		// 	start: "top top", 
+		// 	end: "+40%",
+		// 	pin: ".js6"
+		// });
 	}
 })
 

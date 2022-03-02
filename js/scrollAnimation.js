@@ -12,26 +12,34 @@ const vw = (coef) => window.innerWidth * (coef/100);
 
 const tl = gsap.timeline({
 	scrollTrigger: {
-	  trigger: ".s2__svg",
+	  trigger: ".s2__svg-perehod",
 	  start: "center center",
 	//   end: vh(200) + ' top',
-	  end: "+=100%",
+	  end: "+=200%",
 	  scrub: true,
 	  pin: true
 	}
   });
 
-tl.to(".s2__svg", {scale: 80, duration: 1})
+tl.to(".s2__svg-perehod", {scale: 130, duration: 1});
 
 
-
-// background color animation
-gsap.to(".s3", {
-	backgroundColor: "white",
+gsap.to(".s2", {
+	backgroundColor: "black",
 	scrollTrigger: {
-	trigger: ".s3",
+	trigger: ".s1",
 	  start: "top top",
 	  end: "+=10%",
+	  scrub: true
+	}
+  });
+// background color animation
+gsap.to(".s2", {
+	backgroundColor: "white",
+	scrollTrigger: {
+	trigger: ".s2",
+	  start: "top top",
+	  end: "+=40%",
 	  scrub: true
 	}
   });

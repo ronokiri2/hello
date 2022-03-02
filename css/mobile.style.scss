@@ -35,7 +35,7 @@
 
 
 .s1 {
-	background: linear-gradient(180deg, #010516 0%, #072F64 49.72%, #010516 100%);
+	background: linear-gradient(180deg, #010516 0%, #072F64 49.72%, #000000 100%);
 
 	&__wrapper {
 		display: flex;
@@ -156,6 +156,7 @@
 
 	&__svg-perehod {
 		width: 100vw;
+		display: none;
 	}
 
 	&__header {

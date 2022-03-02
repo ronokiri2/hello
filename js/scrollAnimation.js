@@ -56,6 +56,104 @@ ScrollTrigger.matchMedia({
 			  scrub: true
 			}
 		  });
+
+
+
+		//   gsap.to(".js1", {
+		// 	scrollTrigger: {
+		// 	  trigger: ".s2__posters",
+		// 	  scrub: true,
+		// 	  pin: true,
+		// 	  start: "top top",
+		// 	  end: "+=10%"
+		// 	},
+		// 	// scaleX: 0, 
+		// 	// transformOrigin: "left center", 
+		// 	// ease: "none"
+		//   });
+
+		//   gsap.registerPlugin(ScrollTrigger);
+
+		//   // --- RED PANEL ---
+		//   gsap.from(".line-1", {
+		// 	scrollTrigger: {
+		// 	  trigger: ".line-1",
+		// 	  scrub: true,
+		// 	  start: "top bottom",
+		// 	  end: "top top"
+		// 	},
+		// 	scaleX: 0,
+		// 	transformOrigin: "left center", 
+		// 	ease: "none"
+		//   });
+		  
+		  
+		//   // --- ORANGE PANEL ---
+		//   gsap.from(".line-2", {
+		// 	scrollTrigger: {
+		// 	  trigger: ".orange",
+		// 	  scrub: true,
+		// 	  pin: true,
+		// 	  start: "top top",
+		// 	  end: "+=100%"
+		// 	},
+		// 	scaleX: 0, 
+		// 	transformOrigin: "left center", 
+		// 	ease: "none"
+		//   });
+		  
+		  
+		  // --- PURPLE/GREEN PANEL ---
+		//   var tl = gsap.timeline({
+		// 	  scrollTrigger: {
+		// 		trigger: ".js1",
+		// 		scrub: true,
+		// 		pin: true,
+		// 		start: "top top",
+		// 		end: "+=100%"
+		// 	  }
+		// 	});
+		ScrollTrigger.create({
+			trigger: ".js1",
+			start: "top top", 
+			end: "+300%",
+			pin: ".js1"
+		});
+
+		ScrollTrigger.create({
+			trigger: ".js2",
+			start: "top top", 
+			end: "+300%",
+			pin: ".js2"
+		});
+
+		ScrollTrigger.create({
+			trigger: ".js3",
+			start: "top top", 
+			end: "+100%",
+			pin: ".js3"
+		});
+
+		ScrollTrigger.create({
+			trigger: ".js4",
+			start: "top top", 
+			end: "+100%",
+			pin: ".js4"
+		});
+
+		ScrollTrigger.create({
+			trigger: ".js5",
+			start: "top top", 
+			end: "+40%",
+			pin: ".js5"
+		});
+
+		ScrollTrigger.create({
+			trigger: ".js6",
+			start: "top top", 
+			end: "+40%",
+			pin: ".js6"
+		});
 	}
 })
 

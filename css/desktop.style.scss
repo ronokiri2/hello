@@ -443,10 +443,10 @@
 	.footer {
 		flex-direction: row;
 		justify-content: space-around;
-		margin: 0 auto;
+		margin: 3.54817708vw auto 3.61328125vw auto;
 		width: 64.7135417vw;
-		height: 7.2463768vh; /* 135px */
-		align-items: center;
+		height: unset;
+		align-items: flex-start;
 
 		&__left {
 			order: 1;
@@ -454,7 +454,7 @@
 			flex-direction: row;
 			justify-content: flex-start;
 			width: 30vw; /* 500px */
-			height: 7.2463768vh; /* 135px */
+			height: unset; /* 135px */
 			margin-top: 0;
 			color: white;
 			font-weight: 400;
@@ -469,7 +469,7 @@
 		&__logo {
 			order: 2;
 			margin: 0 auto;
-			width: 6.77083333vw;
+			width: 13.4114583vw;
 		}
 		&__right {
 			order: 3;

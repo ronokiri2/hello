@@ -9,7 +9,7 @@
 	src: url('../fonts/Hero-New-Regular.woff2');
 }
 
-body {
+:root {
 	background: linear-gradient(89deg, #3A3D91 0.92%, #393289 32.37%, #C12E7D 73.27%, #C62E68 98.43%, #CC2D50 121.71%);
 	font-family: 'Hero New', system-ui, sans-serif;
 }
@@ -568,18 +568,39 @@ body {
 
 .footer {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 
-	&__left {
-		display: none;
-	}
-	&__right {
-		display: none;
-	}
+	height: 134.0625vw;
+
+
 	&__logo {
-		width: 31.25vw;
-		margin: 2.8125vw auto; /* 9px */
+		order: 1;
+		width: 60vw;
+		margin: 25vw auto 0 auto; /* 9px */
 		display: flex; /* чтобы высота была равна высоте картинки */
 	}
-
+	&__left {
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		color: white;
+		margin-top: 13.4375vw;
+		font-size: 6.25vw;
+		line-height: 140%;
+		height: 22.5vw;
+	}
+	&__right {
+		order: 3;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		color: white;
+		font-size: 6.25vw;
+		line-height: 140%;
+		height: 22.5vw;
+		margin-top: 5vw;
+	}
 }

@@ -417,7 +417,7 @@
 			border-radius: 0.651041667vw;
 			background: #EBECF0;
 			box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFFFFF;
-			padding-left: 2.63671875vw;
+			padding: 1.43229167vw 2.63671875vw;
 			
 
 			summary {
@@ -441,41 +441,52 @@
 
 		
 	.footer {
+		flex-direction: row;
+		justify-content: space-around;
 		margin: 0 auto;
 		width: 64.7135417vw;
 		height: 7.2463768vh; /* 135px */
 		align-items: center;
 
 		&__left {
+			order: 1;
 			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
 			width: 30vw; /* 500px */
+			height: 7.2463768vh; /* 135px */
+			margin-top: 0;
+			color: white;
+			font-weight: 400;
+			font-size: max(12px, 0.9765625vw);
 
 			&--link {
 				display: inline-block;
-				color: white;
-				font-weight: 400;
-				font-size: max(12px, 0.9765625vw);
 				margin-right: 1.953125vw; /* 60px */
 			}
 		}
-		&__right {
-			display: flex;
-			justify-content: flex-end;
-
-			&--link {
-				display: inline-block;
-				color: white;
-				font-weight: 400;
-				font-size: max(12px, 0.9765625vw);
-				margin-left: 1.953125vw; /* 60px */
-			}
-		}
-	
-		
-		
+			
 		&__logo {
+			order: 2;
 			margin: 0 auto;
 			width: 6.77083333vw;
 		}
+		&__right {
+			order: 3;
+			width: 30vw; /* 500px */
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			margin-top: 0;
+			height: unset; /* 135px */
+			font-weight: 400;
+			font-size: max(12px, 0.9765625vw);
+
+			&--link {
+				display: inline-block;
+				margin-left: 1.953125vw; /* 60px */
+			}
+		}
+
 	}
 }

@@ -13,6 +13,31 @@ ScrollTrigger.matchMedia({
 		const vh = (coef) => window.innerHeight * (coef/100);
 		const vw = (coef) => window.innerWidth * (coef/100);
 		
+		gsap.from(".header", {
+			opacity: 0,
+			delay: 1
+		});
+		gsap.from(".s1__wrapper", {
+			scale: 0.272197962,
+			
+		});
+		gsap.from(".s1__h1", {
+			opacity: 0,
+			delay: 1
+		});
+		gsap.from(".s1__h2", {
+			opacity: 0,
+			delay: 1
+		});		
+		gsap.from(".s1__button", {
+			opacity: 0,
+			delay: 1
+		});
+		gsap.from(".s1__img", {
+			opacity: 0,
+			delay: 1
+		});
+
 		const tl = gsap.timeline({
 			scrollTrigger: {
 			  trigger: ".s2__svg-perehod",
@@ -37,12 +62,12 @@ ScrollTrigger.matchMedia({
 		gsap.to(".s2", {
 			backgroundColor: "black",
 			scrollTrigger: {
-			trigger: ".s1",
-			  start: "top top",
-			  end: "+=1%",
-			  scrub: true
+				trigger: ".s1",
+				start: "top top",
+				end: "+=1%",
+				scrub: true
 			}
-		  });
+		});
 		
 		
 		
@@ -57,62 +82,7 @@ ScrollTrigger.matchMedia({
 			}
 		  });
 
-
-
-		//   gsap.to(".js1", {
-		// 	scrollTrigger: {
-		// 	  trigger: ".s2__posters",
-		// 	  scrub: true,
-		// 	  pin: true,
-		// 	  start: "top top",
-		// 	  end: "+=10%"
-		// 	},
-		// 	// scaleX: 0, 
-		// 	// transformOrigin: "left center", 
-		// 	// ease: "none"
-		//   });
-
-		//   gsap.registerPlugin(ScrollTrigger);
-
-		//   // --- RED PANEL ---
-		//   gsap.from(".line-1", {
-		// 	scrollTrigger: {
-		// 	  trigger: ".line-1",
-		// 	  scrub: true,
-		// 	  start: "top bottom",
-		// 	  end: "top top"
-		// 	},
-		// 	scaleX: 0,
-		// 	transformOrigin: "left center", 
-		// 	ease: "none"
-		//   });
-		  
-		  
-		//   // --- ORANGE PANEL ---
-		//   gsap.from(".line-2", {
-		// 	scrollTrigger: {
-		// 	  trigger: ".orange",
-		// 	  scrub: true,
-		// 	  pin: true,
-		// 	  start: "top top",
-		// 	  end: "+=100%"
-		// 	},
-		// 	scaleX: 0, 
-		// 	transformOrigin: "left center", 
-		// 	ease: "none"
-		//   });
-		  
-		  
-		  // --- PURPLE/GREEN PANEL ---
-		//   var tl = gsap.timeline({
-		// 	  scrollTrigger: {
-		// 		trigger: ".js1",
-		// 		scrub: true,
-		// 		pin: true,
-		// 		start: "top top",
-		// 		end: "+=100%"
-		// 	  }
-		// 	});
+		// sticky анимация постеров по скроллу
 		ScrollTrigger.create({
 			trigger: ".js1",
 			start: "top top", 
@@ -154,6 +124,18 @@ ScrollTrigger.matchMedia({
 		// 	end: "+40%",
 		// 	pin: ".js6"
 		// });
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 })
 

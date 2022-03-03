@@ -436,7 +436,7 @@
 			min-height: 5.859375vw;
 			border-radius: 0.651041667vw;
 			background: #EBECF0;
-			box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFFFFF;
+			// box-shadow: inset 0.3vw 0.3vw 0.6vw #BABECC, inset -0.3vw -0.3vw 0.6vw #FFFFFF;
 			padding: 1.43229167vw 2.63671875vw;
 			
 
@@ -457,6 +457,11 @@
 				margin-bottom: 2.44140625vw;
 			}
 		}
+
+		// details[open]{
+		// 	box-shadow: 2px 2px 5px 0px #BABECC;
+		// 	box-shadow: -2px -2px 5px 0px #FFFFFF;
+		// }
 	}
 
 		

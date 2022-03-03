@@ -131,7 +131,16 @@ ScrollTrigger.matchMedia({
 
 
 
-
+		gsap.to(".s9", {
+			scale: 0.8,
+			
+			scrollTrigger: {
+				trigger: ".footer",
+				start: "top bottom",
+				// end: "+=1%",
+				scrub: true
+			}
+		});
 
 
 

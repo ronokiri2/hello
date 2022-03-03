@@ -212,6 +212,13 @@
 			&--image {
 				width: 20.6054688vw; /* 633px */
 				border-radius: 0.651041667vw; /* 20px */
+				object-fit: none;
+			}
+			&--image5 {
+				object-position: center 90%;
+			}
+			&--image6 {
+				object-fit: cover;
 			}
 	
 			&--column {

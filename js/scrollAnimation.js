@@ -31,6 +31,23 @@ ScrollTrigger.matchMedia({
 			ease: CustomEase.create("custom", "M0,0,C0.486,0.054,0.234,0.2,0.49,0.488,0.686,0.709,0.78,1,1,1"),
 		});
 		
+		gsap
+		.timeline({
+		  scrollTrigger: {
+			trigger: ".s2",
+			scrub: true,
+			start: "top top",
+			end: "center bottom"
+		  }
+		})
+		.fromTo(
+		  ".s2",
+		  {
+			backgroundColor: "black"
+		  },
+		  { backgroundColor: "white", ease: "none" },
+		  0
+		);
 		
 		// анимация s1
 		gsap.from(".header", {
@@ -61,15 +78,15 @@ ScrollTrigger.matchMedia({
 		// Меняет цвет бэкраунда s2 на черный
 		// черный в css не установлен на случай если не загрузится js или сломается
 
-		gsap.to(".s2", {
-			backgroundColor: "black",
-			scrollTrigger: {
-				trigger: ".s1",
-				start: "top top",
-				end: "+=1%",
-				scrub: true
-			}
-		});
+		// gsap.to(".s2", {
+		// 	backgroundColor: "black",
+		// 	scrollTrigger: {
+		// 		trigger: ".s1",
+		// 		start: "top top",
+		// 		end: "+=1%",
+		// 		scrub: true
+		// 	}
+		// });
 
 
 
@@ -78,16 +95,16 @@ ScrollTrigger.matchMedia({
 		
 		
 		
-		// background color animation
-		gsap.to(".s2", {
-			backgroundColor: "white",
-			scrollTrigger: {
-			trigger: ".s2",
-			  start: "top top-=600px",
-			  end: "+=40%",
-			  scrub: true
-			}
-		  });
+		// // background color animation
+		// gsap.to(".s2", {
+		// 	backgroundColor: "white",
+		// 	scrollTrigger: {
+		// 	trigger: ".s2",
+		// 	  start: "top top-=600px",
+		// 	  end: "+=40%",
+		// 	  scrub: true
+		// 	}
+		//   });
 
 		// sticky анимация постеров по скроллу
 		ScrollTrigger.create({

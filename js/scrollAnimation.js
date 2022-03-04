@@ -39,7 +39,7 @@ ScrollTrigger.matchMedia({
 		});
 		gsap.from(".s1__wrapper", {
 			scale: 0.272197962,
-			
+			duration: 1,
 		});
 		gsap.from(".s1__h1", {
 			opacity: 0,

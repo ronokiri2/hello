@@ -13,16 +13,16 @@ ScrollTrigger.matchMedia({
 		const vh = (coef) => window.innerHeight * (coef/100);
 		const vw = (coef) => window.innerWidth * (coef/100);
 
-				const tl = gsap.timeline({
+		const tl = gsap.timeline({
 			scrollTrigger: {
-			  trigger: ".s2__svg-perehod",
-			  start: "center center",
-			//   end: vh(200) + ' top',
-			  end: "+=200%",
-			  scrub: true,
-			  pin: true
+				trigger: ".s2__svg-perehod",
+				start: "center center",
+				end: "+=200%",
+				scrub: true,
+				pin: true,
+				anticipatePin: 1 
 			}
-		  });
+		});
 		
 		// Увеличение svg в 130 раз по кастомному изингу
 		tl.to(".s2__svg-perehod", {

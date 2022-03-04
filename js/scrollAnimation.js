@@ -94,28 +94,32 @@ ScrollTrigger.matchMedia({
 			trigger: ".js1",
 			start: "top top", 
 			end: "223.4375%",
-			pin: ".js1"
+			pin: ".js1",
+			anticipatePin: 1 
 		});
 
 		ScrollTrigger.create({
 			trigger: ".js2",
 			start: "top top", 
 			end: "223.4375%",
-			pin: ".js2"
+			pin: ".js2",
+			anticipatePin: 1 
 		});
 
 		ScrollTrigger.create({
 			trigger: ".js3",
 			start: "top top", 
 			end: "111.71875%",
-			pin: ".js3"
+			pin: ".js3",
+			anticipatePin: 1 
 		});
 
 		ScrollTrigger.create({
 			trigger: ".js4",
 			start: "top top", 
 			end: "111.71875%",
-			pin: ".js4"
+			pin: ".js4",
+			anticipatePin: 1 
 		});
 			// 27.2135417vw
 

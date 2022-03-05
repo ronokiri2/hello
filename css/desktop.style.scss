@@ -7,6 +7,9 @@
 добавлен alt для 44 изображений
 исправлены ошибки с валидацией css
 исправлен баг с прыжком постеров во время закрепления их к верху экрана
+длительность увеличения окна на первом экране увеличена до 1 секунды
+исправил баг анимации: теперь окно внутри буквы О изначально черное
+
 */
 @media (min-width: 700px) {
 	
@@ -213,9 +216,10 @@
 
 
 		&__images {
-			margin-top: 5.33854167vw; /* 164px */
-			margin-left: 12.9231771vw; /* 397px */
-			width: 89.453125vw; /* 2748px */
+			
+			// margin-left: 12.9231771vw; /* 397px */
+			// width: 89.453125vw; /* 2748px */
+			width: 181.25vw;
 			height: 27.8645833vw; /* 856px */
 
 			&--image {
@@ -237,7 +241,27 @@
 				}
 			}
 		}
-
+		.marquee {
+			margin-top: 5.33854167vw; /* 164px */
+			position: relative;
+			width: 181.25vw;
+			height: 27.8645833vw; /* 856px */
+			overflow-x: hidden;
+		  }
+		  
+		  .track {
+			position: absolute;
+			white-space: nowrap;
+			will-change: transform;
+			animation: marquee 32s linear infinite alternate;
+			
+		  }
+		  
+		  @keyframes marquee {
+			from { transform: translateX(0); }
+			to { transform: translateX(-50%); }
+		  }
+		  
 	}
 
 	.s4 {

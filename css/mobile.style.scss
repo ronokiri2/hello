@@ -235,9 +235,10 @@
 	}
 
 	&__images {
-		margin-top: 11.875vw; /* 38px */
-		margin-left: 6.25vw; /* 20px */
-		width: 186.25vw;
+		
+		// margin-left: 6.25vw; /* 20px */
+		// width: 186.25vw;
+		width: 377.5vw;
 		height: 58.125vw; /* 186px */
 		display: flex;
 		justify-content: space-between;
@@ -259,6 +260,27 @@
 			}
 		}
 	}
+
+	  .marquee {
+		position: relative;
+		margin-top: 11.875vw; /* 38px */
+		width: 377.5vw;
+		height: 58.125vw;
+		overflow-x: hidden;
+	  }
+	  
+	  .track {
+		position: absolute;
+		white-space: nowrap;
+		will-change: transform;
+		animation: marquee 32s linear infinite alternate;
+	  }
+	  
+	  @keyframes marquee {
+		from { transform: translateX(0); }
+		to { transform: translateX(-50%); }
+	  }
+	  
 }
 
 

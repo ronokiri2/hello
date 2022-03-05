@@ -214,12 +214,16 @@
 			margin-top: 1.26953125vw;  /* 39px */
 		}
 
+		.marquee {
+			margin-top: 5.33854167vw; /* 164px */
+			height: 27.8645833vw; /* 856px */
+		  }
 
 		&__images {
 			
 			// margin-left: 12.9231771vw; /* 397px */
 			// width: 89.453125vw; /* 2748px */
-			width: 181.25vw;
+			width: 381.25vw;
 			height: 27.8645833vw; /* 856px */
 
 			&--image {
@@ -241,26 +245,7 @@
 				}
 			}
 		}
-		.marquee {
-			margin-top: 5.33854167vw; /* 164px */
-			position: relative;
-			width: 181.25vw;
-			height: 27.8645833vw; /* 856px */
-			overflow-x: hidden;
-		  }
-		  
-		  .track {
-			position: absolute;
-			white-space: nowrap;
-			will-change: transform;
-			animation: marquee 32s linear infinite alternate;
-			
-		  }
-		  
-		  @keyframes marquee {
-			from { transform: translateX(0); }
-			to { transform: translateX(-50%); }
-		  }
+
 		  
 	}
 

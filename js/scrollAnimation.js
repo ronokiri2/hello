@@ -162,35 +162,35 @@ ScrollTrigger.matchMedia({
 
 
 
-		gsap.to(".first-row", {
-			xPercent: 30,
+		// gsap.to(".first-row", {
+		// 	xPercent: 30,
 			
-			scrollTrigger: {
-				trigger: ".first-row",
-				start: "top bottom",
-				scrub: true
-			}
-		});
+		// 	scrollTrigger: {
+		// 		trigger: ".first-row",
+		// 		start: "top bottom",
+		// 		scrub: true
+		// 	}
+		// });
 
-		gsap.to(".second-row", {
-			xPercent: -30,
+		// gsap.to(".second-row", {
+		// 	xPercent: -30,
 			
-			scrollTrigger: {
-				trigger: ".second-row",
-				start: "top bottom",
-				scrub: true
-			}
-		});
+		// 	scrollTrigger: {
+		// 		trigger: ".second-row",
+		// 		start: "top bottom",
+		// 		scrub: true
+		// 	}
+		// });
 
-		gsap.to(".third-row", {
-			xPercent: 30,
+		// gsap.to(".third-row", {
+		// 	xPercent: 30,
 			
-			scrollTrigger: {
-				trigger: ".third-row",
-				start: "top bottom",
-				scrub: true
-			}
-		});
+		// 	scrollTrigger: {
+		// 		trigger: ".third-row",
+		// 		start: "top bottom",
+		// 		scrub: true
+		// 	}
+		// });
 
 		// gsap.to(".s9", {
 		// 	scale: 0.8,

@@ -352,19 +352,19 @@
 
 	&__tv {
 		margin-top: 10.3125vw;
-		margin-left: 6.25vw; // 20px
-		width: 159.375vw;
+		// margin-left: 6.25vw; // 20px
+		// width: 159.375vw;
 		
 		&--row {
 			display: flex;
-			margin-top: 3.75vw;
+			// margin-top: 3.75vw;
 		}
 
 		.first-row {
-			margin-left: 8.75vw; //28px
+			margin-left: -8.75vw; //28px
 		}
 		.third-row {
-			margin-left: 8.75vw; //28px
+			margin-left: -8.75vw; //28px
 		}
 		&--channel {
 			background-color: white;
@@ -433,6 +433,40 @@
 		&--image18 {
 			width: 12.8125vw;
 		}
+	}
+
+	.marquee {
+		position: relative;
+		height: 67.8125vw;
+		overflow-x: hidden;
+		will-change: transform;
+	}
+ 
+	.track {
+		position: absolute;
+		white-space: nowrap;
+		will-change: transform;
+		animation: marquee 32s linear infinite;
+	}
+
+	.track2 {
+		position: absolute;
+		top: 23.75vw;
+		white-space: nowrap;
+		will-change: transform;
+		animation: marquee 32s linear infinite;
+	}	
+
+	.track3 {
+		position: absolute;
+		top: 47.8125vw;
+		white-space: nowrap;
+		will-change: transform;
+		animation: marquee 32s linear infinite;
+	}
+	@keyframes marquee {
+		from { transform: translateX(0); }
+		to { transform: translateX(-50%); }
 	}
 }
 

@@ -288,19 +288,19 @@
 		}
 
 		&__tv {
-			margin-top: 1.1vw;
-			margin-left: 5.2734375vw;
-			width: 106.770833vw;
+			margin-top: 3.64583333vw;
+			// margin-left: 5.2734375vw;
+			// width: 106.770833vw;
 			
-			&--row {
-				margin-top: 2.60416667vw;
-			}
-			.first-row {
-				margin-left: 5.859375vw;
-			}
-			.third-row {
-				margin-left: 5.859375vw;
-			}
+			// &--row {
+			// 	margin-top: 2.60416667vw;
+			// }
+			// .first-row {
+			// 	margin-left: 5.859375vw;
+			// }
+			// .third-row {
+			// 	margin-left: 5.859375vw;
+			// }
 			&--channel {
 				width: 13.0208333vw;
 				height: 13.0208333vw;
@@ -366,6 +366,18 @@
 				width: 8.65885417vw;
 			}
 
+		}
+
+		.marquee {
+			height: 44.3033854vw;
+		}
+	
+		.track2 {
+			top: 15.625vw;
+		}	
+	
+		.track3 {
+			top: 31.25vw;
 		}
 	}
 

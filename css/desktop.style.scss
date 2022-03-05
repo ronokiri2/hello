@@ -13,6 +13,8 @@
 исправлено 2 бага с анимацией
 отформатирован html: beautify html
 текст отформатирован через "Типограф"
+переделана анимация тв-каналов с GSAP на CSS
+исправлен баг анимации: теперь каналы не исчезают
 */
 @media (min-width: 700px) {
 	
@@ -296,10 +298,13 @@
 			// 	margin-top: 2.60416667vw;
 			// }
 			// .first-row {
-			// 	margin-left: 5.859375vw;
+			// 	margin-left: -5.859375vw;
 			// }
+			.second-row {
+				margin-left: -5.859375vw;
+			}
 			// .third-row {
-			// 	margin-left: 5.859375vw;
+			// 	margin-left: -5.859375vw;
 			// }
 			&--channel {
 				width: 13.0208333vw;

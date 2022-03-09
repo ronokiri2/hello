@@ -583,10 +583,17 @@
 		border-radius: 12.5vw;
 	}
 
-	&__logo {
+	&__logo1 {
 		width: 46.5625vw;
 	}
 
+	&__logo2 {
+		width: 70vw;
+	}
+
+	&__logo3 {
+		width: 30vw;
+	}
 
 	button {
 		cursor: pointer;
@@ -635,20 +642,16 @@
 	}
 
 	.slide1 {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/startbg.jpg);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/start.jpeg);
 	}
 
 	.slide2 {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/bgphotojpg.jpg);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/amediateka.jpeg);
 	}
 
 	.slide3 {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/spanchbob.jpg);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/ivi.jpeg);
 	}	
-	
-	.slide4 {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/32.jpg);
-	}
 
 	.slides-inner {
 		position: relative;

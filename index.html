@@ -730,9 +730,27 @@
 
 
 		<section class="s8">
-			<div class="s8__wrapper">
-				<img class="s8__logo" decoding="async" src="media/start.svg" alt="Лого онлайн-кинотеатра Старт">
-			</div>
+				<div class="s8__wrapper slides-container">
+					<div class="slides-inner">
+						<div class="slide slide1">
+							<img class="s8__logo" decoding="async" src="media/start.svg" alt="Лого онлайн-кинотеатра Старт">
+						</div>
+						<div class="slide slide2">
+							<img class="s8__logo" decoding="async" src="media/ivi.svg" alt="Лого онлайн-кинотеатра Иви">
+						</div>
+						<div class="slide slide3">
+							<img class="s8__logo" decoding="async" src="media/amediateka.svg" alt="Лого онлайн-кинотеатра Амедиатека">
+						</div>
+						<div class="slide slide4">
+							<img class="s8__logo" decoding="async" src="media/kion.svg" alt="Лого онлайн-кинотеатра Кион">
+						</div>
+					</div>
+				</div>
+				
+				<div class="controls">
+					<button id="prevButton">Prev</button>
+					<button id="nextButton">Next</button>
+				</div>
 
 		</section>
 
@@ -790,6 +808,8 @@
 	<script src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->
 	<script src="js/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
 	<script src="js/CustomEase.min.js"></script> <!-- плагин для кастомного изинга -->
+	<script src="js/Draggable.min.js"></script>
+	<script src="js/InertiaPlugin.min.js"></script> 
 	<script src="js/scrollAnimation.js"></script> <!-- моя анимация по скроллу -->
 </body>
 

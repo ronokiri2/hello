@@ -684,26 +684,36 @@
 		min-height: 15.9375vw;
 		background: #EBECF0;
 		box-shadow: inset 0.3vw 0.3vw 0.6vw #BABECC, inset -0.3vw -0.3vw 0.6vw #FFFFFF;
+		
 		margin-top: 1.875vw;
 		list-style: none;
 		border-radius: 1.875vw;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFFFFF;
+		}
 
 		&[open]{
 			box-shadow: 0.6vw 0.6vw 1.5vw 0px #BABECC;
 			box-shadow: -0.6vw -0.6vw 1.5vw 0px #FFFFFF;
+			box-shadow: -5px -5px 20px #FFFFFF, 5px 5px 20px #BABECC;
+		}
+
+		summary {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			font-weight: 700;
+			font-size: 5.62500vw;
+			line-height: 140%;
+			min-height: 0px;
+			color: #141414;
 		}
 	}
 
-	summary {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		font-weight: 700;
-		font-size: 5.62500vw;
-		line-height: 140%;
-		min-height: 15.9375vw;
-		color: #141414;
-	}
+
 
 
 }

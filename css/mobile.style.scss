@@ -631,6 +631,7 @@
 		background-position: center;
 		width: calc(100% / 3);
 		width: 100%;
+		will-change: transform;
 	}
 
 	.slide1 {

@@ -84,11 +84,13 @@
 		text-align: center;
 	}
 	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		z-index: 1;
 		color: white;
 		background-color: #C42F75;
 		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
-
 		margin-top: 7.8125vw;
 		width: 71.875vw; /* 230px */
 		height: 13.125vw; /* 42px */
@@ -195,6 +197,9 @@
 	}
 
 	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 71.875vw; /* 230px */
 		height: 13.125vw; /* 42px */
 		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);
@@ -552,6 +557,9 @@
 	}
 
 	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 71.875vw; /* 230px */
 		height: 13.125vw; /* 42px */
 		background: linear-gradient(88.48deg, #C32F77 0%, #CF2E47 100%);

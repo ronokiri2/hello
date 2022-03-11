@@ -133,7 +133,27 @@
 			font-size: 1.30208333vw; /* 40px */
 			margin-top: 0;
 			margin-bottom: auto;
-		}
+			border-radius: 0.325520833vw; /* 10px */
+		}	
+		// &__button2 {
+		// 	width: 21.5820312vw;
+		// 	height: 3.90625vw;
+		// 	z-index: 100;
+		// 	background-color: white;
+		// 	color: black;
+		// 	text-transform: uppercase;
+		// 	font-size: 6px;
+		// 	margin: 8px;
+		// 	padding: 16px 24px;
+		// 	outline: none;
+		// 	border: none;
+		// 	--squircle-smooth: 0.8;
+		// 	--squircle-radius: 10px;
+		// 	mask-image: paint(squircle);
+		// }
+		
+		
+		
 
 		&__img {
 			
@@ -479,6 +499,8 @@
 			font-size: 1.30208333vw; /* 40px */
 			font-weight: 400; /* medium */
 		}
+
+	
 	}
 
 

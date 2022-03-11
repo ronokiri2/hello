@@ -50,6 +50,9 @@
 		background-color: black;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/bgphotojpg.jpg);
 		border-radius: 12.5vw;
+		--squircle-smooth: 0.8;
+		--squircle-radius: 10px;
+		mask-image: paint(squircle);
 	}
 
 
@@ -65,6 +68,9 @@
 		object-fit: cover;
 		border-radius: 12.5vw;
 		filter: grayscale(1) brightness(0.45) contrast(1.05);
+		--squircle-smooth: 0.8;
+		--squircle-radius: 10px;
+		mask-image: paint(squircle);
 	}
 	
 	&__h1 {
@@ -192,6 +198,9 @@
 			width: 87.5vw; /* 280px */
 			border-radius: 4.09375vw;
 			margin-top: 12.5vw; /* 40px */
+			--squircle-smooth: 0.8;
+			--squircle-radius: 10px;
+			mask-image: paint(squircle);
 		}
 		
 	}

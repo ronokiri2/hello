@@ -1,6 +1,8 @@
 ScrollTrigger.matchMedia({
 	"(min-width: 700px)"() {
 
+		
+
 		gsap.registerPlugin(ScrollTrigger);
 
 		// gsap.to(".s2__svg", {
@@ -20,7 +22,7 @@ ScrollTrigger.matchMedia({
 				end: "+=200%",
 				scrub: true,
 				pin: true,
-				anticipatePin: 1 
+				anticipatePin: 1,
 			}
 		});
 		
@@ -29,6 +31,7 @@ ScrollTrigger.matchMedia({
 			scale: 130, 
 			duration: 1, 
 			ease: CustomEase.create("custom", "M0,0,C0.486,0.054,0.234,0.2,0.49,0.488,0.686,0.709,0.78,1,1,1"),
+			force3D: false,
 		});
 		
 		gsap

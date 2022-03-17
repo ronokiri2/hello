@@ -14,6 +14,8 @@
 	src: url('../fonts/Hero-New-Regular-subset.woff2');
 }
 
+
+
 :root {
 	background: linear-gradient(89deg, #3A3D91 0.92%, #393289 32.37%, #C12E7D 73.27%, #C62E68 98.43%, #CC2D50 121.71%);
 	font-family: 'Hero New', system-ui, sans-serif;
@@ -41,6 +43,7 @@
 
 
 .s1 {
+	background-color: black;
 	background: linear-gradient(180deg, #010516 0%, #072F64 49.72%, #000000 100%);
 
 	&__wrapper {

@@ -47,8 +47,8 @@
 		height: 160vw; /* 512px */
 		width: 87.5vw;
 		margin: 0 auto;
-		background-color: black;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/bgphotojpg.jpg);
+		background-color: transparent;
+		// background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/bgphotojpg.jpg);
 		border-radius: 12.5vw;
 		--squircle-smooth: 0.8;
 		--squircle-radius: 10px;

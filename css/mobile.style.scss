@@ -4,6 +4,11 @@
 	src: url('../fonts/Hero-New-Bold.woff2');
 }
 @font-face {
+	font-weight: 500; /* medium */
+	font-family: 'Hero New';
+	src: url('../fonts/Hero-New-Medium.woff2');
+}
+@font-face {
 	font-weight: 400; /* regular / normal */
 	font-family: 'Hero New';
 	src: url('../fonts/Hero-New-Regular.woff2');
@@ -76,7 +81,7 @@
 	&__h1 {
 		z-index: 1;
 		color: white;
-		font-weight: 800;
+		font-weight: 700;
 		font-size: 6.25vw; /* 20px */
 		line-height: 8.75vw; /* 28px */
 		text-transform: uppercase;
@@ -145,7 +150,7 @@
 
 	&__benefit--text {
 		color: white;
-		font-weight: 600;
+		font-weight: 500;
 		text-align: center;
 		font-size: 4.375vw; /* 14px */
 		line-height: 6.25vw; /* 20px */
@@ -228,7 +233,7 @@
 
 	&__header {
 		width: 87.5vw; /* 280px */
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 7.5vw; /* 24px */
 		line-height: 140%; /* 34px */
 		text-align: center;
@@ -307,7 +312,7 @@
 
 	&__header {
 		width: 87.5vw; /* 280px */
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 7.5vw; /* 24px */
 		line-height: 140%; /* 34px */
 		text-align: center;
@@ -338,7 +343,7 @@
 
 	&__header {
 		width: 87.5vw; /* 280px */
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 7.5vw; /* 24px */
 		line-height: 140%; /* 34px */
 		text-align: center;
@@ -507,7 +512,7 @@
 
 	&__header {
 		width: 87.5vw; /* 280px */
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 7.5vw; /* 24px */
 		line-height: 140%; /* 34px */
 		text-align: center;
@@ -545,7 +550,7 @@
 
 	&__header {
 		width: 87.5vw; /* 280px */
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 7.5vw; /* 24px */
 		line-height: 140%; /* 34px */
 		text-align: center;
@@ -642,9 +647,6 @@
 
 	.slide {
 		position: absolute;
-		font-size: 90px;
-		font-weight: 700;
-		color: rgba(255,255,255,0.9);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -764,6 +766,7 @@
 		color: white;
 		margin-top: 13.4375vw;
 		font-size: 6.25vw;
+		font-weight: 400;
 		line-height: 140%;
 		height: 22.5vw;
 	}
@@ -775,6 +778,7 @@
 		justify-content: space-between;
 		color: white;
 		font-size: 6.25vw;
+		font-weight: 400;
 		line-height: 140%;
 		height: 22.5vw;
 		margin-top: 5vw;

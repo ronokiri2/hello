@@ -26,6 +26,12 @@
 	display: flex;
 	justify-content: space-around;
 
+	&__logo {
+		width: 31.25vw;
+		margin: 2.8125vw auto; /* 9px */
+		display: flex; /* чтобы высота была равна высоте картинки */
+	}
+
 	@keyframes animate-svg-stroke-1 {
 		0% {
 			stroke-dashoffset: 399.6763610839844px;
@@ -69,11 +75,11 @@
 			fill: transparent;
 		}
 	}
-	.svg-elem-1 {
+	.svg-head-1 {
 		animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s reverse both,
 		animate-svg-fill-1 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s both;
 	}
-	svg:hover .svg-elem-1 {
+	svg:hover .svg-head-1 {
 		animation: animate-svg-stroke-1-hover 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s normal both,
 		animate-svg-fill-1-hover 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
 	}
@@ -119,11 +125,11 @@
 			fill: transparent;
 		}
 	}
-	.svg-elem-2 {
+	.svg-head-2 {
 		animation: animate-svg-stroke-2 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s reverse both,
 		animate-svg-fill-2 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s both;
 	}
-	svg:hover .svg-elem-2 {
+	svg:hover .svg-head-2 {
 		animation: animate-svg-stroke-2-hover 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s normal both,
 		animate-svg-fill-2-hover 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
 	}
@@ -169,11 +175,11 @@
 			fill: transparent;
 		}
 	}
-	.svg-elem-3 {
+	.svg-head-3 {
 		animation: animate-svg-stroke-3 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s reverse both,
 		animate-svg-fill-3 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s both;
 	}
-	svg:hover .svg-elem-3 {
+	svg:hover .svg-head-3 {
 		animation: animate-svg-stroke-3-hover 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s normal both,
 		animate-svg-fill-3-hover 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
 	}
@@ -219,11 +225,11 @@
 			fill: transparent;
 		}
 	}
-	.svg-elem-4 {
+	.svg-head-4 {
 		animation: animate-svg-stroke-4 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s reverse both,
 		animate-svg-fill-4 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s both;
 	}
-	svg:hover .svg-elem-4 {
+	svg:hover .svg-head-4 {
 		animation: animate-svg-stroke-4-hover 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s normal both,
 		animate-svg-fill-4-hover 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
 	}
@@ -234,11 +240,7 @@
 	&__right {
 		display: none;
 	}
-	&__logo {
-		width: 31.25vw;
-		margin: 2.8125vw auto; /* 9px */
-		display: flex; /* чтобы высота была равна высоте картинки */
-	}
+
 
 }
 

@@ -1,11 +1,15 @@
 // анимация плавного скрытия прелоадера
 
 document.addEventListener('DOMContentLoaded', function () {
-	document.body.classList.add('loaded_hiding');
-	window.setTimeout(function () {
-	  document.body.classList.add('loaded');
-	  document.body.classList.remove('loaded_hiding');
-	}, 500);
+	function timer() {
+		document.body.classList.add('loaded_hiding');
+		window.setTimeout(function () {
+			document.body.classList.add('loaded');
+			document.body.classList.remove('loaded_hiding');
+		}, 500);
+
+	}
+	setTimeout(timer, 2000);
 });
 
 // этот код на мобильных вызывал неприятный баг

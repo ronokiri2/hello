@@ -256,8 +256,7 @@
 		height: 160vw; /* 512px */
 		width: 87.5vw;
 		margin: 0 auto;
-		background-color: transparent;
-		// background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/bgphotojpg.jpg);
+		background-color: black;
 		border-radius: 12.5vw;
 		--squircle-smooth: 0.8;
 		--squircle-radius: 10px;
@@ -276,6 +275,9 @@
 		z-index: 0;
 		object-fit: cover;
 		border-radius: 12.5vw;
+		background-image: url(../media/poster.webp);
+		background-size: cover;
+		background-position: center;
 		filter: grayscale(1) brightness(0.45) contrast(1.05);
 		--squircle-smooth: 0.8;
 		--squircle-radius: 10px;

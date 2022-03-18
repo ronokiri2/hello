@@ -48,27 +48,28 @@ ScrollTrigger.matchMedia({
 		// анимация s1
 		gsap.from(".header", {
 			opacity: 0,
-			delay: 1
+			delay: 2.5,
 		});
 		gsap.from(".s1__wrapper", {
 			scale: 0.272197962,
 			duration: 1,
+			delay: 2
 		});
 		gsap.from(".s1__h1", {
 			opacity: 0,
-			delay: 1
+			delay: 2.5
 		});
 		gsap.from(".s1__h2", {
 			opacity: 0,
-			delay: 1
+			delay: 2.5
 		});		
 		gsap.from(".s1__button", {
 			opacity: 0,
-			delay: 1
+			delay: 2.5
 		});
 		gsap.from(".s1__img", {
 			opacity: 0,
-			delay: 1
+			delay: 2.5
 		});
 
 

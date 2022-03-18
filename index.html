@@ -28,6 +28,237 @@
 	<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 	<link rel="manifest" href="manifest.json">
 
+		<!-- стили для прелоадера сразу в html, чтобы посетитель не увидел блинка белого бэкграунда ночью -->
+		<style>
+			.preloader {
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				overflow: hidden;
+				background: #1A1A1A;
+				z-index: 1001;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+	
+			.loaded_hiding .preloader {
+				transition: 0.3s opacity;
+				opacity: 0;
+			}
+	
+			.loaded .preloader {
+				display: none;
+			}
+	
+	
+			@-webkit-keyframes animate-svg-stroke-10 {
+				0% {
+					stroke-dashoffset: 399.6763610839844px;
+					stroke-dasharray: 399.6763610839844px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 399.6763610839844px;
+				}
+			}
+	
+			@keyframes animate-svg-stroke-10 {
+				0% {
+					stroke-dashoffset: 399.6763610839844px;
+					stroke-dasharray: 399.6763610839844px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 399.6763610839844px;
+				}
+			}
+	
+			@-webkit-keyframes animate-svg-fill-10 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			@keyframes animate-svg-fill-10 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			.svg1 {
+				-webkit-animation: animate-svg-stroke-10 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-10 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+				animation: animate-svg-stroke-10 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-10 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+			}
+	
+			@-webkit-keyframes animate-svg-stroke-20 {
+				0% {
+					stroke-dashoffset: 260.6836853027344px;
+					stroke-dasharray: 260.6836853027344px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 260.6836853027344px;
+				}
+			}
+	
+			@keyframes animate-svg-stroke-20 {
+				0% {
+					stroke-dashoffset: 260.6836853027344px;
+					stroke-dasharray: 260.6836853027344px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 260.6836853027344px;
+				}
+			}
+	
+			@-webkit-keyframes animate-svg-fill-20 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			@keyframes animate-svg-fill-20 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			.svg2 {
+				-webkit-animation: animate-svg-stroke-20 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-20 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+				animation: animate-svg-stroke-20 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-20 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+			}
+	
+			@-webkit-keyframes animate-svg-stroke-30 {
+				0% {
+					stroke-dashoffset: 274.9515686035156px;
+					stroke-dasharray: 274.9515686035156px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 274.9515686035156px;
+				}
+			}
+	
+			@keyframes animate-svg-stroke-30 {
+				0% {
+					stroke-dashoffset: 274.9515686035156px;
+					stroke-dasharray: 274.9515686035156px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 274.9515686035156px;
+				}
+			}
+	
+			@-webkit-keyframes animate-svg-fill-30 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			@keyframes animate-svg-fill-30 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			.svg3 {
+				-webkit-animation: animate-svg-stroke-30 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-30 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+				animation: animate-svg-stroke-30 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-30 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+			}
+	
+			@-webkit-keyframes animate-svg-stroke-40 {
+				0% {
+					stroke-dashoffset: 130.1905975341797px;
+					stroke-dasharray: 130.1905975341797px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 130.1905975341797px;
+				}
+			}
+	
+			@keyframes animate-svg-stroke-40 {
+				0% {
+					stroke-dashoffset: 130.1905975341797px;
+					stroke-dasharray: 130.1905975341797px;
+				}
+	
+				100% {
+					stroke-dashoffset: 0;
+					stroke-dasharray: 130.1905975341797px;
+				}
+			}
+	
+			@-webkit-keyframes animate-svg-fill-40 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			@keyframes animate-svg-fill-40 {
+				0% {
+					fill: transparent;
+				}
+	
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+	
+			.svg4 {
+				-webkit-animation: animate-svg-stroke-40 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-40 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+				animation: animate-svg-stroke-40 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+				animate-svg-fill-40 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+			}
+		</style>
+
 	<link rel="preload" href="fonts/Hero-New-Bold-subset.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Hero-New-Medium-subset.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Hero-New-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
@@ -68,236 +299,7 @@
 
 	</div>
 
-	<!-- стили для прелоадера сразу в html, чтобы посетитель не увидел блинка белого бэкграунда ночью -->
-	<style>
-		.preloader {
-			position: fixed;
-			left: 0;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			overflow: hidden;
-			background: #1A1A1A;
-			z-index: 1001;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
 
-		.loaded_hiding .preloader {
-			transition: 0.3s opacity;
-			opacity: 0;
-		}
-
-		.loaded .preloader {
-			display: none;
-		}
-
-
-		@-webkit-keyframes animate-svg-stroke-10 {
-			0% {
-				stroke-dashoffset: 399.6763610839844px;
-				stroke-dasharray: 399.6763610839844px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 399.6763610839844px;
-			}
-		}
-
-		@keyframes animate-svg-stroke-10 {
-			0% {
-				stroke-dashoffset: 399.6763610839844px;
-				stroke-dasharray: 399.6763610839844px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 399.6763610839844px;
-			}
-		}
-
-		@-webkit-keyframes animate-svg-fill-10 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		@keyframes animate-svg-fill-10 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		.svg1 {
-			-webkit-animation: animate-svg-stroke-10 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-10 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-			animation: animate-svg-stroke-10 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-10 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-		}
-
-		@-webkit-keyframes animate-svg-stroke-20 {
-			0% {
-				stroke-dashoffset: 260.6836853027344px;
-				stroke-dasharray: 260.6836853027344px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 260.6836853027344px;
-			}
-		}
-
-		@keyframes animate-svg-stroke-20 {
-			0% {
-				stroke-dashoffset: 260.6836853027344px;
-				stroke-dasharray: 260.6836853027344px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 260.6836853027344px;
-			}
-		}
-
-		@-webkit-keyframes animate-svg-fill-20 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		@keyframes animate-svg-fill-20 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		.svg2 {
-			-webkit-animation: animate-svg-stroke-20 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-20 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-			animation: animate-svg-stroke-20 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-20 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-		}
-
-		@-webkit-keyframes animate-svg-stroke-30 {
-			0% {
-				stroke-dashoffset: 274.9515686035156px;
-				stroke-dasharray: 274.9515686035156px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 274.9515686035156px;
-			}
-		}
-
-		@keyframes animate-svg-stroke-30 {
-			0% {
-				stroke-dashoffset: 274.9515686035156px;
-				stroke-dasharray: 274.9515686035156px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 274.9515686035156px;
-			}
-		}
-
-		@-webkit-keyframes animate-svg-fill-30 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		@keyframes animate-svg-fill-30 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		.svg3 {
-			-webkit-animation: animate-svg-stroke-30 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-30 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-			animation: animate-svg-stroke-30 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-30 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-		}
-
-		@-webkit-keyframes animate-svg-stroke-40 {
-			0% {
-				stroke-dashoffset: 130.1905975341797px;
-				stroke-dasharray: 130.1905975341797px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 130.1905975341797px;
-			}
-		}
-
-		@keyframes animate-svg-stroke-40 {
-			0% {
-				stroke-dashoffset: 130.1905975341797px;
-				stroke-dasharray: 130.1905975341797px;
-			}
-
-			100% {
-				stroke-dashoffset: 0;
-				stroke-dasharray: 130.1905975341797px;
-			}
-		}
-
-		@-webkit-keyframes animate-svg-fill-40 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		@keyframes animate-svg-fill-40 {
-			0% {
-				fill: transparent;
-			}
-
-			100% {
-				fill: rgb(255, 255, 255);
-			}
-		}
-
-		.svg4 {
-			-webkit-animation: animate-svg-stroke-40 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-40 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-			animation: animate-svg-stroke-40 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
-			animate-svg-fill-40 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-		}
-	</style>
 
 
 

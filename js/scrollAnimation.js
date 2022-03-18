@@ -67,10 +67,7 @@ ScrollTrigger.matchMedia({
 			opacity: 0,
 			delay: 2.5
 		});
-		gsap.from(".s1__img", {
-			opacity: 0,
-			delay: 2.5
-		});
+
 
 
 		// sticky анимация постеров по скроллу

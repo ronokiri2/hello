@@ -670,6 +670,9 @@
 			width: 42.8125vw;
 			object-fit: cover;
 			border-radius: 1.25vw; /* 4px */
+			--squircle-smooth: 0.8;
+			--squircle-radius: 4px;
+			mask-image: paint(squircle);
 		}
 
 		&--column {

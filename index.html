@@ -420,8 +420,42 @@
 				<img class="s2__posters--poster js3" decoding="async" src="media/dva.jpg" alt="Постер сериала Два">
 				<img class="s2__posters--poster js4" decoding="async" src="media/beg.jpg"
 					alt="Постер сериала Бег улиток">
-				<img class="s2__posters--poster js5" decoding="async" src="media/penguins.jpg"
-					alt="Постер сериала Пингвины моей мамы">
+				<!-- <img class="s2__posters--poster js5" decoding="async" src="media/penguins.jpg"
+					alt="Постер сериала Пингвины моей мамы"> -->
+				<picture class="s2__posters--poster js5">
+					<source srcset="media/penguins400x1.webp 1x,
+									media/penguins400x2.webp 2x,
+									media/penguins400x3.webp 3x,
+									media/penguins400x4.webp 4x"
+									type="image/webp"
+									media="(max-width: 450px)">
+
+					<source srcset="media/penguins400x1.jpg 1x,
+									media/penguins400x2.jpg 2x,
+									media/penguins400x3.jpg 3x,
+									media/penguins400x4.jpg 4x"
+									media="(max-width: 450px)">
+
+
+					<source srcset="media/penguins700x1.webp 1x,
+									media/penguins700x2.webp 2x,
+									media/penguins700x3.webp 3x,
+									media/penguins700x4.webp 4x"
+									type="image/webp"
+									media="(min-width: 451px)">
+
+					<source srcset="media/penguins700x1.jpg 1x,
+									media/penguins700x2.jpg 2x,
+									media/penguins700x3.jpg 3x,
+									media/penguins700x4.jpg 4x"
+									media="(min-width: 451px)">
+
+					<img alt="Постер сериала Пингвины моей мамы"
+							src="media/penguins700x1.jpg" 
+							srcset="media/penguins700x2.jpg 2x,
+									media/penguins700x3.jpg 3x,
+									media/penguins700x4.jpg 4x">
+				</picture>
 				<img class="s2__posters--poster js6" decoding="async" src="media/chinovnitsa.jpg"
 					alt="Постер сериала Чиновница">
 			</div>

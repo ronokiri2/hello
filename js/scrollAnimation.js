@@ -48,7 +48,7 @@ ScrollTrigger.matchMedia({
 		// анимация s1
 		gsap.from(".header", {
 			opacity: 0,
-			delay: 2.5,
+			delay: 2.8,
 		});
 		gsap.from(".s1__wrapper", {
 			scale: 0.272197962,

@@ -589,6 +589,15 @@
 			--squircle-smooth: 0.8;
 			--squircle-radius: 10px;
 			mask-image: paint(squircle);
+
+			img { 
+				border-radius: 1vw;
+				width: 100%;
+				max-height: 100%;
+				object-fit: cover;
+				object-position: 50% 30%;
+			}
+			
 		}
 		
 	}

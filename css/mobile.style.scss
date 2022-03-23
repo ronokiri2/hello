@@ -683,6 +683,7 @@
 			--squircle-smooth: 0.8;
 			--squircle-radius: 10px;
 			mask-image: paint(squircle);
+			object-fit: cover;
 
 			img { 
 				border-radius: 1vw;

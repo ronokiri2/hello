@@ -421,12 +421,29 @@
 
 
 			<div class="s2__posters">
-				<img class="s2__posters--poster js1" decoding="async" src="media/pochka.jpg" alt="Постер сериала Почка">
+				<picture class="s2__posters--poster js1">
+					<source srcset="media/Pochka400x1.jpg 1x,
+									media/Pochka400x2.jpg 2x,
+									media/Pochka400x3.jpg 3x,
+									media/Pochka400x4.jpg 4x"
+									media="(max-width: 450px)">
+
+					<source srcset="media/Pochka700x1.jpg 1x,
+									media/Pochka700x2.jpg 2x,
+									media/Pochka700x3.jpg 3x,
+									media/Pochka700x4.jpg 4x"
+									media="(min-width: 451px)">
+
+					<img alt="Постер сериала Почка"
+							src="media/Pochka700x1.jpg" 
+							srcset="media/Pochka700x2.jpg 2x,
+									media/Pochka700x3.jpg 3x,
+									media/Pochka700x4.jpg 4x">
+				</picture>
+
 				<img class="s2__posters--poster js2" decoding="async" src="media/vrayu.jpg"
 					alt="Постер сериала В раю мест нет">
 				<img class="s2__posters--poster js3" decoding="async" src="media/dva.jpg" alt="Постер сериала Два">
-				<!-- <img class="s2__posters--poster js4" decoding="async" src="media/beg.jpg"
-					alt="Постер сериала Бег улиток"> -->
 
 				<picture class="s2__posters--poster js4">
 					<source srcset="media/beg400x1.webp 1x,

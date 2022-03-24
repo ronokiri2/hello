@@ -308,6 +308,14 @@
 		align-items: center;
 		z-index: 1;
 		color: white;
+		margin-top: 7.8125vw;
+		width: 71.875vw; /* 230px */
+		height: 13.125vw; /* 42px */
+		font-weight: 400;
+		font-size: 4.375vw; /* 14px */
+		border-radius: 1.25vw; /* 4px */
+		text-align: center;
+		margin-bottom: 25.625vw; /* 82px */
 		background-color: #C42F75;
 		background: linear-gradient(
 			89deg,
@@ -317,33 +325,13 @@
 			hsl(250deg 73% 40%)
 		);
 		background-size: 300% 100%;
-		margin-top: 7.8125vw;
-		width: 71.875vw; /* 230px */
-		height: 13.125vw; /* 42px */
-		font-weight: 400;
-		font-size: 4.375vw; /* 14px */
-		border-radius: 1.25vw; /* 4px */
-		text-align: center;
-		margin-bottom: 25.625vw; /* 82px */
 		transition: background-position 1s, transform 0.4s;
 
 		&:hover {
 			background-position: 100% 0;
-			transform: translateY(-2px);
-		}
-		@keyframes animate {
-			0% {
-				background-position: 0%;
-			}
-			100% {
-				background-position: 400%;
-			}
+			transform: translateY(-0.2vw);
 		}
 	}
-
-
-
-
 	
 	&__mts {
 		z-index: 1;
@@ -723,7 +711,22 @@
 		font-size: 4.375vw; /* 14px */
 		font-weight: 500; /* medium */
 		margin-top: 20.3125vw; /* 65px */
-		margin-bottom: 29.6875vw; /* 95px */
+		margin-bottom: 29.6875vw; /* 95px */		
+		background-color: #C42F75;
+		background: linear-gradient(
+			89deg,
+			hsl(331deg 61% 47%),
+			hsl(351deg 64% 50%),
+			hsl(238deg 43% 40%),
+			hsl(250deg 73% 40%)
+		);
+		background-size: 300% 100%;
+		transition: background-position 1s, transform 0.4s;
+
+		&:hover {
+			background-position: 100% 0;
+			transform: translateY(-0.2vw);
+		}
 	}
 }
 
@@ -1086,6 +1089,21 @@
 		font-size: 4.375vw; /* 14px */
 		font-weight: 500; /* medium */
 		margin-top: 10.3125vw; /* 65px */
+		background-color: #C42F75;
+		background: linear-gradient(
+			89deg,
+			hsl(331deg 61% 47%),
+			hsl(351deg 64% 50%),
+			hsl(238deg 43% 40%),
+			hsl(250deg 73% 40%)
+		);
+		background-size: 300% 100%;
+		transition: background-position 1s, transform 0.4s;
+
+		&:hover {
+			background-position: 100% 0;
+			transform: translateY(-0.2vw);
+		}
 	}
 
 }

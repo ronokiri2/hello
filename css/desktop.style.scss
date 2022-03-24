@@ -640,6 +640,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 	.s6 {
 		padding-top: 15.2994792vw;
+		background-color: var(--color);
 
 		&__wrapper {
 			border-radius: 3.25520833vw;
@@ -698,6 +699,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 	.s8 {
 		padding-top: 4.55729167vw;
 		padding-bottom: 11.6536458vw;
+		background-color: var(--color);
 
 		&__wrapper {
 			border-radius: 3.25520833vw;
@@ -732,12 +734,14 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 		}
 
 		details {
+			background-color: var(--color);
 			width: 66.1132812vw;
 			min-height: 5.859375vw;
 			border-radius: 0.651041667vw;
 			padding: 1.43229167vw 2.63671875vw;
 			margin-top: 0.651041667vw; // 20px
-			box-shadow: inset 0.0651041667vw 0.0651041667vw 0.162760417vw #BABECC, inset -0.162760417vw -0.162760417vw 0.325520833vw #FFFFFF;
+			box-shadow: inset 0.0651041667vw 0.0651041667vw 0.162760417vw #BABECC, 
+						inset -0.162760417vw -0.162760417vw 0.325520833vw #FFFFFF;
 
 			summary {
 				display: flex;

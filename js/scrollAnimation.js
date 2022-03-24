@@ -109,9 +109,10 @@ ScrollTrigger.matchMedia({
 		gsap.to("body", {
 			"--color": "#EBECF0",
 			scrollTrigger: {
-				trigger: ".s9",
-				start: "top bottom",
-				toggleActions: "play none none reverse"
+				trigger: ".s7__button",
+				start: "top top",
+				toggleActions: "play none none reverse",
+				duration: 0.1
 			}
 		});
 

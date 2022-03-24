@@ -22,6 +22,10 @@
 	scroll-behavior: smooth;
 }
 
+body {
+	--color: #010516;
+}
+
 .header {
 	display: flex;
 	justify-content: space-around;
@@ -1113,7 +1117,7 @@
 .s8 {
 	padding-top: 22.1875vw;
 	padding-bottom: 21.875vw;
-	background-color: #010516;
+	background-color: var(--color);
 
 	&__wrapper {
 		display: flex;

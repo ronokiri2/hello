@@ -104,6 +104,19 @@ ScrollTrigger.matchMedia({
 		});
 
 
+
+		// изменение цвета фона s8 s9
+		gsap.to("body", {
+			"--color": "#EBECF0",
+			scrollTrigger: {
+				trigger: ".s9",
+				start: "top bottom",
+				toggleActions: "play none none reverse"
+			}
+		});
+
+
+
 	}
 })
 

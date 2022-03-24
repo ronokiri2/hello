@@ -5,8 +5,6 @@
 		var slideDuration = 0.5;
 		
 		var slides = document.querySelectorAll(".slide");
-		var prevButton = document.querySelector("#prevButton");
-		var nextButton = document.querySelector("#nextButton");
 		
 		var numSlides = slides.length;
 		
@@ -48,14 +46,6 @@
 		});
 		
 		window.addEventListener("resize", resize);
-		
-		prevButton.addEventListener("click", function() {
-			animateSlides(1);
-		});
-		
-		nextButton.addEventListener("click", function() {
-			animateSlides(-1);
-		});
 		
 		function updateDraggable() {
 			timer.restart(true);

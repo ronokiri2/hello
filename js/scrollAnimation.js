@@ -32,8 +32,8 @@ ScrollTrigger.matchMedia({
 		  scrollTrigger: {
 			trigger: ".s2",
 			scrub: true,
-			start: "top top",
-			end: "center bottom",
+			start: "18% top",
+			end: "+=10%",
 			invalidateOnRefresh: true
 		  }
 		})

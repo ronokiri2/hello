@@ -22,10 +22,6 @@
 	scroll-behavior: smooth;
 }
 
-body {
-	--color: #010516;
-}
-
 .header {
 	display: flex;
 	justify-content: space-around;
@@ -846,8 +842,105 @@ body {
 		width: 87.5vw; /* 280px */
 		margin-top: 12.1875vw;
 	}
+
 }
 
+// .s45 {
+// 	overflow-x: hidden;
+
+// 		.section {
+// 			font-size: 5rem;
+// 		}
+// 		.section--large {
+// 			width: 100vw;
+// 			background-color: #e4002b;
+// 			color: white;
+// 		}
+// 		.section--small {
+// 			width: 46rem;
+// 			background-color: #28bd90;
+// 		}
+// 		.section--dark {
+// 			color: white;
+// 			background-color: black;
+// 		}
+		
+// 		.center-marker {
+// 			position: fixed;
+// 			width: 2px;
+// 			height: 100vh;
+// 			background: tomato;
+// 			top: 0;
+// 			left: calc(50vw - 1px);
+// 		}
+		
+// 		.section {
+// 			font-weight: 900;
+// 			transition: color 0.3s;
+// 		}
+	
+// 		.section.active {
+// 			color: orange;
+// 		}
+// 		.flex-shrink-0 {
+// 			flex-shrink: 0;
+// 		}
+// 		.vw-100 {
+// 			width: 100vw;
+// 		} 
+// 		.vh-100 {
+// 			height: 100vh;
+// 		}
+// 		.d-flex {
+// 			display: flex;
+// 		}
+// 		.justify-content-center {
+// 			justify-content: center;
+// 		}
+// 		.align-items-center {
+// 			align-items: center;
+// 		}
+
+// 		.flex-nowrap {
+// 			flex-wrap: nowrap;
+// 		}
+// }
+
+
+  
+//   #PageWrap {
+// 	height: 100vh;
+// 	width: 300vw;
+// 	display: flex;
+// 	flex-wrap: nowrap;
+//   }
+
+//   #SectionA {
+// 	width: 100vw;
+// 	height: 100vh;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background: rgb(104, 104, 104);
+//   }
+  
+//   #SectionC {
+// 	width: 100vw;
+// 	height: 100vh;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background: rgb(36, 36, 36);
+//   }
+  
+//   #SectionB {
+// 	width: 100vw;
+// 	height: 100vh;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background: rgb(167, 167, 167);
+//   }
 
 .s5 {
 	background-color: #010516;
@@ -1115,6 +1208,7 @@ body {
 
 
 .s8 {
+	background-color: #010516;
 	padding-top: 22.1875vw;
 	padding-bottom: 21.875vw;
 
@@ -1140,6 +1234,7 @@ body {
 		height: 160vw;
 		margin: 0 auto;
 		border-radius: 12.5vw;
+		-webkit-mask-image: -webkit-radial-gradient(white, black);
 	}
 
 	&__logo1 {

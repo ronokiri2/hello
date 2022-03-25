@@ -198,10 +198,13 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 Теперь ряды телеканалов двигаются с разной скоростью
 
 Добавлена анимация смены цвета фона при скролле до FAQ
+Исправлен баг анимации смены цвета фона
 
 Изменена ширина и текст кнопки "Подключить KION TOP"
 
 Добавлен скрытый текст, необходимый для скринридера и прохождения валидации
+
+Исправлен баг при котором у слайдера KION TOP не работали скругления в браузере Safari
 
 */
 @media (min-width: 700px) {
@@ -644,7 +647,6 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 	.s6 {
 		padding-top: 15.2994792vw;
-		background-color: var(--color);
 
 		&__wrapper {
 			border-radius: 3.25520833vw;
@@ -669,7 +671,6 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 
 	.s7 {
-		background-color: var(--color);
 
 		&__logo {
 			margin-top: 15.2669271vw;
@@ -703,7 +704,6 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 	.s8 {
 		padding-top: 4.55729167vw;
 		padding-bottom: 11.6536458vw;
-		background-color: var(--color);
 
 		&__wrapper {
 			border-radius: 3.25520833vw;
@@ -727,7 +727,6 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 
 	.s9 {
-		background-color: var(--color);
 		padding-bottom: 16.015625vw;
 		border-radius: 0 0 3.25520833vw 3.25520833vw;
 
@@ -738,7 +737,6 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 		}
 
 		details {
-			background-color: var(--color);
 			width: 66.1132812vw;
 			min-height: 5.859375vw;
 			border-radius: 0.651041667vw;

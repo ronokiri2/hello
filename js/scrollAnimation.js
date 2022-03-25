@@ -33,7 +33,8 @@ ScrollTrigger.matchMedia({
 			trigger: ".s2",
 			scrub: true,
 			start: "top top",
-			end: "center bottom"
+			end: "center bottom",
+			invalidateOnRefresh: true
 		  }
 		})
 		.fromTo(

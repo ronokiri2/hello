@@ -1306,12 +1306,10 @@
 	}
 
 	details {
-		padding: 3.75vw 4.0625vw;
 		width: 87.5vw;
 		min-height: 15.9375vw;
 		background: #F0F1F5;
 		box-shadow: inset 0.625vw 0.625vw 1.5625vw #BABECC, inset -1.5625vw -1.5625vw 3.125vw #FFFFFF;
-		
 		margin-top: 1.875vw;
 		list-style: none;
 		border-radius: 1.875vw;
@@ -1325,10 +1323,10 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			padding: 3.75vw 4.0625vw;
 			font-weight: 700;
-			font-size: 5.62500vw;
+			font-size: 5.625vw;
 			line-height: 140%;
-			min-height: 0px;
 			color: #141414;
 
 			&::-webkit-details-marker {
@@ -1341,8 +1339,7 @@
 			font-size: 4.375vw;
 			line-height: 140%;
 			color: #141414;
-			margin-top: 4.0625vw;
-			margin-bottom: 4.6875vw;
+			padding: 0 4.0625vw 8.4375vw 4.0625vw;
 		}
 	}
 

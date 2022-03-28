@@ -677,6 +677,8 @@
 		
 
 		&--poster {
+			position: sticky;
+			top: 6vw;
 			width: 87.5vw; /* 280px */
 			height: 107.178125vw;
 			border-radius: 4.09375vw;
@@ -1205,7 +1207,7 @@
 		height: 160vw;
 		margin: 0 auto;
 		border-radius: 12.5vw;
-		-webkit-mask-image: -webkit-radial-gradient(white, black);
+		mask-image: radial-gradient(white, black);
 	}
 
 	&__logo1 {

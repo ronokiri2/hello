@@ -762,21 +762,18 @@
 		margin-top: 11.875vw; /* 38px */
 		height: 58.125vw;
 		overflow-x: hidden;
-		will-change: transform;
-	  }
-	  
-	  .track {
+	}
+
+	.track {
 		position: absolute;
 		white-space: nowrap;
-		will-change: transform;
 		animation: marquee 32s linear infinite;
-	  }
-	  
-	  @keyframes marquee {
+	}
+
+	@keyframes marquee {
 		from { transform: translateX(0); }
 		to { transform: translateX(-50%); }
-	  }
-	  
+	}
 
 	&__images {
 		
@@ -956,23 +953,15 @@
 
 	&__tv {
 		margin-top: 10.3125vw;
-		// margin-left: 6.25vw; // 20px
-		// width: 159.375vw;
-		
+
 		&--row {
 			display: flex;
-			// margin-top: 3.75vw;
 		}
 
-		// .first-row {
-		// 	margin-left: -8.75vw; //28px
-		// }
 		.second-row {
 			margin-left: -8.75vw; //28px
 		}
-		// .third-row {
-		// 	margin-left: -8.75vw; //28px
-		// }
+
 		&--channel {
 			background-color: white;
 			border-radius: 0.9375vw; // 3px

@@ -30,7 +30,7 @@ ScrollTrigger.matchMedia({
 		.timeline({
 		  scrollTrigger: {
 			trigger: ".s2",
-			scrub: 1,
+			scrub: true,
 			start: "18% top",
 			end: "+=10%",
 			invalidateOnRefresh: true

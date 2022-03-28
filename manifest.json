@@ -8,7 +8,7 @@
         "src": "media/google-touch-icon.png",
         "sizes": "512x512"
     }],
-    "background_color": "#1A1A1A",
+    "background_color": "#3B3A91",
     "theme_color": "#C62E68",
     "display": "fullscreen"
 }

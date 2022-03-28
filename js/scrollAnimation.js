@@ -15,15 +15,14 @@ ScrollTrigger.matchMedia({
 				trigger: ".overlay2",
 				start: "top top",
 				end: "+=200%",
-				scrub: true
+				scrub: 1
 			}
 		});
 		
 
 		// Увеличение svg в 130 раз по кастомному изингу
 		tl.to(".overlay2", {
-			scale: 130, 
-			duration: 1, 
+			scale: 130,
 			ease: CustomEase.create("custom", "M0,0,C0.486,0.054,0.234,0.2,0.49,0.488,0.686,0.709,0.78,1,1,1")
 		});
 		
@@ -31,7 +30,7 @@ ScrollTrigger.matchMedia({
 		.timeline({
 		  scrollTrigger: {
 			trigger: ".s2",
-			scrub: true,
+			scrub: 1,
 			start: "18% top",
 			end: "+=10%",
 			invalidateOnRefresh: true
@@ -74,34 +73,38 @@ ScrollTrigger.matchMedia({
 		// sticky анимация постеров по скроллу
 		ScrollTrigger.create({
 			trigger: ".js1",
-			start: "top top", 
-			end: "223.4375%",
+			start: `-9% top`, 
+			end: "214.4375%",
 			pin: ".js1",
-			anticipatePin: 1 
+			anticipatePin: 1,
+			pinSpacing: false
 		});
 
 		ScrollTrigger.create({
 			trigger: ".js2",
-			start: "top top", 
-			end: "223.4375%",
+			start: "-9% top", 
+			end: "214.4375%",
 			pin: ".js2",
-			anticipatePin: 1 
+			anticipatePin: 1,
+			pinSpacing: false
 		});
 
 		ScrollTrigger.create({
 			trigger: ".js3",
-			start: "top top", 
-			end: "111.71875%",
+			start: "-9% top", 
+			end: "102.71875%",
 			pin: ".js3",
-			anticipatePin: 1 
+			anticipatePin: 1,
+			pinSpacing: false
 		});
 
 		ScrollTrigger.create({
 			trigger: ".js4",
-			start: "top top", 
-			end: "111.71875%",
+			start: "-9% top", 
+			end: "102.71875%",
 			pin: ".js4",
-			anticipatePin: 1 
+			anticipatePin: 1,
+			pinSpacing: false
 		});
 
 

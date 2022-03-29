@@ -1,5 +1,5 @@
 // анимация плавного скрытия прелоадера
-
+'use strict';
 document.addEventListener('DOMContentLoaded', function () {
 	function timer() {
 		document.body.classList.add('loaded_hiding');

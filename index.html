@@ -10,25 +10,22 @@
 	<meta name="description" content="Оригинальные сериалы KION и новинки каждый месяц :)">
 	<meta name="keywords" content="KION, КИОН, MTS, МТС, кинотеатр, онлайн кинотеатр, онлайн-кинотеатр Кион">
 
-	<!-- Open Graph Generated: a.pr-cy.ru -->
 	<meta property="og:type" content="product">
 	<meta property="og:title" content="Онлайн-кинотеатр KION">
 	<meta property="og:description" content="Оригинальные сериалы KION и новинки каждый месяц :)">
 	<meta property="og:image" content="/media/social.png">
 	<meta property="og:site_name" content="KION">
 	<meta property="og:locale" content="ru_RU">
-	<meta property="og:video" content="/media/videoplayback.mp4">
+	<meta property="og:video" content="/media/KION264.mp4">
 	<meta property="fb:app_id" content="kion.ru">
 
-
-	<meta name="theme-color" content="#C62E68">
+	<meta name="theme-color" content="#1A1A1A">
 	<link rel="icon" href="media/favicon.ico">
 	<link rel="icon" href="media/favicon.svg">
 	<link rel="mask-icon" href="favicon.svg" color="red">
 	<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 	<link rel="manifest" href="manifest.json">
 
-		<!-- стили для прелоадера сразу в html, чтобы посетитель не увидел блинка белого бэкграунда ночью -->
 	<style>
 		.preloader {
 			position: fixed;
@@ -262,25 +259,28 @@
 	<link rel="preload" href="fonts/Hero-New-Bold-subset.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Hero-New-Medium-subset.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Hero-New-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
-	<!--1 файл - обнуление css. 
-		2 файл - css для смартфонов. 
-		3 файл - css для десктопов. 
-		Разделение нужно для ускорения загрузки css на смартфонах.
-		Это минифицированные css с префиксами -->
+
 	<link rel="stylesheet" href="minified/reset.min.css">
 	<link rel="stylesheet" href="minified/mobile.style.min.css">
 	<link rel="stylesheet" href="minified/desktop.style.min.css">
+
+
+	<script defer src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера -->
+	<script defer src="js/houdini-squircle.min.js"></script> <!-- библиотека для закругления супперэллипсов -->
+	<script defer src="js/squircle.js"></script> <!-- закругления супперэллипсов -->
+	<script defer src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->
+	<script defer src="js/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
+	<script defer src="js/CustomEase.min.js"></script> <!-- плагин для кастомного изинга -->
+	<script defer src="js/scrollAnimation.js"></script> <!-- моя анимация по скроллу -->
+
+	<script defer src="js/s4__horizont.js"></script> <!-- GSAP S4 горизонтальный скролл -->
+	<script defer src="js/Draggable.min.js"></script> <!-- GSAP S8 драггинг для слайдера -->
+	<script defer src="js/InertiaPlugin.min.js"></script> <!-- GSAP S8 инерция для слайдера -->
+	<script defer src="js/s8__slider.js"></script> <!-- GSAP S8 анимация для слайдера -->
 </head>
 
 
-<!-- добавить  decoding="async" картинкам -->
-
-<!-- проставить бэкграунд колор блэк в инлайн штмл, чтобы не видеть блинка -->
-
 <body>
-
-
-	<!-- прелоадер -->
 	<div class="preloader">
 		<svg width="210" height="52" viewBox="0 0 210 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
@@ -296,20 +296,13 @@
 				d="M69.6939 2.86827V49.1282C69.6944 49.3736 69.6469 49.6168 69.5541 49.8437C69.4613 50.0705 69.3249 50.2767 69.1529 50.4502C68.9808 50.6238 68.7765 50.7614 68.5516 50.855C68.3267 50.9487 68.0857 50.9966 67.8424 50.996H55.8514C55.3604 50.996 54.8895 50.7993 54.5423 50.449C54.1951 50.0987 54 49.6236 54 49.1282V2.86827C54 2.37288 54.1951 1.89778 54.5423 1.54749C54.8895 1.1972 55.3604 1.00041 55.8514 1.00041H67.8078C68.054 0.995177 68.2988 1.03965 68.5277 1.13123C68.7566 1.2228 68.965 1.35962 69.1407 1.53365C69.3165 1.70768 69.4559 1.91541 69.5509 2.1446C69.6459 2.3738 69.6945 2.61984 69.6939 2.86827Z"
 				fill="white" stroke="white" class="svg4"></path>
 		</svg>
-
 	</div>
-
-
-
-
-
-
 
 	<main>
 		<section class="s1">
 			<header class="header">
 				<div class="header__left">
-					<a class="header__left--link" href="#originals4">KION Originals</a>
+					<a class="header__left--link" href="#originals">KION Originals</a>
 					<a class="header__left--link" href="#subscription">Подписка</a>
 				</div>
 
@@ -403,7 +396,7 @@
 				</div>
 			</div>
 
-			<div class="s2__header">
+			<div class="s2__header" id="originals" >
 				<img class="s2__header--logo" decoding="async" src="media/s2__logo.png"
 					alt="Логотип оригинальных сериалов КИОН — Kion originals">
 				<h3 class="s2__header--text">KION&nbsp;&mdash; это онлайн-кинотеатр, который вы&nbsp;полюбите. В&nbsp;KION можно смотреть фильмы и&nbsp;сериалы лучших российских и&nbsp;зарубежных студий.</h3>
@@ -1059,18 +1052,6 @@
 
 	</footer>
 
-	<script src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера -->
-	<script src="js/houdini-squircle.min.js"></script> <!-- библиотека для закругления супперэллипсов -->
-	<script src="js/squircle.js"></script> <!-- закругления супперэллипсов -->
-	<script src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->
-	<script src="js/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
-	<script src="js/CustomEase.min.js"></script> <!-- плагин для кастомного изинга -->
-	<script src="js/scrollAnimation.js"></script> <!-- моя анимация по скроллу -->
-
-	<script src="js/s4__horizont.js"></script> <!-- GSAP S4 горизонтальный скролл -->
-	<script src="js/Draggable.min.js"></script> <!-- GSAP S8 драггинг для слайдера -->
-	<script src="js/InertiaPlugin.min.js"></script> <!-- GSAP S8 инерция для слайдера -->
-	<script src="js/s8__slider.js"></script> <!-- GSAP S8 анимация для слайдера -->
 </body>
 
 </html>

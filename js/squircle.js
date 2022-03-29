@@ -22,7 +22,7 @@ if ("paintWorklet" in CSS) {
 	if (window.matchMedia("(min-width: 700px)").matches) {
 
 		// для больших дисплеев:
-		console.log(`Big display`);
+		// console.log(`Big display`);
 
 		let vw = window.innerWidth / 100;
 		let videoRaius = 3.25520833 * vw;
@@ -46,7 +46,7 @@ if ("paintWorklet" in CSS) {
 	} else {
 
 		// для смартфонов:
-		console.log(`Small display`);
+		// console.log(`Small display`);
 
 		let videoRaiusMobile = 12.5 * vw;
 		let posterRadiusMobile = 4.09375 * vw;
@@ -73,7 +73,7 @@ if ("paintWorklet" in CSS) {
 	window.addEventListener('resize', function(event) {
 
 		let vw = window.innerWidth / 100;
-		console.log(`resized vw: ${vw}px`);
+		// console.log(`resized vw: ${vw}px`);
 
 
 		// для больших дисплеев

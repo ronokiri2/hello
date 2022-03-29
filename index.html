@@ -19,14 +19,13 @@
 	<meta property="og:video" content="/media/KION264.mp4">
 	<meta property="fb:app_id" content="kion.ru">
 
-	<meta name="theme-color" content="#C62E68">
+	<meta name="theme-color" content="#1A1A1A">
 	<link rel="icon" href="media/favicon.ico">
 	<link rel="icon" href="media/favicon.svg">
 	<link rel="mask-icon" href="favicon.svg" color="red">
 	<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 	<link rel="manifest" href="manifest.json">
 
-		<!-- стили для прелоадера сразу в html, чтобы посетитель не увидел блинка белого бэкграунда ночью -->
 	<style>
 		.preloader {
 			position: fixed;
@@ -264,6 +263,20 @@
 	<link rel="stylesheet" href="minified/reset.min.css">
 	<link rel="stylesheet" href="minified/mobile.style.min.css">
 	<link rel="stylesheet" href="minified/desktop.style.min.css">
+
+
+	<script defer src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера -->
+	<script defer src="js/houdini-squircle.min.js"></script> <!-- библиотека для закругления супперэллипсов -->
+	<script defer src="js/squircle.js"></script> <!-- закругления супперэллипсов -->
+	<script defer src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->
+	<script defer src="js/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
+	<script defer src="js/CustomEase.min.js"></script> <!-- плагин для кастомного изинга -->
+	<script defer src="js/scrollAnimation.js"></script> <!-- моя анимация по скроллу -->
+
+	<script defer src="js/s4__horizont.js"></script> <!-- GSAP S4 горизонтальный скролл -->
+	<script defer src="js/Draggable.min.js"></script> <!-- GSAP S8 драггинг для слайдера -->
+	<script defer src="js/InertiaPlugin.min.js"></script> <!-- GSAP S8 инерция для слайдера -->
+	<script defer src="js/s8__slider.js"></script> <!-- GSAP S8 анимация для слайдера -->
 </head>
 
 
@@ -1039,18 +1052,6 @@
 
 	</footer>
 
-	<script src="js/preloader.js"></script> <!-- анимация плавного скрытия прелоадера -->
-	<script src="js/houdini-squircle.min.js"></script> <!-- библиотека для закругления супперэллипсов -->
-	<script src="js/squircle.js"></script> <!-- закругления супперэллипсов -->
-	<script src="js/gsap.min.js"></script> <!-- библиотека анимаций GSAP -->
-	<script src="js/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
-	<script src="js/CustomEase.min.js"></script> <!-- плагин для кастомного изинга -->
-	<script src="js/scrollAnimation.js"></script> <!-- моя анимация по скроллу -->
-
-	<script src="js/s4__horizont.js"></script> <!-- GSAP S4 горизонтальный скролл -->
-	<script src="js/Draggable.min.js"></script> <!-- GSAP S8 драггинг для слайдера -->
-	<script src="js/InertiaPlugin.min.js"></script> <!-- GSAP S8 инерция для слайдера -->
-	<script src="js/s8__slider.js"></script> <!-- GSAP S8 анимация для слайдера -->
 </body>
 
 </html>

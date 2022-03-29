@@ -2,6 +2,7 @@
 // Скругления суперэллипсов
 // Не работает для тега <a>
 
+'use strict';
 if ("paintWorklet" in CSS) {
 	CSS.paintWorklet.addModule(
 		'js/houdini-squircle.min.js'

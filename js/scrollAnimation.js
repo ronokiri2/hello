@@ -1,6 +1,8 @@
+'use strict';
 ScrollTrigger.matchMedia({
 	"(min-width: 700px)"() {
 
+		// нужен для того, чтобы увелчивающийся svg не становился размытым в Safari
 		gsap.config({
 			force3D: false
 		});
@@ -67,44 +69,6 @@ ScrollTrigger.matchMedia({
 			opacity: 0,
 			delay: 2.5
 		});
-
-		// sticky анимация постеров по скроллу
-		// ScrollTrigger.create({
-		// 	trigger: ".js1",
-		// 	start: `-9% top`, 
-		// 	end: "214.4375%",
-		// 	pin: ".js1",
-		// 	anticipatePin: 1,
-		// 	pinSpacing: false
-		// });
-
-		// ScrollTrigger.create({
-		// 	trigger: ".js2",
-		// 	start: "-9% top", 
-		// 	end: "214.4375%",
-		// 	pin: ".js2",
-		// 	anticipatePin: 1,
-		// 	pinSpacing: false
-		// });
-
-		// ScrollTrigger.create({
-		// 	trigger: ".js3",
-		// 	start: "-9% top", 
-		// 	end: "102.71875%",
-		// 	pin: ".js3",
-		// 	anticipatePin: 1,
-		// 	pinSpacing: false
-		// });
-
-		// ScrollTrigger.create({
-		// 	trigger: ".js4",
-		// 	start: "-9% top", 
-		// 	end: "102.71875%",
-		// 	pin: ".js4",
-		// 	anticipatePin: 1,
-		// 	pinSpacing: false
-		// });
-
 
 		gsap.set(".s9", {backgroundColor: "#010516"});
 

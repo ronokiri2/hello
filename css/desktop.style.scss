@@ -225,6 +225,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 Изменен easing увеличения видео
 Минифицированы js скрипты (загрузка сайта ускорена)
+Первый экран на смартфонах теперь выглядит как на макете
 
 */
 @media (min-width: 700px) {
@@ -367,7 +368,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			height: calc(100vh + 4px);
 			top: -2px;
 			left: -2px;
-			z-index: 20;
+			z-index: 2;
 			overflow: hidden;
 			contain: layout;
 			pointer-events: none;

@@ -227,6 +227,8 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 Минифицированы js скрипты (загрузка сайта ускорена)
 Первый экран на смартфонах теперь выглядит как на макете
 
+Добавлены подчеркивания для ссылок при наведении курсором
+
 */
 @media (min-width: 700px) {
 	
@@ -249,6 +251,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 				line-height: 140%;
 				margin-right: 1.953125vw; /* 60px */
 				margin-bottom: 1.33463542vw;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 		&__right {
@@ -264,6 +270,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 				line-height: 140%;
 				margin-left: 1.953125vw; /* 60px */
 				margin-bottom: 1.33463542vw;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	
@@ -805,6 +815,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			&--link {
 				display: inline-block;
 				margin-right: 1.953125vw; /* 60px */
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 			
@@ -826,6 +840,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			&--link {
 				display: inline-block;
 				margin-left: 1.953125vw; /* 60px */
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 

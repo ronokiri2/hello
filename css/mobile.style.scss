@@ -27,6 +27,7 @@
 	display: flex;
 	justify-content: space-around;
 
+
 	&__logo {
 		width: 31.25vw;
 		margin: 2.8125vw auto; /* 9px */
@@ -296,6 +297,7 @@
 		text-transform: uppercase;
 		letter-spacing: 0.07em;
 	}
+
 	&__h2 {
 		z-index: 1;
 		color: white;

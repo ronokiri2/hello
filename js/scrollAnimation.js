@@ -55,7 +55,8 @@ ScrollTrigger.matchMedia({
 		gsap.from(".s1__wrapper", {
 			scale: 0.272197962,
 			duration: 1,
-			delay: 2
+			delay: 2,
+			ease: "circ.out"
 		});
 		gsap.from(".s1__h1", {
 			opacity: 0,

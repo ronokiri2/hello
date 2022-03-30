@@ -805,7 +805,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 
-			img {
+			.s3__images--image {
 				height: 26.5625vw; /* 85px */
 				object-fit: cover;
 			}
@@ -814,6 +814,8 @@
 		.alley {
 			object-fit: cover;
 		}
+
+
 	}
 
 

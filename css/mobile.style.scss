@@ -768,7 +768,7 @@
 		position: relative;
 		margin-top: 11.875vw; /* 38px */
 		height: 58.125vw;
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 
 	.track {
@@ -809,6 +809,10 @@
 				height: 26.5625vw; /* 85px */
 				object-fit: cover;
 			}
+		}
+
+		.alley {
+			object-fit: cover;
 		}
 	}
 

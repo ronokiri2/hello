@@ -227,7 +227,8 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 Минифицированы js скрипты (загрузка сайта ускорена)
 Первый экран на смартфонах теперь выглядит как на макете
 
-Добавлены подчеркивания для ссылок при наведении курсором
+Добавлено увеличение толщины начертания для ссылок при наведении курсором
+Постеры "Аллея кошмаров", "Сергий против нечести", "Король Ричард" теперь с адаптивными картинками
 
 */
 @media (min-width: 700px) {
@@ -251,9 +252,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 				line-height: 140%;
 				margin-right: 1.953125vw; /* 60px */
 				margin-bottom: 1.33463542vw;
+				text-decoration: none;
 
 				&:hover {
-					text-decoration: underline;
+					font-weight: 500;
 				}
 			}
 		}
@@ -270,9 +272,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 				line-height: 140%;
 				margin-left: 1.953125vw; /* 60px */
 				margin-bottom: 1.33463542vw;
+				text-decoration: none;
 
 				&:hover {
-					text-decoration: underline;
+					font-weight: 500;
 				}
 			}
 		}
@@ -809,13 +812,14 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			margin-top: 0;
 			color: white;
 			font-size: max(12px, 0.9765625vw);
+			text-decoration: none;
 
 			&--link {
 				display: inline-block;
 				margin-right: 1.953125vw; /* 60px */
 
 				&:hover {
-					text-decoration: underline;
+					font-weight: 500;
 				}
 			}
 		}
@@ -838,9 +842,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			&--link {
 				display: inline-block;
 				margin-left: 1.953125vw; /* 60px */
+				text-decoration: none;
 
 				&:hover {
-					text-decoration: underline;
+					font-weight: 500;
 				}
 			}
 		}

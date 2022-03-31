@@ -820,85 +820,75 @@
 
 }
 
-
-.s4 {
-	background-color: #010516;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	&__header {
-		width: 87.5vw; /* 280px */
-		font-weight: 700;
-		font-size: 7.5vw; /* 24px */
-		line-height: 140%; /* 34px */
-		text-align: center;
-		color: white;
-		margin-top: 22.8125vw; /* 73px */
-	}
-
-	&__text {
-		width: 87.5vw; /* 280px */
-		font-weight: 400; /* normal */
-		font-size: 4.375vw; /* 14px */
-		line-height: 140%; /* 20px */
-		text-align: center;
-		color: white;
-		margin-top: 8.75vw; /* 28px */
-	}
-
-	&__image {
-		width: 87.5vw; /* 280px */
-		margin-top: 12.1875vw;
-	}
-
-}
-
 .s45 {
-	height: calc(400vw + 100vh);
+	height: calc(100vw + 160vw + 205vw + 285vw + 100vh);
 	overflow: hidden;
 
-		&__image { height: 50vh;}
 		&__wrapper {
 			display: flex;
 			flex-wrap: nowrap;
 		}
 
 		&__section {
-			font-weight: 900;
-			transition: color 0.3s;
-			font-size: 5rem;
 			width: 100vw;
-			height: 100vh;
-			color: white;
+			height: 101vh;
 			display: flex;
+			flex-direction: column;
 			flex-shrink: 0;
 			justify-content: center;
 			align-items: center;
 		}
 
 		&__section1 {
-			background-color: #e4002b;
+			background-color: #010516;
+
+			&--header {
+				font-weight: 700;
+				font-size: 7.5vw; /* 24px */
+				line-height: 140%; /* 34px */
+				text-align: center;
+				color: white;
+				margin-bottom: 4.55729167vw;
+			}
+			&--image { 
+				width: 36vw;
+				max-height: 50vh;
+				object-fit: scale-down;
+			}
 		}
 		&__section2 {
-			background-color: #28bd90;
+			background-color: white;
+			width: 160vw;
 
-			img { 
+			&--image { 
 				border-radius: 1vw;
+				width: 125vw;
+				max-height: 70vh;
+				object-fit: scale-down;
 			}
 		}
 		&__section3 {
-			background-color: black;
+			background-color: white;
+			width: 205vw;
+
+			&--image { 
+				border-radius: 1vw;
+				width: 167vw;
+				max-height: 80vh;
+				object-fit: scale-down;
+			}
 		}
 		&__section4 {
-			background-color: #e4002b;
+			background-color: #010516;
+			width: 285vw;
+
+			&--image { 
+				border-radius: 1vw;
+				width: 222vw;
+				max-height: 90vh;
+				object-fit: scale-down;
+			}
 		}
-
-		&__section.active {
-			color: orange;
-		}
-
-
 }
 
 

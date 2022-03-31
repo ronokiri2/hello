@@ -653,8 +653,17 @@
 	align-items: center;
 
 	.overlay {
-		display: none;
+		display: block;
+		position: sticky;
+		width: 100vw;
+		height: 100vh;
+		top: 0px;
+		z-index: 2;
+		overflow: hidden;
+		contain: layout;
+		pointer-events: none;
 	}
+
 
 	&__header {
 		display: flex;
@@ -679,14 +688,13 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		
 
 		&--poster {
 			position: sticky;
 			top: 6vw;
 			width: 87.5vw; /* 280px */
 			height: 107.178125vw;
-			border-radius: 4.09375vw;
+			border-radius: 2.09375vw;
 			margin-top: 12.5vw; /* 40px */
 			--squircle-smooth: 0.8;
 			--squircle-radius: 10px;
@@ -694,7 +702,7 @@
 			object-fit: cover;
 
 			img { 
-				border-radius: 1vw;
+				border-radius: 2.09375vw;
 				width: 100%;
 				max-height: 100%;
 				object-fit: cover;
@@ -874,6 +882,10 @@
 		}
 		&__section2 {
 			background-color: #28bd90;
+
+			img { 
+				border-radius: 1vw;
+			}
 		}
 		&__section3 {
 			background-color: black;
@@ -889,41 +901,6 @@
 
 }
 
-
-  
-//   #PageWrap {
-// 	height: 100vh;
-// 	width: 300vw;
-// 	display: flex;
-// 	flex-wrap: nowrap;
-//   }
-
-//   #SectionA {
-// 	width: 100vw;
-// 	height: 100vh;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	background: rgb(104, 104, 104);
-//   }
-  
-//   #SectionC {
-// 	width: 100vw;
-// 	height: 100vh;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	background: rgb(36, 36, 36);
-//   }
-  
-//   #SectionB {
-// 	width: 100vw;
-// 	height: 100vh;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	background: rgb(167, 167, 167);
-//   }
 
 .s5 {
 	background-color: #010516;

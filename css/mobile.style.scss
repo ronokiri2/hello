@@ -837,10 +837,10 @@
 			flex-shrink: 0;
 			justify-content: center;
 			align-items: center;
+			background-color: #010516;
 		}
 
 		&__section1 {
-			background-color: #010516;
 
 			&--header {
 				font-weight: 700;
@@ -857,7 +857,6 @@
 			}
 		}
 		&__section2 {
-			background-color: white;
 			width: 160vw;
 
 			&--image { 
@@ -870,7 +869,6 @@
 			}
 		}
 		&__section3 {
-			background-color: white;
 			width: 205vw;
 
 			&--image { 
@@ -881,7 +879,6 @@
 			}
 		}
 		&__section4 {
-			background-color: #010516;
 			width: 285vw;
 
 			&--image {

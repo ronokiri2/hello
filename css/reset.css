@@ -19,6 +19,7 @@
 /* Reapply the pointer cursor for anchor tags */
 a {
     cursor: revert;
+	text-decoration: none;
 }
 
 /* Remove list styles (bullets/numbers) */

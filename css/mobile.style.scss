@@ -1338,12 +1338,15 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		color: white;
 		margin-top: 13.4375vw;
 		font-size: 6.25vw;
 		font-weight: 400;
 		line-height: 140%;
 		height: 22.5vw;
+
+		&--link {
+			color: white;
+		}
 	}
 	&__right {
 		order: 3;
@@ -1351,11 +1354,14 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		color: white;
 		font-size: 6.25vw;
 		font-weight: 400;
 		line-height: 140%;
 		height: 22.5vw;
 		margin-top: 5vw;
+
+		&--link {
+			color: white;
+		}
 	}
 }

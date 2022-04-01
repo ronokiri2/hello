@@ -255,6 +255,8 @@ body {
 
 
 .s1 {
+	padding: 0;
+	margin: 0;
 	background: linear-gradient(180deg, #010516 0%, #072F64 49.72%, #000000 100%);
 
 	&__wrapper {
@@ -1182,7 +1184,7 @@ body {
 		justify-content: center;
 		background-color: grey;
 		width: 87.5vw;
-		height: max(50vh, 160vw);
+		height: min(50vh, 160vw);
 		margin: 0 auto;
 		border-radius: 12.5vw;
 		mask-image: radial-gradient(white, black);

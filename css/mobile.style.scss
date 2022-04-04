@@ -22,6 +22,10 @@
 	font-family: 'Hero New', system-ui, sans-serif;
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
+}
+
+// обнуление для браузера Vivo
+body { 
 	margin: 0;
 	padding: 0;
 }

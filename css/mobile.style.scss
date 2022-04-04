@@ -14,7 +14,7 @@
 	src: url('../fonts/Hero-New-Regular-subset.woff2');
 }
 
-
+/// надо изменить alt в svg тв каналов
 
 :root {
 	background: black ;
@@ -950,66 +950,15 @@ body {
 			width: 19.375vw; // 62px
 			height: 19.375vw; // 62px
 			display: flex;
-			place-content: center;
+			align-items: center;
+			justify-content: center;
 			margin-right: 3.75vw;
 		}
 
-		&--image1 {
-			width: 14.375vw; // 46px
-		}
-		&--image2 {
-			width: 8.125vw;
-		}
-		&--image3 {
-			width: 14.375vw;
-		}
-		&--image4 {
-			width: 13.4375vw;
-		}
-		&--image5 {
-			width: 14.375vw;
-		}
-		&--image6 {
-			width: 12.8125vw; // 41
-		}
-
-		&--image7 {
-			width: 11.25vw;
-		}
-		&--image8 {
-			width: 13.75vw;
-		}
-		&--image9 {
-			width: 9.6875vw;
-		}
-		&--image10 {
-			width: 14.375vw;
-		}
-		&--image11 {
-			width: 10.625vw;
-		}
-		&--image12 {
-			width: 12.5vw;
-		}
-
-
-		&--image13 {
-			width: 17.1875vw;
-		}
-		&--image14 {
-			width: 15.625vw;
-		}
-		&--image15 {
-			width: 13.125vw;
-		}
-		&--image16 {
-			width: 14.375vw;
-		}
-		&--image17 {
-			width: 14.375vw;
-		}
-		&--image18 {
-			width: 12.8125vw;
+		&--image {
+			max-width: 70%;
+			max-height: 70%;
+			object-fit: contain;
 		}
 	}
 

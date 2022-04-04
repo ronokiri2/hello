@@ -23,6 +23,10 @@
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
 }
+::selection {
+	background-color: #f06;
+	color: white;
+  }
 
 // обнуление для браузера Vivo
 body { 

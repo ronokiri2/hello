@@ -839,6 +839,7 @@ body {
 .s45 {
 	height: calc(100vw + 160vw + 205vw + 285vw + 100vh);
 	overflow: hidden;
+	background-color: #010516;
 
 		&__wrapper {
 			display: flex;
@@ -961,7 +962,7 @@ body {
 
 		&--image {
 			max-width: 70%;
-			max-height: 70%;
+			max-height: 60%;
 			object-fit: contain;
 		}
 	}
@@ -1259,9 +1260,13 @@ body {
 }
 
 .footer {
-	display: flex;
-	flex-direction: column;
-	height: 134.0625vw;
+	overflow: hidden;
+	
+	&-container {
+		display: flex;
+		flex-direction: column;
+		height: 134.0625vw;
+	}
 
 	&__logo {
 		order: 1;

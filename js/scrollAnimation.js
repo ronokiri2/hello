@@ -88,6 +88,21 @@ ScrollTrigger.matchMedia({
 
 
 
+
+		gsap.set('.footer-container', { yPercent: -50 })
+
+		const uncover = gsap.timeline({ paused:true })
+
+		uncover.to('.footer-container', { yPercent: 0, ease: "none" });
+
+		ScrollTrigger.create({  
+		trigger: '.s9',
+		start: 'bottom bottom',
+		end: '+=' + vw(134.0625),
+		animation: uncover,
+		scrub: true,  
+		markers: true,
+		})
 	},
 
 
@@ -169,6 +184,19 @@ ScrollTrigger.matchMedia({
 		});
 
 
+		gsap.set('.footer-container', { yPercent: -vw(5) })
+
+		const uncover = gsap.timeline({ paused:true })
+
+		uncover.to('.footer-container', { yPercent: 0, ease: 'none' });
+
+		ScrollTrigger.create({  
+		trigger: '.s9',
+		start: 'bottom bottom',
+		end: '+=' + vw(12.0117188),
+		animation: uncover,
+		scrub: true
+		})
 
 	}
 })

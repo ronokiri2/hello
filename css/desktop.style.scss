@@ -240,6 +240,8 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 Другой цвет при выделении текста
 Добавил стандартный попап для айфонов с предложением установить приложение
+
+Добавлена параллакс анимация в самом конце сайта
 */
 @media (min-width: 700px) {
 	
@@ -583,29 +585,14 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 		&__tv {
 			margin-top: 3.64583333vw;
-			// margin-left: 5.2734375vw;
-			// width: 106.770833vw;
-			
-			// &--row {
-			// 	margin-top: 2.60416667vw;
-			// }
-			// .first-row {
-			// 	margin-left: -5.859375vw;
-			// }
+
 			.second-row {
 				margin-left: -5.859375vw;
 			}
-			// .third-row {
-			// 	margin-left: -5.859375vw;
-			// }
 			&--channel {
 				width: 13.0208333vw;
 				height: 13.0208333vw;
 				margin-right: 2.60416667vw;
-			}
-
-			&--image {
-				// width: 9.765625vw; 
 			}
 
 		}
@@ -742,12 +729,17 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 		
 	.footer {
-		flex-direction: row;
-		justify-content: space-around;
-		margin: 3.54817708vw auto 3.61328125vw auto;
-		width: 64.7135417vw;
-		height: unset;
-		align-items: flex-start;
+
+		&-container {
+			box-sizing: border-box;
+			flex-direction: row;
+			justify-content: space-around;
+			// margin: 3.54817708vw auto 3.61328125vw auto;
+			margin: 0 auto;
+			width: 64.7135417vw;
+			height: 12.0117188vw;
+			// height: 10vw;
+		}
 
 		&__left {
 			order: 1;

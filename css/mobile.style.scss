@@ -294,7 +294,7 @@ body {
 		background-image: url(../media/poster.webp);
 		background-size: cover;
 		background-position: center;
-		filter: grayscale(1) brightness(0.45) contrast(1.05);
+		filter: brightness(0.7);
 		--squircle-smooth: 0.8;
 		--squircle-radius: 10px;
 		mask-image: paint(squircle);

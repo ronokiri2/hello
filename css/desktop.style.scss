@@ -694,45 +694,48 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 	}
 
 
-	.s9 {
-		padding-bottom: 16.015625vw;
-		border-radius: 0 0 3.25520833vw 3.25520833vw;
 
-		&__header {
-			font-size: 3.25520833vw; /* 100px */
-			margin-top: 8.203125vw; /* 252px */
-			margin-bottom: 3.35286458vw;
-		}
-
-		details {
-			width: 66.1132812vw;
-			min-height: 5.859375vw;
-			border-radius: 0.651041667vw;
-			margin-top: 0.651041667vw; // 20px
-			box-shadow: inset 0.0651041667vw 0.0651041667vw 0.162760417vw #BABECC, 
-						inset -0.162760417vw -0.162760417vw 0.325520833vw #FFFFFF;
-
-			summary {
-				font-size: 2.1484375vw;
-				padding: 1.43229167vw 2.63671875vw 1.46484375vw 2.63671875vw ;
-			}
-
-			p {
-				font-size: 1.62760417vw;
-				padding: 0 2.63671875vw 2.44140625vw 2.63671875vw;
-				// width: 56.9986979vw;
-			}
-
-			&[open]{
-				box-shadow: -0.162760417vw -0.162760417vw 0.651041667vw #FFFFFF, 0.162760417vw 0.162760417vw 0.651041667vw #BABECC;
-			}
-
-		}
-	}
 
 		
 	.footer {
 
+		.s9 {
+			padding-bottom: 16.015625vw;
+			border-radius: 0 0 3.25520833vw 3.25520833vw;
+	
+			&__header {
+				font-size: 3.25520833vw; /* 100px */
+				margin-top: 8.203125vw; /* 252px */
+				margin-bottom: 3.35286458vw;
+			}
+	
+			details {
+				width: 66.1132812vw;
+				min-height: 5.859375vw;
+				border-radius: 0.651041667vw;
+				margin-top: 0.651041667vw; // 20px
+				box-shadow: inset 0.0651041667vw 0.0651041667vw 0.162760417vw #BABECC, 
+							inset -0.162760417vw -0.162760417vw 0.325520833vw #FFFFFF;
+	
+				summary {
+					font-size: 2.1484375vw;
+					padding: 1.43229167vw 2.63671875vw 1.46484375vw 2.63671875vw ;
+				}
+	
+				p {
+					font-size: 1.62760417vw;
+					padding: 0 2.63671875vw 2.44140625vw 2.63671875vw;
+					// width: 56.9986979vw;
+				}
+	
+				&[open]{
+					box-shadow: -0.162760417vw -0.162760417vw 0.651041667vw #FFFFFF, 0.162760417vw 0.162760417vw 0.651041667vw #BABECC;
+				}
+	
+			}
+		}
+
+		
 		&-container {
 			box-sizing: border-box;
 			flex-direction: row;

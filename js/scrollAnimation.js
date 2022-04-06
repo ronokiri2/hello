@@ -89,7 +89,7 @@ ScrollTrigger.matchMedia({
 
 
 
-		gsap.set('.footer-container', { yPercent: -50 })
+		gsap.set('.footer-container', { yPercent: 0 })
 
 		const uncover = gsap.timeline({ paused:true })
 
@@ -100,8 +100,7 @@ ScrollTrigger.matchMedia({
 		start: 'bottom bottom',
 		end: '+=' + vw(134.0625),
 		animation: uncover,
-		scrub: true,  
-		markers: true,
+		scrub: true
 		})
 	},
 
@@ -184,7 +183,7 @@ ScrollTrigger.matchMedia({
 		});
 
 
-		gsap.set('.footer-container', { yPercent: -vw(5) })
+		gsap.set('.footer-container', { yPercent: -vw(0) })
 
 		const uncover = gsap.timeline({ paused:true })
 

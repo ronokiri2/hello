@@ -735,16 +735,16 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			}
 		}
 
-		
+
 		&-container {
 			box-sizing: border-box;
 			flex-direction: row;
 			justify-content: space-around;
-			// margin: 3.54817708vw auto 3.61328125vw auto;
 			margin: 0 auto;
 			width: 64.7135417vw;
 			height: 12.0117188vw;
-			// height: 10vw;
+			padding-top: 3.54817708vw;
+			align-items: flex-start;
 		}
 
 		&__left {
@@ -768,7 +768,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 				}
 			}
 		}
-			
+		
 		&__logo {
 			order: 2;
 			margin: 0 auto;

@@ -102,6 +102,17 @@ ScrollTrigger.matchMedia({
 		// animation: uncover,
 		// scrub: true
 		// })
+
+		gsap.from(".footer-container", {
+			yPercent: vw(2),
+			scrollTrigger: {
+				trigger: ".s9",
+				start: "bottom bottom",
+				end: '+=' + vw(134.0625),
+				toggleActions: "play none none reverse",
+				scrub: true,
+			}
+		});
 	},
 
 
@@ -197,6 +208,16 @@ ScrollTrigger.matchMedia({
 		// scrub: true
 		// })
 
+		gsap.from(".footer-container", {
+			yPercent: vw(2),
+			scrollTrigger: {
+				trigger: ".s9",
+				start: "bottom bottom",
+				end: '+=' + vw(12.0117188),
+				toggleActions: "play none none reverse",
+				scrub: true,
+			}
+		});
 	}
 })
 

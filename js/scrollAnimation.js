@@ -89,19 +89,19 @@ ScrollTrigger.matchMedia({
 
 
 
-		gsap.set('.footer-container', { yPercent: 0 })
+		// gsap.set('.footer-container', { yPercent: 0 })
 
-		const uncover = gsap.timeline({ paused:true })
+		// const uncover = gsap.timeline({ paused:true })
 
-		uncover.to('.footer-container', { yPercent: 0, ease: "none" });
+		// uncover.to('.footer-container', { yPercent: 0, ease: "none" });
 
-		ScrollTrigger.create({  
-		trigger: '.s9',
-		start: 'bottom bottom',
-		end: '+=' + vw(134.0625),
-		animation: uncover,
-		scrub: true
-		})
+		// ScrollTrigger.create({  
+		// trigger: '.s9',
+		// start: 'bottom bottom',
+		// end: '+=' + vw(134.0625),
+		// animation: uncover,
+		// scrub: true
+		// })
 	},
 
 
@@ -183,19 +183,19 @@ ScrollTrigger.matchMedia({
 		});
 
 
-		gsap.set('.footer-container', { yPercent: -vw(0) })
+		// gsap.set('.footer-container', { yPercent: -vw(0) })
 
-		const uncover = gsap.timeline({ paused:true })
+		// const uncover = gsap.timeline({ paused:true })
 
-		uncover.to('.footer-container', { yPercent: 0, ease: 'none' });
+		// uncover.to('.footer-container', { yPercent: 0, ease: 'none' });
 
-		ScrollTrigger.create({  
-		trigger: '.s9',
-		start: 'bottom bottom',
-		end: '+=' + vw(12.0117188),
-		animation: uncover,
-		scrub: true
-		})
+		// ScrollTrigger.create({  
+		// trigger: '.s9',
+		// start: 'bottom bottom',
+		// end: '+=' + vw(12.0117188),
+		// animation: uncover,
+		// scrub: true
+		// })
 
 	}
 })

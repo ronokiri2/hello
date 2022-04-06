@@ -17,7 +17,7 @@
 /// надо изменить alt в svg тв каналов
 
 :root {
-	background: black ;
+	background: #010516 ;
 	font-family: 'Hero New', system-ui, sans-serif;
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
@@ -32,7 +32,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 
 .header {
 	display: flex;
@@ -256,8 +255,6 @@ body {
 
 
 }
-
-
 
 .s1 {
 	background: linear-gradient(180deg, #010516 0%, #072F64 49.72%, #000000 100%);
@@ -1201,9 +1198,11 @@ body {
 
 .footer {
 	// overflow: hidden;
+	background: linear-gradient(89deg, #3A3D91 0.92%, #393289 32.37%, #C12E7D 73.27%, #C62E68 98.43%, #CC2D50 121.71%);
+	position: relative;
+	z-index: 1;
 
 	.s9 {
-		position: relative;
 		background-color: #EBECF0;
 		z-index: 1;
 		opacity: 1;
@@ -1267,20 +1266,11 @@ body {
 
 	&-container {
 		position: sticky;
+		z-index: -1;
 		bottom: 0;
 		display: flex;
 		flex-direction: column;
 		height: 134.0625vw;
-
-		&::before {
-			content: "";
-			position: absolute;
-			z-index: -1;
-			width: 100vw;
-			height: 162%;
-			bottom: 0;
-			background: linear-gradient(89deg, #3A3D91 0.92%, #393289 32.37%, #C12E7D 73.27%, #C62E68 98.43%, #CC2D50 121.71%);
-		}
 	}
 
 	&__logo {

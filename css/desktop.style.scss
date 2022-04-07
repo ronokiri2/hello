@@ -272,9 +272,10 @@ https://www.figma.com/file/OwJM15yM9f1RMV0pkPdZTj/%D1%86%D0%B2%D0%B5%D1%82%D0%B0
 				margin-right: 1.953125vw; /* 60px */
 				margin-bottom: 1.33463542vw;
 				text-decoration: none;
+				transition: 0.3s;
 
 				&:hover {
-					font-weight: 500;
+					color: #C32F77;
 				}
 			}
 		}
@@ -292,9 +293,10 @@ https://www.figma.com/file/OwJM15yM9f1RMV0pkPdZTj/%D1%86%D0%B2%D0%B5%D1%82%D0%B0
 				margin-left: 1.953125vw; /* 60px */
 				margin-bottom: 1.33463542vw;
 				text-decoration: none;
+				transition: 0.3s;
 
 				&:hover {
-					font-weight: 500;
+					color: #C32F77;
 				}
 			}
 		}
@@ -760,14 +762,15 @@ https://www.figma.com/file/OwJM15yM9f1RMV0pkPdZTj/%D1%86%D0%B2%D0%B5%D1%82%D0%B0
 			margin-top: 0;
 			color: white;
 			font-size: max(12px, 0.9765625vw);
-			text-decoration: none;
 
 			&--link {
 				display: inline-block;
 				margin-right: 1.953125vw; /* 60px */
+				transition: 0.3s;
+				text-decoration: none;
 
 				&:hover {
-					font-weight: 500;
+					color: #C32F77;
 				}
 			}
 		}
@@ -791,9 +794,10 @@ https://www.figma.com/file/OwJM15yM9f1RMV0pkPdZTj/%D1%86%D0%B2%D0%B5%D1%82%D0%B0
 				display: inline-block;
 				margin-left: 1.953125vw; /* 60px */
 				text-decoration: none;
+				transition: 0.3s;
 
 				&:hover {
-					font-weight: 500;
+					color: #C32F77;
 				}
 			}
 		}

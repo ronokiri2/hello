@@ -33,6 +33,10 @@ body {
 	padding: 0;
 }
 
+.js-scroll-lock {
+	overflow: hidden;
+}
+
 .header {
 	display: flex;
 	justify-content: space-around;

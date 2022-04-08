@@ -1,8 +1,20 @@
 // анимация плавного скрытия прелоадера
 'use strict';
+
+
+// window.addEventListener('resize', function(event) {
+
+// 	// проскроллить вверх страницы при обновлении страницы
+// 	document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+
+// }, true);
+
 document.addEventListener('DOMContentLoaded', function () {
 	function timer() {
 		document.body.classList.add('loaded_hiding');
+		document.body.classList.remove('js-scroll-lock'); // разблокировать скролл после скрытия прелоадера
+
 		window.setTimeout(function () {
 			document.body.classList.add('loaded');
 			document.body.classList.remove('loaded_hiding');

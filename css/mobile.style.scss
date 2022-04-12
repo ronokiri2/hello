@@ -790,6 +790,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 50px;
 
 	.atvImg {
 		height: 650px;
@@ -848,7 +849,7 @@ body {
 		box-shadow: 0 8px 30px rgba(14,21,47,0.6);
 	}
 	
-	.atvImg-shine {
+	.atvImg-container.over .atvImg-shine {
 		position: absolute;
 		top: 0; 
 		left: 0; 

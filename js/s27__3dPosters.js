@@ -57,6 +57,8 @@
  * inspiration when creating this plug-in.
  */
 
+ // если браузер поддерживает webp то imgs будет другим
+
  function atvImg(){
 
 	var d = document,

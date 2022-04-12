@@ -14,10 +14,8 @@
 	src: url('../fonts/Hero-New-Regular-subset.woff2');
 }
 
-/// надо изменить alt в svg тв каналов
-
 :root {
-	background: #010516 ;
+	background: #010516;
 	font-family: 'Hero New', system-ui, sans-serif;
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
@@ -25,13 +23,36 @@
 ::selection {
 	background-color: #f06;
 	color: white;
-  }
+}
+
+// кастомный скроллбар, который не отображается в Safari. Потому что Сафари имеет баг со скроллбаром.
+@supports (contain: paint) {
+	html {
+		scrollbar-width: thin;
+		overflow-y: overlay;
+	}
+	html::-webkit-scrollbar {
+		background-color: transparent;
+		border-radius: 100px;
+		width: 10px;
+	}
+	html::-webkit-scrollbar-thumb:vertical {
+		background: hsl(331deg 100% 47%);
+		background: linear-gradient(hsl(331deg 100% 47%),hsl(351deg 100% 50%));
+		background-clip: padding-box;
+		border: 2px solid transparent;
+		border-radius: 100px;
+		min-height: 10px;
+	}
+}
 
 // обнуление для браузера Vivo
 body { 
 	margin: 0;
 	padding: 0;
 }
+
+
 
 .js-scroll-lock {
 	overflow: hidden;
@@ -716,6 +737,7 @@ body {
 			--squircle-radius: 10px;
 			mask-image: paint(squircle);
 			object-fit: cover;
+			background-color: grey;
 
 			img { 
 				border-radius: 2.09375vw;
@@ -761,6 +783,81 @@ body {
 	}
 }
 
+.s27 {
+    user-select: none;
+	background-color: black;
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.atvImg {
+		height: 650px;
+		width: 464px;
+		transform-style: preserve-3d;
+		will-change: transform;
+	}
+
+	.atvImg img {
+		box-shadow: 0 2px 8px rgba(14,21,47,0.25);
+	}
+	
+	.atvImg-container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		transition: all 0.2s ease-out;
+		will-change: transform;
+	}
+	
+	.atvImg-container.over .atvImg-shadow {
+		box-shadow: 0 45px 100px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
+	}
+	
+	.atvImg-layers {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		transform-style: preserve-3d;
+		border-radius: 25px;
+	}
+	
+	.atvImg-rendered-layer {
+		position: absolute;
+		width: 110%;
+		height: 120%;
+		top: -10%; 
+		left: -5%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: transparent;
+		background-size: cover;
+		transition: all 0.1s ease-out;
+		will-change: transform;
+	}
+	
+	.atvImg-shadow {
+		position: absolute;
+		top: 5%; 
+		left: 5%;
+		width: 90%;
+		height: 90%;
+		transition: all 0.2s ease-out;
+		box-shadow: 0 8px 30px rgba(14,21,47,0.6);
+	}
+	
+	.atvImg-shine {
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		right: 0; 
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(255,255,255,.25) 0%,rgba(255,255,255,0) 60%);
+		will-change: background;
+		border-radius: 25px;
+	}
+}
 
 .s3 {
 	background-color: #010516;

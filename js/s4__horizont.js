@@ -20,7 +20,7 @@ gsap.to(sections, {
 		trigger: ".s45__wrapper",
 		pin: true,
 		anticipatePin: 1,
-		scrub: true,
+		scrub: 1,
 		end: () => `+=${maxWidth}`,
 		invalidateOnRefresh: true
 	}

@@ -354,7 +354,7 @@ function atvImg2(){
 		//parallax for each layer
 		var revNum = totalLayers;
 		for(var ly=0;ly<totalLayers;ly++){
-			layers[ly].style.transform = 'translateX(' + (offsetX * revNum) * ((ly * 15) / wMultiple) + 'px) translateY(' + (offsetY * totalLayers) * ((ly * 15) / wMultiple) + 'px)';
+			layers[ly].style.transform = 'translateX(' + (offsetX * revNum) * ((ly * 10) / wMultiple) + 'px) translateY(' + (offsetY * totalLayers) * ((ly * 10) / wMultiple) + 'px)';
 			revNum--;
 		}
 	}

@@ -102,7 +102,7 @@ function atvImg(){
 
 		for(var i=0;i<totalLayerElems;i++){
 			var layer = d.createElement('div'),
-				imgSrc = layerElems[i].getAttribute('data-img');
+				imgSrc = layerElems[i].getAttribute('src');
 
 			layer.className = 'atvImg-rendered-layer';
 			layer.setAttribute('data-layer',i);
@@ -264,7 +264,7 @@ function atvImg2(){
 
 		for(var i=0;i<totalLayerElems;i++){
 			var layer = d.createElement('div'),
-				imgSrc = layerElems[i].getAttribute('data-img');
+				imgSrc = layerElems[i].getAttribute('src');
 
 			layer.className = 'atvImg-rendered-layer';
 			layer.setAttribute('data-layer',i);

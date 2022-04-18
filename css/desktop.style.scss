@@ -581,11 +581,16 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 	.chin .atvImg-rendered-layer {
 		width: 104%;
-		height: 114%;
+		height: 104%;
 		top: -2%; 
 		left: -2%;
 	}
-	
+	.klinika .atvImg-rendered-layer {
+		width: 110%;
+		height: 115%;
+		top: -5%; 
+		left: -5%;
+	}
 	.atvImg-shadow {
 		position: absolute;
 		top: 5%; 
@@ -593,7 +598,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 		width: 90%;
 		height: 90%;
 		transition: all 0.2s ease-out;
-		box-shadow: 0 8px 30px rgba(14,21,47,0.6);
+		box-shadow: 0 0.25vw 0.75vw rgba(14,21,47,0.6);
 	}
 	
 	.atvImg-container.over .atvImg-shine {

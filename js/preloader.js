@@ -68,11 +68,10 @@ disableScroll();
 
 document.addEventListener('DOMContentLoaded', function () {
 	function timer() {
-		enableScroll();
 		document.body.classList.add('loaded_hiding');
-		document.body.classList.remove('js-scroll-lock'); // разблокировать скролл после скрытия прелоадера
-
+		
 		window.setTimeout(function () {
+			enableScroll();
 			document.body.classList.add('loaded');
 			document.body.classList.remove('loaded_hiding');
 		}, 500);

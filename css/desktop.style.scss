@@ -270,6 +270,19 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 Убрал отобржаение 3д постеров на смартфонах, потому что 3д эффект не давал пользователю просвайпать сайт вниз
 Блокировка скролла во время отображения прелоадера не работала. Теперь работает.
 
+
+Переделать img на div backround-image и инлайн css с картинкой по медиа запросу чтобы не загружать картинки на смартфонах
+или использовать srcset 
+
+<img srcset="elva-fairy-320w.jpg 320w,
+             elva-fairy-480w.jpg 480w,
+             elva-fairy-800w.jpg 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+	 https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
 Добавить кастомный курсор
 Добавить появление видео при наведении на постер
 Добавить увеличение постера при наведении курсора
@@ -442,25 +455,6 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			// overflow: hidden;
 		}
 
-		&__svg-perehod {
-			position: absolute;
-			width: 200vw;
-			height: 71.0998008vw;
-			max-width: 10000%;
-			max-height: 10000%;
-			display: block;
-			z-index: 2;
-			opacity: 0.8;
-			// top: 50%;  /* position the top  edge of the element at the middle of the parent */
-			// left: 50%; /* position the left edge of the element at the middle of the parent */
-			left: 50%;
-			transform: translateX(-50%);
-			// transform: scale(0.1);
-		
-		}
-
-
-
 		&__header {
 		
 			&--logo {
@@ -540,8 +534,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 		overflow: hidden;
 		transform-style: preserve-3d;
 		border-radius: 2.09375vw;
-		overflow: hidden;	
-		background-color: transparent;	
+		overflow: hidden;
 	}
 	
 	.atvImg-rendered-layer {
@@ -552,7 +545,6 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 		left: 0%;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-color: transparent;
 		background-size: cover;
 		transition: all 0.1s ease-out;
 		will-change: transform;

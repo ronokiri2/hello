@@ -693,6 +693,7 @@ body {
 		overflow: hidden;
 		contain: layout;
 		pointer-events: none;
+		z-index: 5;
 	}
 
 
@@ -742,10 +743,19 @@ body {
 			}
 			
 		}
+	
 		
 	}
 
-	.atvImg-layer {
+		
+		@media not all and (min-resolution:.001dpcm)
+		{ @supports (-webkit-appearance:none) {
+		
+			.s2__posters--poster { 
+				position: relative;
+			}
+		}}
+	.atvImg--layers {
 		display: none;
 	}
 

@@ -57,7 +57,7 @@
  * inspiration when creating this plug-in.
  */
 
-
+if (window.matchMedia("(min-width: 700px)").matches) {
 function atvImg(){
 
 	var d = document,
@@ -380,3 +380,4 @@ function atvImg2(){
 }
 atvImg();
 atvImg2();
+}

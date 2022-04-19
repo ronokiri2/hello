@@ -24,7 +24,7 @@ const tl = gsap.timeline({
 // Увеличение svg в 130 раз по кастомному изингу
 tl.to(".overlay2", {
 	scale: 130,
-	ease: CustomEase.create("custom", "M0,0,C0.486,0.054,0.234,0.2,0.49,0.488,0.686,0.709,0.78,1,1,1")
+	ease: "none"
 });
 
 // анимация s1

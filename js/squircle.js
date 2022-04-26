@@ -10,12 +10,12 @@ if ("paintWorklet" in CSS) {
 
 	const s1__wrapper = document.querySelector(".s1__wrapper");
 	const video = document.querySelector(".s1__video");
-	const posters = document.querySelectorAll(".s2__posters--poster");
+	// const posters = document.querySelectorAll(".s2__posters--poster");
 
 	const s3_images = document.querySelectorAll(".s3__images--image");
 
 	let vw = window.innerWidth / 100;
-	console.log(`Start vw: ${vw}px`);
+	// console.log(`Start vw: ${vw}px`);
 
 
 	// при запуске сайта, один раз запустится проверка на разрешение экрана:
@@ -33,9 +33,9 @@ if ("paintWorklet" in CSS) {
 		video.style.setProperty('--squircle-radius', `${videoRaius}`);
 		
 		// s2 posters
-		for (const poster of posters) {
-			poster.style.setProperty('--squircle-radius', `${vw}`);
-		}
+		// for (const poster of posters) {
+		// 	poster.style.setProperty('--squircle-radius', `${vw}`);
+		// }
 
 		// s3 images
 		for (const s3_image of s3_images) {
@@ -57,9 +57,9 @@ if ("paintWorklet" in CSS) {
 		video.style.setProperty('--squircle-radius', `${videoRaiusMobile}`);
 	
 		// s2 posters
-		for (const poster of posters) {
-			poster.style.setProperty('--squircle-radius', `${posterRadiusMobile}`);
-		}
+		// for (const poster of posters) {
+		// 	poster.style.setProperty('--squircle-radius', `${posterRadiusMobile}`);
+		// }
 
 		// s3 images
 		for (const s3_image of s3_images) {
@@ -88,9 +88,9 @@ if ("paintWorklet" in CSS) {
 			video.style.setProperty('--squircle-radius', `${videoRaius}`);
 			
 			// s2 posters
-			for (const poster of posters) {
-				poster.style.setProperty('--squircle-radius', `${vw}`);
-			}
+			// for (const poster of posters) {
+			// 	poster.style.setProperty('--squircle-radius', `${vw}`);
+			// }
 
 			// s3 images
 			for (const s3_image of s3_images) {
@@ -109,9 +109,9 @@ if ("paintWorklet" in CSS) {
 			s1__wrapper.style.setProperty('--squircle-radius', `${videoRaiusMobile}`);
 		
 			// s2 posters mobile
-			for (const poster of posters) {
-				poster.style.setProperty('--squircle-radius', `${posterRadiusMobile}`);
-			}
+			// for (const poster of posters) {
+			// 	poster.style.setProperty('--squircle-radius', `${posterRadiusMobile}`);
+			// }
 
 			// s3 images mobile
 			for (const s3_image of s3_images) {

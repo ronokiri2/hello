@@ -1,6 +1,6 @@
 'use strict';
 
-// нужен для того, чтобы увелчивающийся svg не становился размытым в Safari
+// нужен для того, чтобы увеличивающийся svg не становился размытым в Safari
 gsap.config({
 	force3D: false
 });
@@ -10,21 +10,16 @@ gsap.registerPlugin(ScrollTrigger);
 const vh = (coef) => window.innerHeight * (coef/100);
 const vw = (coef) => window.innerWidth * (coef/100);
 
-const tl = gsap.timeline({
+// Увеличение svg в 130 раз по кастомному изингу
+gsap.to(".overlay2", {
+	scale: 130,
+	ease: "none",
 	scrollTrigger: {
-		trigger: ".overlay2",
+		trigger: ".s2",
 		start: "top top",
 		end: "+=200%",
-		scrub: 1,
-		invalidateOnRefresh: true
+		scrub: 1
 	}
-});
-
-
-// Увеличение svg в 130 раз по кастомному изингу
-tl.to(".overlay2", {
-	scale: 130,
-	ease: "none"
 });
 
 // анимация s1

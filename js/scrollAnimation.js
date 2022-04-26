@@ -116,16 +116,16 @@ ScrollTrigger.matchMedia({
 			{ backgroundColor: "white", ease: "none" },
 			0
 		);
-		gsap.from(".footer-container", {
-			yPercent: vw(2),
-			scrollTrigger: {
-				trigger: ".s9",
-				start: "bottom bottom",
-				end: '+=' + vw(12.0117188),
-				toggleActions: "play none none reverse",
-				scrub: true,
-			}
-		});
+		// gsap.from(".footer__left, .footer__logo, .footer__right", {
+		// 	yPercent: -vw(2),
+		// 	scrollTrigger: {
+		// 		trigger: ".s9",
+		// 		start: "bottom bottom",
+		// 		end: '+=' + vw(12.0117188),
+		// 		toggleActions: "play none none reverse",
+		// 		scrub: true,
+		// 	}
+		// });
 	}
 })
 

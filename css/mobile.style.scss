@@ -747,7 +747,7 @@ body {
 		
 	}
 
-		
+		// fix bug for safari
 		@media not all and (min-resolution:.001dpcm)
 		{ @supports (-webkit-appearance:none) {
 		
@@ -1268,7 +1268,17 @@ body {
 			
 			&[open]{
 				box-shadow: -1.5625vw -1.5625vw 6.25vw #FFFFFF, 1.5625vw 1.5625vw 6.25vw #BABECC;
+
+				summary ~ * {
+					animation: sweep .5s ease-in-out;
+				}
+
+				@keyframes sweep {
+					0%    {opacity: 0; transform: translateY(-1vw)}
+					100%  {opacity: 1; transform: translateY(0)}
+				}
 			}
+
 
 			summary {
 				display: flex;

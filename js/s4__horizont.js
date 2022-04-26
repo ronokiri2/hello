@@ -29,7 +29,7 @@ gsap.to(sections, {
 
 
 window.addEventListener('resize', function(event) {
-
+	
 	sections.forEach((sct, i) => {
 		ScrollTrigger.create({
 			trigger: sct,

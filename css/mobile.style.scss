@@ -723,11 +723,11 @@ body {
 		user-select: none;
 
 		&--poster {
-			position: sticky;
+			// position: sticky;
 			top: 6vw;
-			width: 87.5vw; /* 280px */
-			height: 107.178125vw;
-			border-radius: 2.09375vw;
+			width: 70vw; /* 87.5 = 280px */
+			height: 87.5vw; /* 107.178125vw */
+			border-radius: 2vw;
 			margin-top: 12.5vw; /* 40px */
 			// --squircle-smooth: 0.8;
 			// --squircle-radius: 10px;
@@ -735,7 +735,7 @@ body {
 			object-fit: cover;
 
 			img { 
-				border-radius: 2.09375vw;
+				border-radius: 2vw;
 				width: 100%;
 				max-height: 100%;
 				object-fit: cover;
@@ -748,13 +748,13 @@ body {
 	}
 
 		// fix bug for safari
-		@media not all and (min-resolution:.001dpcm)
-		{ @supports (-webkit-appearance:none) {
+		// @media not all and (min-resolution:.001dpcm)
+		// { @supports (-webkit-appearance:none) {
 		
-			.s2__posters--poster { 
-				position: relative;
-			}
-		}}
+		// 	.s2__posters--poster { 
+		// 		position: relative;
+		// 	}
+		// }}
 
 		.atvImg {
 			transform-style: preserve-3d;
@@ -792,7 +792,7 @@ body {
 			height: 100%;
 			overflow: hidden;
 			transform-style: preserve-3d;
-			border-radius: 2.09375vw;
+			border-radius: 2vw;
 			overflow: hidden;
 		}
 		
@@ -866,15 +866,12 @@ body {
 			bottom: 0;
 			background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%,rgba(255, 255, 255, 0) 60%);
 			will-change: background;
-			border-radius: 2.09375vw;
+			border-radius: 2vw;
 		}
-			.atvImg-layers {
-				border-radius: 1vw;
-			}
-			.atvImg-container.over .atvImg-shine {
-				border-radius: 1vw;
-			}
-	
+		.atvImg-container.over .atvImg-shine {
+			border-radius: 2vw;
+		}
+
 
 	&__button {
 		display: flex;

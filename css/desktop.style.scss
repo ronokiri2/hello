@@ -499,6 +499,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 			overflow: visible;
 
 			&--poster {
+				position: sticky;
 				top: 2vw;
 				display: block;
 				margin-top: 3.90625vw; /* 120px */

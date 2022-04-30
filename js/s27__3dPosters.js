@@ -315,7 +315,24 @@ function atvImg2(){
 	        })(thisImg,layers,totalLayerElems,shineHTML);
 	    }
 	}
+	window.ondevicemotion = function(event) {
+		var pageX = event.accelerationIncludingGravity.x;
+		var pageY = event.accelerationIncludingGravity.y;
+		var pageZ = event.accelerationIncludingGravity.z;
+		// console.log(`${accelerationX},${accelerationY},${accelerationZ}`)
+		let xdeg = accelerationX/10;
+		let ydeg = accelerationY/10;
 
+		offsetX = 0.52 - (pageX - offsets.left - bdsl)/w, //cursor position X
+		offsetY = 0.52 - (pageY - offsets.top - bdst)/h, //cursor position Y
+		card.style.transform = `rotateX(${ydeg * 20}deg) rotateY(${xdeg * 20}deg)`;
+				//parallax for each layer
+				var revNum = totalLayers;
+				for(var ly=0;ly<totalLayers;ly++){
+					layers[ly].style.transform = 'translateX(' + (offsetX * revNum) * ((ly * 10) / wMultiple) + 'px) translateY(' + (offsetY * totalLayers) * ((ly * 10) / wMultiple) + 'px)';
+					revNum--;
+				}
+	}
 	function processMovement(e, touchEnabled, elem, layers, totalLayers, shine){
 
 		var bdst = bd.scrollTop || htm.scrollTop,

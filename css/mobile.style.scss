@@ -755,9 +755,126 @@ body {
 				position: relative;
 			}
 		}}
-	.atvImg--layers {
-		display: none;
-	}
+
+		.atvImg {
+			transform-style: preserve-3d;
+			will-change: transform;
+		}
+	
+		.atvImg img {
+			box-shadow: 0 2px 8px rgba(14,21,47,0.25);
+		}
+	
+		// для постеров с усиленным эффектом параллакса
+		.atvImg2 {
+			transform-style: preserve-3d;
+			will-change: transform;
+		}
+		.atvImg2 img {
+			box-shadow: 0 2px 8px rgba(14,21,47,0.25);
+		}
+	
+		.atvImg-container {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			transition: all 0.2s ease-out;
+			will-change: transform;
+		}
+		
+		.atvImg-container.over .atvImg-shadow {
+			box-shadow: 0 45px 100px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
+		}
+		
+		.atvImg-layers {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			transform-style: preserve-3d;
+			border-radius: 2.09375vw;
+			overflow: hidden;
+		}
+		
+		.atvImg-rendered-layer {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0%; 
+			left: 0%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			transition: all 0.1s ease-out;
+			will-change: transform;
+		}
+	
+		.pochka .atvImg-rendered-layer {
+			width: 100%;
+			height: 106%;
+			top: -3%; 
+			left: 0%;
+		}
+	
+		.dva .atvImg-rendered-layer {
+			width: 108%;
+			height: 115%;
+			top: -7.5%; 
+			left: -4%;
+		}
+	
+		.penguins .atvImg-rendered-layer {
+			width: 112%;
+			height: 115%;
+			top: -7.5%; 
+			left: -6%;
+		}
+	
+		.chin .atvImg-rendered-layer {
+			width: 104%;
+			height: 104%;
+			top: -2%; 
+			left: -2%;
+		}
+		.klinika .atvImg-rendered-layer {
+			width: 110%;
+			height: 115%;
+			top: -5%; 
+			left: -5%;
+		}
+		// .klinika .atvImg-rendered-layer {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	top: 0%; 
+		// 	left: 0%;
+		// }
+		.atvImg-shadow {
+			position: absolute;
+			top: 5%; 
+			left: 5%;
+			width: 90%;
+			height: 90%;
+			transition: all 0.2s ease-out;
+			box-shadow: 0 0.25vw 0.75vw rgba(14,21,47,0.6);
+		}
+		
+		.atvImg-container.over .atvImg-shine {
+			position: absolute;
+			top: 0; 
+			left: 0; 
+			right: 0; 
+			bottom: 0;
+			background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%,rgba(255, 255, 255, 0) 60%);
+			will-change: background;
+			border-radius: 2.09375vw;
+		}
+			.atvImg-layers {
+				border-radius: 1vw;
+			}
+			.atvImg-container.over .atvImg-shine {
+				border-radius: 1vw;
+			}
+	
 
 	&__button {
 		display: flex;

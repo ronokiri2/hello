@@ -57,7 +57,7 @@
  * inspiration when creating this plug-in.
  */
 
-if (window.matchMedia("(min-width: 700px)").matches) {
+// if (window.matchMedia("(min-width: 700px)").matches) {
 function atvImg(){
 
 	var d = document,
@@ -121,7 +121,7 @@ function atvImg(){
 		thisImg.style.transform = 'perspective('+ w*3 +'px)';
 
 		if(supportsTouch){
-			win.preventScroll = false;
+			win.preventScroll = true;
 
 	        (function(_thisImg,_layers,_totalLayers,_shine) {
 				thisImg.addEventListener('touchmove', function(e){
@@ -380,4 +380,4 @@ function atvImg2(){
 }
 atvImg();
 atvImg2();
-}
+// }

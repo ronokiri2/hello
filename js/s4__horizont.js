@@ -1,7 +1,14 @@
 'use strict';
+
+
+// чтобы исправить баг с адаптивностью, я заменил vw(100) на x: 100%
+// возможно, если использовать тут проценты а не переменные, то бага не будет
+// в примерах gsap был способ обновления при ресайзе
+
+
 gsap.registerPlugin(ScrollTrigger);
 
-const sections = gsap.utils.toArray(".s45__section");
+const sections = gsap.utils.toArray(".s4__section");
 let maxWidth = 0;
 
 const getMaxWidth = () => {
@@ -17,9 +24,9 @@ gsap.to(sections, {
 	x: () => `-${maxWidth - window.innerWidth}`,
 	ease: "none",
 	scrollTrigger: {
-		trigger: ".s45__wrapper",
+		trigger: ".s4__container",
 		pin: true,
-		anticipatePin: 1,
+		// anticipatePin: 1,
 		scrub: 1,
 		end: () => `+=${maxWidth}`,
 		invalidateOnRefresh: true
@@ -29,7 +36,7 @@ gsap.to(sections, {
 
 
 window.addEventListener('resize', function(event) {
-	
+
 	sections.forEach((sct, i) => {
 		ScrollTrigger.create({
 			trigger: sct,

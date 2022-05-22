@@ -1,9 +1,15 @@
 'use strict';
 
 // нужен для того, чтобы увеличивающийся svg не становился размытым в Safari
-gsap.config({
-	force3D: false
-});
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (isSafari === true) {
+	gsap.config({
+		force3D: false
+	});
+}
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,9 +77,7 @@ function enableScroll2() {
 	enableScroll();
 }
 
-
-
-// Увеличение svg в 130 раз по кастомному изингу
+// Увеличение svg в 130 раз
 gsap.to(".overlay2", {
 	scale: 130,
 	ease: "none",
@@ -108,6 +112,9 @@ gsap.from(".s1__button", {
 	opacity: 0,
 	delay: 2.5
 });
+
+
+
 
 gsap.set(".s9", {backgroundColor: "#010516"});
 

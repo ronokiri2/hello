@@ -283,9 +283,13 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 Объединил скрипт preloader со скриптом scrollAnimation, чтобы прелоадер скрывался синхронно с анимацией увеличения видео
 
+Добавил пасхалку. Ее можно увидеть только не в Сафари или Firefox. Чтобы увидеть пасхалку нужно зажать на alt или option и подвигать мышью
+
+
+добавить конфиг 3д в анимации по скроллу только если это сафари
 
 Поменять триггер для горизонтального скролла, чтобы избежать бага при смене разрешения. Как я сделал с увеличивающимся логотипом.
-
+Добавить функцию ресайза для горизонатльного скролла как в примерах gsap.
 
 Переделать img на div backround-image и инлайн css с картинкой по медиа запросу чтобы не загружать картинки на смартфонах
 или использовать srcset 
@@ -512,7 +516,10 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 				border-radius: 1vw; /* 0.651041667vw; 20px */
 				overflow: visible;
 				// box-shadow: 0.325520833vw 0.325520833vw 0.9765625vw rgba(20, 20, 20, 0.1);
-
+				&_::-webkit-full-page-media, _:future, :root focus-zoom {
+					
+					position: static;
+				}
 				img { 
 					border-radius: 1vw;
 					width: 100%;
@@ -520,6 +527,15 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 					object-fit: cover;
 				}
 			}
+
+				// скрыть в сафари и файерфоксе
+				@media not all and (min-resolution:.001dpcm)
+				{ @supports (-webkit-appearance:none) {
+
+					.s2__posters--poster { 
+						position: static;
+					}
+				}}
 		}
 
 
@@ -960,7 +976,7 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 
 	}
 	
-
+	// zoom animation 
 	@property --focal-size {
 		syntax: '<length-percentage>';
 		initial-value: 100%;
@@ -1009,9 +1025,8 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 	}}
 
 	_::-webkit-full-page-media, _:future, :root focus-zoom {
-
 		display: none;
-	  }
+	}
 
 	@supports (-moz-appearance: none) {
 		focus-zoom { 

@@ -959,4 +959,64 @@ iPhone 12 Pro имеет разрешение 2532×1170 физических п
 		}
 
 	}
+	
+
+	@property --focal-size {
+		syntax: '<length-percentage>';
+		initial-value: 100%;
+		inherits: false;
+	};
+	
+		focus-zoom {
+		z-index: 2;
+		--mouse-x: center;
+		--mouse-y: center;
+		--backdrop-color: hsl(200 50% 0% / 50%); /* can't be opaque */
+		--backdrop-blur-strength: 10px;
+		user-select: none;
+		pointer-events: none;
+		position: fixed;
+		touch-action: none;
+		inset: 0;
+		background-color: var(--backdrop-color);
+		backdrop-filter: blur(var(--backdrop-blur-strength));
+		
+		mask-image: radial-gradient(
+		  circle at var(--mouse-x) var(--mouse-y), 
+		  transparent var(--focal-size), 
+		  black 0%
+		);
+		
+		
+		transition: --focal-size .3s ease;
+		
+		/*  debug/grok the gradient mask image here   */
+	    // background-image: radial-gradient(
+		//   circle, 
+		//   transparent 100px, 
+		//   black 0%
+		// ); 
+	}
+	
+	// скрыть в сафари и файерфоксе
+	@media not all and (min-resolution:.001dpcm)
+	{ @supports (-webkit-appearance:none) {
+
+		focus-zoom { 
+			display: none;
+
+		}
+	}}
+
+	_::-webkit-full-page-media, _:future, :root focus-zoom {
+
+		display: none;
+	  }
+
+	@supports (-moz-appearance: none) {
+		focus-zoom { 
+			display: none;
+
+		}
+	}
 }

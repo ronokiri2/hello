@@ -159,9 +159,12 @@ function atvImg(){
 					console.log('asddas3')		
 				});
 				thisImg.addEventListener('touchend', function(e){
-					win.preventScroll = false;
-					processExit(e,_thisImg,_layers,_totalLayers,_shine);
-					console.log('asddas4')		
+					setTimeout(function(){
+						win.preventScroll = false;
+						processExit(e,_thisImg,_layers,_totalLayers,_shine);
+						console.log('asddas4')	
+				   }, 51);
+						
 				});
 	        })(thisImg,layers,totalLayerElems,shineHTML);
 	    } else {

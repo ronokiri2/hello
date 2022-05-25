@@ -60,6 +60,24 @@
 // if (window.matchMedia("(min-width: 700px)").matches) {
 function atvImg(){
 
+
+
+	// троттлинг
+	let throttleTimer;
+	const throttle = (callback, time) => {
+		if (throttleTimer) return;
+	  
+		  throttleTimer = true;
+		
+		  setTimeout(() => {
+		  callback();
+			  throttleTimer = false;
+		  }, time);
+	  }
+
+
+
+
 	var d = document,
 		de = d.documentElement,
 		bd = d.getElementsByTagName('body')[0],
@@ -127,29 +145,39 @@ function atvImg(){
 				thisImg.addEventListener('touchmove', function(e){
 					if (win.preventScroll){
 						e.preventDefault();
+						console.log('asddas');
 					}
-					processMovement(e,true,_thisImg,_layers,_totalLayers,_shine);		
-				}, {passive: true});
+					throttle(() => {
+						console.log('asddas2')
+						processMovement(e,true,_thisImg,_layers,_totalLayers,_shine);
+					}, 50)
+							
+				});
 	            thisImg.addEventListener('touchstart', function(e){
 	            	win.preventScroll = true;
-					processEnter(e,_thisImg);		
-				}, {passive: true});
+					processEnter(e,_thisImg);
+					console.log('asddas3')		
+				});
 				thisImg.addEventListener('touchend', function(e){
 					win.preventScroll = false;
-					processExit(e,_thisImg,_layers,_totalLayers,_shine);		
-				}, {passive: true});
+					processExit(e,_thisImg,_layers,_totalLayers,_shine);
+					console.log('asddas4')		
+				});
 	        })(thisImg,layers,totalLayerElems,shineHTML);
 	    } else {
 	    	(function(_thisImg,_layers,_totalLayers,_shine) {
 				thisImg.addEventListener('mousemove', function(e){
-					processMovement(e,false,_thisImg,_layers,_totalLayers,_shine);		
-				}, {passive: true});
+					processMovement(e,false,_thisImg,_layers,_totalLayers,_shine);	
+					console.log('asddas5')	
+				});
 	            thisImg.addEventListener('mouseenter', function(e){
-					processEnter(e,_thisImg);		
-				}, {passive: true});
+					processEnter(e,_thisImg);
+					console.log('asddas6')		
+				});
 				thisImg.addEventListener('mouseleave', function(e){
-					processExit(e,_thisImg,_layers,_totalLayers,_shine);		
-				}, {passive: true});
+					processExit(e,_thisImg,_layers,_totalLayers,_shine);	
+					console.log('asddas7')	
+				});
 	        })(thisImg,layers,totalLayerElems,shineHTML);
 	    }
 	}

@@ -129,27 +129,27 @@ function atvImg(){
 						e.preventDefault();
 					}
 					processMovement(e,true,_thisImg,_layers,_totalLayers,_shine);		
-				});
+				}, {passive: true});
 	            thisImg.addEventListener('touchstart', function(e){
 	            	win.preventScroll = true;
 					processEnter(e,_thisImg);		
-				});
+				}, {passive: true});
 				thisImg.addEventListener('touchend', function(e){
 					win.preventScroll = false;
 					processExit(e,_thisImg,_layers,_totalLayers,_shine);		
-				});
+				}, {passive: true});
 	        })(thisImg,layers,totalLayerElems,shineHTML);
 	    } else {
 	    	(function(_thisImg,_layers,_totalLayers,_shine) {
 				thisImg.addEventListener('mousemove', function(e){
 					processMovement(e,false,_thisImg,_layers,_totalLayers,_shine);		
-				});
+				}, {passive: true});
 	            thisImg.addEventListener('mouseenter', function(e){
 					processEnter(e,_thisImg);		
-				});
+				}, {passive: true});
 				thisImg.addEventListener('mouseleave', function(e){
 					processExit(e,_thisImg,_layers,_totalLayers,_shine);		
-				});
+				}, {passive: true});
 	        })(thisImg,layers,totalLayerElems,shineHTML);
 	    }
 	}

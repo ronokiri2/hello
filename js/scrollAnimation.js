@@ -20,16 +20,16 @@ const vw = (coef) => window.innerWidth * (coef/100);
 
 
 // Увеличение svg в 130 раз
-gsap.to(".overlay2", {
-	scale: 130,
-	ease: "none",
-	scrollTrigger: {
-		trigger: ".s2",
-		start: "top top",
-		end: "+=200%",
-		scrub: 1
-	}
-});
+// gsap.to(".overlay2", {
+// 	scale: 130,
+// 	ease: "none",
+// 	scrollTrigger: {
+// 		trigger: ".s2",
+// 		start: "top top",
+// 		end: "+=200%",
+// 		scrub: 1
+// 	}
+// });
 
 // анимация s1
 // gsap.from(".header", {

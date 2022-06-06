@@ -1,4 +1,5 @@
 import { animate } from "motion"
+import { scrollTimeline } from "./scrollTimeline.js"
 
 
 animate(".preloader", 
@@ -35,6 +36,28 @@ animate(".s1__wrapper",
 
 
 
+// Create ScrollTimeline
+const myScrollTimeline = new ScrollTimeline({
+	source: document.documentElement,
+	scrollSource: document.documentElement, // For legacy implementations
+	orientation: 'block',
+    scrollOffsets: [
+		{ target: document.querySelector(".s2"), edge: "start", threshold: 1 },
+		{ target: document.querySelector(".s2"), edge: "end", threshold: 1 }
+    ],
+});
+
+// Animate Progress Bar on Scroll
+document.querySelector(".overlay2").animate(
+	{
+		transform: ["scale(1)", "scale(100)"]
+	},
+	{ 
+		duration: 1, 
+		fill: "forwards", 
+		timeline: myScrollTimeline,
+	}
+);
 
 
 

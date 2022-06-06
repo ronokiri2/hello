@@ -266,6 +266,8 @@
 	<script defer src="minified/ScrollTrigger.min.js"></script> <!-- плагин с анимациями по скроллу для GSAP -->
 	
 	<script defer src="minified/scrollAnimation.min.js"></script> <!-- моя анимация по скроллу -->
+	<script defer src="js/parallax.js"></script> <!-- Библиотнека 3д парраллакс постеров с гироскопом -->
+	<script defer src="js/pivot.js"></script> <!-- Библиотнека наклонов постеров -->
 	<script defer src="minified/s27__3dPosters.min.js"></script> <!-- 3д парраллакс постеры -->
 
 	<script defer src="minified/s4__horizont.min.js"></script> <!-- GSAP S4 горизонтальный скролл -->
@@ -407,84 +409,52 @@
 
 			<div class="s2__posters">
 
-				<div class="s2__posters--poster atvImg pochka">
-					<img src="./media/Pochka700x1.jpg">
-					<div class="atvImg--layers">
-						<img class="atvImg-layer" src="./media/Pochka0x2.webp">
-						<img class="atvImg-layer" src="./media/Pochka1x2.webp">
-						<img class="atvImg-layer" src="./media/Pochka2x2.webp">
-						<img class="atvImg-layer" src="./media/Pochka3x2.webp">
+				<div id="container" class="s2__posters--poster">
+					<div id="scene1" class="scene">
+						<div data-depth="0.0"><img src="./media/Klinika0x2.webp"></div>
+						<div data-depth="0.2"><img src="./media/Klinika1x2.webp"></div>
+						<div data-depth="0.4"><img src="./media/Klinika2x2.webp"></div>
+						<div data-depth="0.6"><img src="./media/Klinika3x2.webp"></div>
+						<div data-depth="0.8"><img src="./media/Klinika4x2.webp"></div>
+						<div data-depth="1.0"><img src="./media/Klinika5x2.webp"></div>
 					</div>
 				</div>
 
-				<picture class="s2__posters--poster">
-					<source srcset="media/VRAY400x1.webp 1x,
-									media/VRAY400x2.webp 2x,
-									media/VRAY400x3.webp 3x,
-									media/VRAY400x4.webp 4x"
-									type="image/webp"
-									media="(max-width: 450px)">
-
-					<source srcset="media/VRAY400x1.jpg 1x,
-									media/VRAY400x2.jpg 2x,
-									media/VRAY400x3.jpg 3x,
-									media/VRAY400x4.jpg 4x"
-									media="(max-width: 450px)">
-
-
-					<source srcset="media/VRAY700x1.webp 1x,
-									media/VRAY700x2.webp 2x,
-									media/VRAY700x3.webp 3x,
-									media/VRAY700x4.webp 4x"
-									type="image/webp"
-									media="(min-width: 451px)">
-
-					<source srcset="media/VRAY700x1.jpg 1x,
-									media/VRAY700x2.jpg 2x,
-									media/VRAY700x3.jpg 3x,
-									media/VRAY700x4.jpg 4x"
-									media="(min-width: 451px)">
-
-					<img alt="Постер сериала В раю мест нет"
-							src="media/VRAY700x1.jpg" 
-							srcset="media/VRAY700x2.jpg 2x,
-									media/VRAY700x3.jpg 3x,
-									media/VRAY700x4.jpg 4x"
-							decoding="async">
-				</picture>
-				<div class="s2__posters--poster atvImg dva">
-					<img src="./media/Dva.jpg">
-					<img class="atvImg-layer" src="./media/Dva0.webp">
-					<img class="atvImg-layer" src="./media/Dva1.webp">
-					<img class="atvImg-layer" src="./media/Dva2.webp">
-					<img class="atvImg-layer" src="./media/Dva3.webp">
-					<img class="atvImg-layer" src="./media/Dva4.webp">
-					<img class="atvImg-layer" src="./media/Dva5.webp">
+				<div id="container" class="s2__posters--poster">
+					<div id="scene2" class="scene">
+						<div data-depth="0.0"><img src="./media/Pochka0x2.webp"></div>
+						<div data-depth="0.2"><img src="./media/Pochka1x2.webp"></div>
+						<div data-depth="0.4"><img src="./media/Pochka2x2.webp"></div>
+						<div data-depth="0.6"><img src="./media/Pochka3x2.webp"></div>
+					</div>
 				</div>
 
-				<div class="s2__posters--poster atvImg klinika">
-					<img src="./media/Klinika.webp">
-					<img class="atvImg-layer" src="./media/Klinika20x2.webp">
-					<img class="atvImg-layer" src="./media/Klinika21x2.webp">
-					<img class="atvImg-layer" src="./media/Klinika22x2.webp">
-					<img class="atvImg-layer" src="./media/Klinika23x2.webp">
-					<img class="atvImg-layer" src="./media/Klinika24x2.webp">
-					<img class="atvImg-layer" src="./media/Klinika25x2.webp">
+				<div id="container" class="s2__posters--poster">
+					<div id="scene3" class="scene">
+						<div data-depth="0.0"><img src="./media/Dva0.webp"></div>
+						<div data-depth="0.2"><img src="./media/Dva1.webp"></div>
+						<div data-depth="0.4"><img src="./media/Dva2.webp"></div>
+						<div data-depth="0.6"><img src="./media/Dva3.webp"></div>
+						<div data-depth="0.8"><img src="./media/Dva4.webp"></div>
+						<div data-depth="1.0"><img src="./media/Dva5.webp"></div>
+					</div>
 				</div>
 
-				<div class="s2__posters--poster atvImg penguins">
-					<img src="./media/Penguins.jpg">
-					<img class="atvImg-layer" src="./media/Penguins0.webp">
-					<img class="atvImg-layer" src="./media/Penguins1.webp">
-					<img class="atvImg-layer" src="./media/Penguins2.webp">
+				<div id="container" class="s2__posters--poster">
+					<div id="scene4" class="scene">
+						<div data-depth="0.0"><img src="./media/Penguins0.webp"></div>
+						<div data-depth="0.2"><img src="./media/Penguins1.webp"></div>
+						<div data-depth="0.4"><img src="./media/Penguins2.webp"></div>
+					</div>
 				</div>
+<!-- 
 
 				<div class="s2__posters--poster atvImg chin">
 					<img src="./media/Chin700x1.jpg">
 					<img class="atvImg-layer" src="./media/Chin0x2.webp">
 					<img class="atvImg-layer" src="./media/Chin1x2.webp">
 					<img class="atvImg-layer" src="./media/Chin2x2.webp">
-				</div>
+				</div> -->
 			</div>
 			<a class="s2__button" href="https://kion.ru/video/filter/Hm_showsOriginals" target="_blank">Смотреть KION ORIGINALS</a>
 		</section>

@@ -15,8 +15,8 @@
 	//   relativeInput: true,
 	//   clipRelativeInput: true,
 	  hoverOnly: true,
-	  scalarX: 5,
-	  scalarY: 5,
+	//   scalarX: 5,
+	//   scalarY: 5,
   });
   var parallax = new Parallax(scene2, {
 	  relativeInput: true,
@@ -74,28 +74,31 @@
 // 	  scalarX: 5,
 // 	  scalarY: 5
 //   });
-  
+
+if (window.matchMedia("(min-width: 600px)").matches) {
+	/* La largeur minimum de l'affichage est 600 px inclus */
+  } 
   pivot.init({
 	  selector: '#scene1',
-	  scale: true,
-	  shine: true,
+	//   scale: true,
+	//   shine: true,
 	  perspective: 1500,
   })
   pivot.init({
 	  selector: '#scene2',
-	  scale: true,
+	//   scale: true,
 	  shine: true,
 	  perspective: 1500,
   })
   pivot.init({
 	  selector: '#scene3',
-	  scale: true,
+	//   scale: true,
 	  shine: true,
 	  perspective: 1500,
   })
   pivot.init({
 	  selector: '#scene4',
-	  scale: true,
+	//   scale: true,
 	  shine: true,
 	  perspective: 1500,
   })

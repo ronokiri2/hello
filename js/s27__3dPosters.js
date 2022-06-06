@@ -12,11 +12,11 @@
   
 	// Pretty simple huh?
   var parallax = new Parallax(scene1, {
-	  relativeInput: true,
-	  clipRelativeInput: true,
-	  hoverOnly: true,
+	//   relativeInput: true,
+	//   clipRelativeInput: true,
+	//   hoverOnly: true,
 	  scalarX: 5,
-	  scalarY: 5
+	  scalarY: 5,
   });
   var parallax = new Parallax(scene2, {
 	  relativeInput: true,

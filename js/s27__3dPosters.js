@@ -1,79 +1,36 @@
-  // Elements
-  var scene1 = document.getElementById('scene1');  
-  var scene2 = document.getElementById('scene2');
-  var scene3 = document.getElementById('scene3');  
-  var scene4 = document.getElementById('scene4');
-  var scene5 = document.getElementById('scene5');  
-  var scene6 = document.getElementById('scene6');
-  var scene7 = document.getElementById('scene7');  
-  var scene8 = document.getElementById('scene8');
-  var scene9 = document.getElementById('scene9'); 
-  
-  
-	// Pretty simple huh?
-  var parallax = new Parallax(scene1, {
-	//   relativeInput: true,
-	//   clipRelativeInput: true,
-	  hoverOnly: true,
-	//   scalarX: 5,
-	//   scalarY: 5,
-  });
-  var parallax = new Parallax(scene2, {
-	  relativeInput: true,
-	  clipRelativeInput: true,
-	  hoverOnly: true,
-	  scalarX: 5,
-	  scalarY: 5
-  });
-  var parallax = new Parallax(scene3, {
-	  relativeInput: true,
-	  clipRelativeInput: true,
-	  hoverOnly: true,
-	  scalarX: 5,
-	  scalarY: 5
-  });
-  var parallax = new Parallax(scene4, {
-	  relativeInput: true,
-	  clipRelativeInput: true,
-	  hoverOnly: true,
-	  scalarX: 5,
-	  scalarY: 5
-  });
-//   var parallax = new Parallax(scene5, {
-// 	  relativeInput: true,
-// 	  clipRelativeInput: true,
-// 	  hoverOnly: true,
-// 	  scalarX: 5,
-// 	  scalarY: 5
-//   });
-//   var parallax = new Parallax(scene6, {
-// 	  relativeInput: true,
-// 	  clipRelativeInput: true,
-// 	  hoverOnly: true,
-// 	  scalarX: 5,
-// 	  scalarY: 5
-//   });
-//   var parallax = new Parallax(scene7, {
-// 	  relativeInput: true,
-// 	  clipRelativeInput: true,
-// 	  hoverOnly: true,
-// 	  scalarX: 5,
-// 	  scalarY: 5
-//   });
-//   var parallax = new Parallax(scene8, {
-// 	  relativeInput: true,
-// 	  clipRelativeInput: true,
-// 	  hoverOnly: true,
-// 	  scalarX: 5,
-// 	  scalarY: 5
-//   });
-//   var parallax = new Parallax(scene9, {
-// 	  relativeInput: true,
-// 	  clipRelativeInput: true,
-// 	  hoverOnly: true,
-// 	  scalarX: 5,
-// 	  scalarY: 5
-//   });
+// Elements
+var scene1 = document.getElementById('scene1');  
+var scene2 = document.getElementById('scene2');
+var scene3 = document.getElementById('scene3');  
+var scene4 = document.getElementById('scene4');
+var scene5 = document.getElementById('scene5');  
+var scene6 = document.getElementById('scene6');
+var scene7 = document.getElementById('scene7');  
+var scene8 = document.getElementById('scene8');
+var scene9 = document.getElementById('scene9'); 
+
+
+
+var parallax = new Parallax(scene1, {
+	hoverOnly: true,
+//   scalarX: 5,
+//   scalarY: 5,
+});
+var parallax = new Parallax(scene2, {
+	hoverOnly: true,
+	scalarX: 5,
+	scalarY: 5
+});
+var parallax = new Parallax(scene3, {
+	hoverOnly: true,
+	scalarX: 5,
+	scalarY: 5
+});
+var parallax = new Parallax(scene4, {
+	hoverOnly: true,
+	scalarX: 5,
+	scalarY: 5
+});
 
 if (window.matchMedia("(min-width: 700px)").matches) {  
 	pivot.init({

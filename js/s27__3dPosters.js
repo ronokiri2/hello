@@ -14,7 +14,7 @@
   var parallax = new Parallax(scene1, {
 	//   relativeInput: true,
 	//   clipRelativeInput: true,
-	//   hoverOnly: true,
+	  hoverOnly: true,
 	  scalarX: 5,
 	  scalarY: 5,
   });
@@ -79,21 +79,25 @@
 	  selector: '#scene1',
 	  scale: true,
 	  shine: true,
+	  perspective: 1500,
   })
   pivot.init({
 	  selector: '#scene2',
 	  scale: true,
 	  shine: true,
+	  perspective: 1500,
   })
   pivot.init({
 	  selector: '#scene3',
 	  scale: true,
 	  shine: true,
+	  perspective: 1500,
   })
   pivot.init({
 	  selector: '#scene4',
 	  scale: true,
 	  shine: true,
+	  perspective: 1500,
   })
 //   pivot.init({
 // 	  selector: '#scene5',

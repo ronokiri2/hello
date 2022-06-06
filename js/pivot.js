@@ -193,7 +193,7 @@
 		var angle  = ang < 0 ? ang + 360 : ang;
   
 		if (config.scale) {
-		  target.style[transformProp] = 'rotateY(' + ax + 'deg) rotateX(' + ay + 'deg) scale3d(1.05, 1.05, 1.05)';
+		  target.style[transformProp] = 'rotateY(' + ax + 'deg) rotateX(' + ay + 'deg) scale3d(1.15, 1.15, 1.15)';
   
 		} else {
 		  target.style[transformProp] = 'rotateY(' + ax + 'deg) rotateX(' + ay + 'deg)';

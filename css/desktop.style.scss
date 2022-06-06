@@ -525,12 +525,11 @@ https://learnui.design/tools/gradient-generator.html
 					
 					position: static;
 				}
-				img { 
+
+				.scene {
 					border-radius: 1vw;
-					width: 100%;
-					max-height: 100%;
-					object-fit: cover;
 				}
+				
 			}
 
 				// скрыть в сафари и файерфоксе

@@ -26,11 +26,11 @@ animate(".header",
 )
 animate(".s1__wrapper", 
 	{ 
-		transform: ["scale(0)", "scale(1)"],
+		transform: ["scale(0.1)", "scale(1)"],
 	},
 	{ 
 		duration: 1,
-		delay: 2
+		delay: 2.3
 	}
 )
 
@@ -47,17 +47,69 @@ const myScrollTimeline = new ScrollTimeline({
     ],
 });
 
-// Animate Progress Bar on Scroll
-document.querySelector(".overlay2").animate(
-	{
-		transform: ["scale(1)", "scale(100)"]
-	},
-	{ 
-		duration: 1, 
-		fill: "forwards", 
-		timeline: myScrollTimeline,
-	}
-);
+// Create ScrollTimeline
+const myScrollTimeline2 = new ScrollTimeline({
+	source: document.documentElement,
+	scrollSource: document.documentElement, // For legacy implementations
+	orientation: 'block',
+    scrollOffsets: [
+		{ target: document.querySelector(".s2"), edge: "start", threshold: 0.9 },
+		{ target: document.querySelector(".s2"), edge: "start", threshold: 0.7 }
+    ],
+});
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (isSafari === true) {
+	console.log("safari")
+	// Animate svg on Scroll for Safari
+	document.querySelector(".overlay3").animate(
+		{
+			width: ["100vw", "13000vw"],
+			height: ["100vh", "13000vh"]
+		},
+		{ 
+			duration: 1, 
+			fill: "forwards", 
+			timeline: myScrollTimeline,
+		}
+	);
+	document.querySelector(".s2").animate(
+		{
+			backgroundColor: ["#000000", "#FFFFFF"],
+		},
+		{ 
+			duration: 1, 
+			fill: "forwards", 
+			timeline: myScrollTimeline2,
+		}
+	);
+} else {
+	console.log(" not safari")
+	// Animate svg on Scroll for not Safari
+	document.querySelector(".overlay3").animate(
+		{
+			transform: ["translate(-50%, -50%) scale(1)", "translate(-50%, -50%) scale(130)"],
+		},
+		{ 
+			duration: 1, 
+			fill: "forwards", 
+			timeline: myScrollTimeline,
+		}
+	);
+	document.querySelector(".s2").animate(
+		{
+			backgroundColor: ["#000000", "#FFFFFF"],
+		},
+		{ 
+			duration: 1, 
+			fill: "forwards", 
+			timeline: myScrollTimeline2,
+		}
+	);
+}
+
+
 
 
 

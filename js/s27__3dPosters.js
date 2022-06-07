@@ -18,18 +18,18 @@ var parallax = new Parallax(scene1, {
 });
 var parallax = new Parallax(scene2, {
 	hoverOnly: true,
-	scalarX: 5,
-	scalarY: 5
+	// scalarX: 5,
+	// scalarY: 5
 });
 var parallax = new Parallax(scene3, {
 	hoverOnly: true,
-	scalarX: 5,
-	scalarY: 5
+	// scalarX: 5,
+	// scalarY: 5
 });
 var parallax = new Parallax(scene4, {
 	hoverOnly: true,
-	scalarX: 5,
-	scalarY: 5
+	// scalarX: 5,
+	// scalarY: 5
 });
 
 if (window.matchMedia("(min-width: 700px)").matches) {  

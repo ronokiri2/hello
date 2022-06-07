@@ -110,23 +110,23 @@ ScrollTrigger.matchMedia({
 
 
 
-	"(min-width: 700px)"() {
-		gsap
-		.timeline({
-			scrollTrigger: {
-				trigger: ".s2",
-				scrub: true,
-				start: "18% top",
-				end: "+=10%"
-			}
-		})
-		.fromTo(
-			".s2",
-			{
-				backgroundColor: "black"
-			},
-			{ backgroundColor: "white", ease: "none" },
-			0
-		);
-	}
+	// "(min-width: 700px)"() {
+	// 	gsap
+	// 	.timeline({
+	// 		scrollTrigger: {
+	// 			trigger: ".s2",
+	// 			scrub: true,
+	// 			start: "18% top",
+	// 			end: "+=10%"
+	// 		}
+	// 	})
+	// 	.fromTo(
+	// 		".s2",
+	// 		{
+	// 			backgroundColor: "black"
+	// 		},
+	// 		{ backgroundColor: "white", ease: "none" },
+	// 		0
+	// 	);
+	// }
 })

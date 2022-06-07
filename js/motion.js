@@ -65,8 +65,9 @@ if (isSafari === true) {
 	// Animate svg on Scroll for Safari
 	document.querySelector(".overlay3").animate(
 		{
-			width: ["100vw", "13000vw"],
-			height: ["100vh", "13000vh"]
+			transform: ["translate(-50%, -50%) scale(1)", "translate(-50%, -50%) scale(130)"],
+			// width: ["100vw", "13000vw"],
+			// height: ["100vh", "13000vh"]
 		},
 		{ 
 			duration: 1, 

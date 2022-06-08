@@ -9,7 +9,7 @@ animate(".preloader",
 	},
 	{ 
 		duration: 0.2,
-		delay: 2
+		delay: 5
 	}
 	).finished.then(() => {
 		enableScroll2()
@@ -21,7 +21,7 @@ animate(".header",
 	},
 	{ 
 		duration: 1,
-		delay: 2.6
+		delay: 5.6
 	}
 )
 animate(".s1__wrapper", 
@@ -30,7 +30,7 @@ animate(".s1__wrapper",
 	},
 	{ 
 		duration: 1,
-		delay: 2.3
+		delay: 5
 	}
 )
 
@@ -47,6 +47,37 @@ const myScrollTimeline = new ScrollTimeline({
     ],
 });
 
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (isSafari === true) {
+	console.log("safari")
+	// Animate svg on Scroll for Safari
+	document.querySelector(".overlay2").animate(
+		{
+			transform: ["scale(0.2)", "scale(27)"]
+		},
+		{ 
+			duration: 1, 
+			fill: "forwards", 
+			timeline: myScrollTimeline
+		}
+	);
+} else {
+	console.log(" not safari")
+	// Animate svg on Scroll for not Safari
+	document.querySelector(".overlay2").animate(
+		{
+			transform: ["scale(1)", "scale(130)"],
+		},
+		{ 
+			duration: 1, 
+			fill: "forwards", 
+			timeline: myScrollTimeline,
+		},
+	);
+}
+
 // Create ScrollTimeline
 const myScrollTimeline2 = new ScrollTimeline({
 	source: document.documentElement,
@@ -57,60 +88,15 @@ const myScrollTimeline2 = new ScrollTimeline({
 		{ target: document.querySelector(".s2"), edge: "start", threshold: 0.7 }
     ],
 });
-
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-if (isSafari === true) {
-	console.log("safari")
-	// Animate svg on Scroll for Safari
-	document.querySelector(".overlay3").animate(
-		{
-			transform: ["translate(-50%, -50%) scale(1)", "translate(-50%, -50%) scale(130)"],
-			// width: ["100vw", "13000vw"],
-			// height: ["100vh", "13000vh"]
-		},
-		{ 
-			duration: 1, 
-			fill: "forwards", 
-			timeline: myScrollTimeline,
-		}
-	);
-	document.querySelector(".s2").animate(
-		{
-			backgroundColor: ["#000000", "#FFFFFF"],
-		},
-		{ 
-			duration: 1, 
-			fill: "forwards", 
-			timeline: myScrollTimeline2,
-		}
-	);
-} else {
-	console.log(" not safari")
-	// Animate svg on Scroll for not Safari
-	document.querySelector(".overlay3").animate(
-		{
-			transform: ["translate(-50%, -50%) scale(1)", "translate(-50%, -50%) scale(130)"],
-		},
-		{ 
-			duration: 1, 
-			fill: "forwards", 
-			timeline: myScrollTimeline,
-		}
-	);
-	document.querySelector(".s2").animate(
-		{
-			backgroundColor: ["#000000", "#FFFFFF"],
-		},
-		{ 
-			duration: 1, 
-			fill: "forwards", 
-			timeline: myScrollTimeline2,
-		}
-	);
-}
-
-
+document.querySelector(".s2").animate(
+	{
+		backgroundColor: ["#000000", "#FFFFFF"],
+	},
+	{ 
+		fill: "forwards", 
+		timeline: myScrollTimeline2,
+	}
+);
 
 
 

@@ -4,11 +4,11 @@
 
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-if (isSafari === true) {
-	gsap.config({
-		force3D: false
-	});
-}
+// if (isSafari === true) {
+// 	gsap.config({
+// 		force3D: false
+// 	});
+// }
 
 
 gsap.registerPlugin(ScrollTrigger);

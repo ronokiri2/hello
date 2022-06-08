@@ -386,7 +386,7 @@ body {
 	}
 	
 	.svg-elem-5 {
-		animation: animate-svg-fill-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5s both;
+		animation: animate-svg-fill-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.5s both;
 	}
 	
 	@keyframes animate-svg-fill-6 {
@@ -399,7 +399,7 @@ body {
 	}
 	
 	.svg-elem-6 {
-		animation: animate-svg-fill-6 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.6s both;
+		animation: animate-svg-fill-6 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.6s both;
 	}
 	
 	@keyframes animate-svg-fill-7 {
@@ -412,7 +412,7 @@ body {
 	}
 	
 	.svg-elem-7 {
-		animation: animate-svg-fill-7 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7s both;
+		animation: animate-svg-fill-7 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.7s both;
 	}
 	
 	@keyframes animate-svg-fill-8 {
@@ -425,7 +425,7 @@ body {
 	}
 	
 	.svg-elem-8 {
-		animation: animate-svg-fill-8 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.8s both;
+		animation: animate-svg-fill-8 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.8s both;
 	}
 	
 	@keyframes animate-svg-fill-9 {
@@ -438,7 +438,7 @@ body {
 	}
 	
 	.svg-elem-9 {
-		animation: animate-svg-fill-9 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.9s both;
+		animation: animate-svg-fill-9 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.9s both;
 	}
 	
 	@keyframes animate-svg-fill-10 {
@@ -451,7 +451,7 @@ body {
 	}
 	
 	.svg-elem-10 {
-		animation: animate-svg-fill-10 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4s both;
+		animation: animate-svg-fill-10 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6s both;
 	}
 	
 	@keyframes animate-svg-fill-11 {
@@ -464,7 +464,7 @@ body {
 	}
 	
 	.svg-elem-11 {
-		animation: animate-svg-fill-11 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.1s both;
+		animation: animate-svg-fill-11 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.1s both;
 	}
 	
 	@keyframes animate-svg-fill-12 {
@@ -477,7 +477,7 @@ body {
 	}
 	
 	.svg-elem-12 {
-		animation: animate-svg-fill-12 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s both;
+		animation: animate-svg-fill-12 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.2s both;
 	}
 	
 	@keyframes animate-svg-fill-13 {
@@ -490,7 +490,7 @@ body {
 	}
 	
 	.svg-elem-13 {
-		animation: animate-svg-fill-13 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.3s both;
+		animation: animate-svg-fill-13 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.3s both;
 	}
 	
 	@keyframes animate-svg-fill-4 {
@@ -503,7 +503,7 @@ body {
 	}
 	
 	.svg-elem-4 {
-		animation: animate-svg-fill-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4s both;
+		animation: animate-svg-fill-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4s both;
 	}
 	
 	@keyframes animate-svg-fill-3 {
@@ -516,7 +516,7 @@ body {
 	}
 	
 	.svg-elem-3 {
-		animation: animate-svg-fill-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.5s both;
+		animation: animate-svg-fill-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.5s both;
 	}
 	
 	@keyframes animate-svg-fill-1 {
@@ -529,7 +529,7 @@ body {
 	}
 	
 	.svg-elem-1 {
-		animation: animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.6s both;
+		animation: animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6s both;
 	}
 	
 	@keyframes animate-svg-fill-2 {
@@ -542,7 +542,7 @@ body {
 	}
 	
 	.svg-elem-2 {
-		animation: animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.7s both;
+		animation: animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.7s both;
 	}
 
 
@@ -693,6 +693,8 @@ body {
 		contain: layout;
 		pointer-events: none;
 		z-index: 5;
+
+		
 	}
 
 	.overlay2 {
@@ -705,16 +707,40 @@ body {
 		contain: layout;
 		pointer-events: none;
 		z-index: 5;
+
+		svg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 50%;  
+			left: 50%; 
+			transform: translate(-50%, -50%);
+		}
 	}
-	.overlay3 {
-		// will-change: transform;
-		position: absolute;
-		width: 100vw;
-		height: 100vh;
-		top: 50%;  
-		left: 50%; 
-		transform: translate(-50%, -50%);
-	}
+
+
+
+
+
+
+
+
+// https://martingarrix.com/
+// position absolute вмсете с {transform: translate(-50%, -50%);} на референсе стоит на {.overlay svg}
+// нужно сделать также
+// это позволит использовать transform без (-50%)
+
+// при скролле 3д постеров, лагает. Нужно проверить отчего
+// 1) из-за огромного лого
+// 2) из-за 3д постеров. Если так, то на смартфонах сделать сайт со слайдером 3д постеров. Так будет отображаться одновременно будет только 1 постер
+
+
+
+
+
+
+
+
 
 	&__header {
 		display: flex;
@@ -822,6 +848,11 @@ body {
 
 }
 
+// для сафари, чтобы svg не была мыльной при увеличении
+_::-webkit-full-page-media, _:future, :root .overlay2 svg {
+	width: 500%;
+	height: 500%;
+}
 
 .s3 {
 	background-color: #010516;

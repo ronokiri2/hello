@@ -18,16 +18,22 @@ var parallax = new Parallax(scene1, {
 });
 var parallax = new Parallax(scene2, {
 	hoverOnly: true,
+	limitX: 5,
+	limitY: 5
 	// scalarX: 5,
 	// scalarY: 5
 });
 var parallax = new Parallax(scene3, {
 	hoverOnly: true,
+	limitX: 10,
+	limitY: 10
 	// scalarX: 5,
 	// scalarY: 5
 });
 var parallax = new Parallax(scene4, {
 	hoverOnly: true,
+	limitX: 15,
+	limitY: 15
 	// scalarX: 5,
 	// scalarY: 5
 });

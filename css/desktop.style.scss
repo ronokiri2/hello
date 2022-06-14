@@ -502,21 +502,11 @@ https://learnui.design/tools/gradient-generator.html
 			overflow: visible;
 
 			&--poster {
-				position: sticky;
-				top: 2vw;
 				display: block;
 				margin-top: 3.90625vw; /* 120px */
 				width: 27.2135417vw; /* 836px */
 				height: 33.3333333vw;
 				border-radius: 1vw; /* 0.651041667vw; 20px */
-				overflow: visible;
-
-				// в сафари не будет position sticky
-				// box-shadow: 0.325520833vw 0.325520833vw 0.9765625vw rgba(20, 20, 20, 0.1);
-				&_::-webkit-full-page-media, _:future, :root focus-zoom {
-					
-					position: static;
-				}
 
 				.scene {
 					border-radius: 1vw;
@@ -525,10 +515,11 @@ https://learnui.design/tools/gradient-generator.html
 
 					img { 
 						width: 27.2135417vw; /* 836px */
-						height: 33.3333333vw;
+					height: 33.3333333vw;
 					}
 				}
-				
+
+			
 			}
 
 				// скрыть в сафари и файерфоксе

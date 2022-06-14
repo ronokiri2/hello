@@ -693,8 +693,6 @@ body {
 		contain: layout;
 		pointer-events: none;
 		z-index: 5;
-
-		
 	}
 
 	.overlay2 {
@@ -707,6 +705,22 @@ body {
 		contain: layout;
 		pointer-events: none;
 		z-index: 5;
+		// transform: scale(1);
+
+		// will-change: transform;
+		// animation: 1s linear forwards progress;
+		// animation-timeline: progress-timeline;
+
+		// @keyframes progress {
+		// 	to {
+		// 		transform: scale(100);
+		// 	}
+		// }
+		
+		// @scroll-timeline progress-timeline {
+		// 	source: selector(#overlay2);
+		// 	scroll-offsets: 0vh, 90vh;
+		// }
 
 		svg {
 			position: absolute;
@@ -721,14 +735,7 @@ body {
 
 
 
-
-
-
-
-// https://martingarrix.com/
-// position absolute вмсете с {transform: translate(-50%, -50%);} на референсе стоит на {.overlay svg}
-// нужно сделать также
-// это позволит использовать transform без (-50%)
+// Надо изменить скорость увеличения лого для смартфонов
 
 // при скролле 3д постеров, лагает. Нужно проверить отчего
 // 1) из-за огромного лого

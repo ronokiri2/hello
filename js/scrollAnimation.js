@@ -74,24 +74,24 @@ gsap.to(".s6, .s7, .s8, .s9", {
 
 ScrollTrigger.matchMedia({
 	"(max-width: 699px)"() {
-		gsap
-		.timeline({
-			scrollTrigger: {
-				trigger: ".s2",
-				scrub: true,
-				start: "10% top",
-				end: "+=30%",
-				invalidateOnRefresh: true
-			}
-		})
-		.fromTo(
-			".s2",
-			{
-				backgroundColor: "black"
-			},
-			{ backgroundColor: "white", ease: "none" },
-			0
-		);
+		// gsap
+		// .timeline({
+		// 	scrollTrigger: {
+		// 		trigger: ".s2",
+		// 		scrub: true,
+		// 		start: "10% top",
+		// 		end: "+=30%",
+		// 		invalidateOnRefresh: true
+		// 	}
+		// })
+		// .fromTo(
+		// 	".s2",
+		// 	{
+		// 		backgroundColor: "black"
+		// 	},
+		// 	{ backgroundColor: "white", ease: "none" },
+		// 	0
+		// );
 		
 
 		gsap.from(".footer-container", {
@@ -104,29 +104,5 @@ ScrollTrigger.matchMedia({
 				scrub: true,
 			}
 		});
-	},
-
-
-
-
-
-	// "(min-width: 700px)"() {
-	// 	gsap
-	// 	.timeline({
-	// 		scrollTrigger: {
-	// 			trigger: ".s2",
-	// 			scrub: true,
-	// 			start: "18% top",
-	// 			end: "+=10%"
-	// 		}
-	// 	})
-	// 	.fromTo(
-	// 		".s2",
-	// 		{
-	// 			backgroundColor: "black"
-	// 		},
-	// 		{ backgroundColor: "white", ease: "none" },
-	// 		0
-	// 	);
-	// }
+	}
 })

@@ -52,6 +52,12 @@ body {
 	padding: 0;
 }
 
+.white{
+	background-color: #EBECF0 !important;
+}
+.black{
+	color: black !important;
+}
 .header {
 	display: flex;
 	justify-content: space-around;
@@ -1102,6 +1108,7 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 
 
 .s6 {
+    transition : all 0.6s ease;
 	background-color: #010516;
 	padding-top: 22.1875vw;
 	
@@ -1145,6 +1152,7 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 
 
 .s7 {
+    transition : all 0.6s ease;
 	background-color: #010516;
 
 	&__wrapper {
@@ -1159,6 +1167,7 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 	}
 
 	&__header {
+		transition : all 0.6s ease;
 		width: 87.5vw; /* 280px */
 		font-weight: 700;
 		font-size: 7.5vw; /* 24px */
@@ -1169,6 +1178,7 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 	}
 
 	&__text {
+		transition : all 0.6s ease;
 		width: 87.5vw; /* 280px */
 		font-weight: 400; /* normal */
 		font-size: 4.375vw; /* 14px */
@@ -1213,6 +1223,7 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 
 
 .s8 {
+    transition : all 0.6s ease;
 	background-color: #010516;
 	padding-top: 22.1875vw;
 	padding-bottom: 21.875vw;

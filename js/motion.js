@@ -138,6 +138,97 @@ if (window.matchMedia("(min-width: 700px)").matches) {
 	);
 }
 
+
+const s6 = document.querySelector(".s6");
+const s7 = document.querySelector(".s7");
+const s8 = document.querySelector(".s8");
+const s7__logo = document.querySelector(".s7__logo");
+const s7__header = document.querySelector(".s7__header");
+const s7__text = document.querySelector(".s7__text");
+
+
+const hr = document.querySelector('hr');
+const sticky = document.querySelector('.sticky-header');
+
+
+const options = {
+    root: null, //ビューポートをルート要素
+    rootMargin: "0px 0px", //ビューポートの中心を判定基準
+    threshold: 1
+};
+
+const ob = new IntersectionObserver(obCallback, options);
+
+function obCallback(payload) {
+  if (payload[0].boundingClientRect.y < 0) {
+    s7.classList.add('white'); 
+	s6.classList.add('white'); 
+	s8.classList.add('white');
+	  s7__header.classList.add('black');
+	  s7__text.classList.add('black');
+  }
+  else {
+    s7.classList.remove('white'); 
+	s6.classList.remove('white'); 
+	s8.classList.remove('white');
+	  s7__header.classList.remove('black');
+	  s7__text.classList.remove('black');
+  }
+}
+
+ob.observe(s7);
+
+
+// 考査を監視する要素を取得
+// const targets = document.querySelectorAll(".bgChange");
+// console.log(targets);
+
+// // IntersectionObserverの設定
+// const options = {
+//     root: null, //ビューポートをルート要素
+//     rootMargin: "0px 0px -90%", //ビューポートの中心を判定基準
+//     threshold: 0
+// };
+// const observer = new IntersectionObserver(callback, options);
+// // それぞれのtargetを監視する
+// targets.forEach(target => {
+//   observer.observe(target);
+// });
+
+// // コールバック関数
+// function callback(entries, observer) {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) { //交差している時
+//             addActiveClass(entry.target);
+//         } else if (!entry.isIntersecting) { //交差していない時
+//             removeActiveClass(entry.target);
+//         }
+//     });
+// }
+
+// function addActiveClass(element) {
+//   element.classList.add('white');
+//   s8.classList.add('white');
+//   s7__header.classList.add('black');
+//   s7__text.classList.add('black');
+// //   s6.classList.add('white');
+// //   s7.classList.add('white');
+// }
+
+// function removeActiveClass(element) {
+//   element.classList.remove('white');
+//   s8.classList.remove('white');
+//   s7__header.classList.remove('black');
+//   s7__text.classList.remove('black');
+// //   s6.classList.remove('white');
+// //   s7.classList.remove('white');
+// // s6.classList.add('white');
+// // s7.classList.add('white');
+// }
+
+
+
+
 // анимация плавного скрытия прелоадера с блокировкой скролла
 
 // left: 37, up: 38, right: 39, down: 40,

@@ -58,18 +58,18 @@ const vw = (coef) => window.innerWidth * (coef/100);
 
 
 
-gsap.set(".s9", {backgroundColor: "#010516"});
+// gsap.set(".s9", {backgroundColor: "#010516"});
 
-// изменение цвета фона s6 s7 s8 s9
-gsap.to(".s6, .s7, .s8, .s9", {
-	backgroundColor: "#EBECF0",
-	scrollTrigger: {
-		trigger: ".s9",
-		start: "top bottom",
-		toggleActions: "play none none reverse",
-		duration: 0.1
-	}
-});
+// // изменение цвета фона s6 s7 s8 s9
+// gsap.to(".s6, .s7, .s8, .s9", {
+// 	backgroundColor: "#EBECF0",
+// 	scrollTrigger: {
+// 		trigger: ".s9",
+// 		start: "top bottom",
+// 		toggleActions: "play none none reverse",
+// 		duration: 0.1
+// 	}
+// });
 
 
 ScrollTrigger.matchMedia({

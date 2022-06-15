@@ -515,21 +515,10 @@ https://learnui.design/tools/gradient-generator.html
 
 					img { 
 						width: 27.2135417vw; /* 836px */
-					height: 33.3333333vw;
+						height: 33.3333333vw;
 					}
 				}
-
-			
 			}
-
-				// скрыть в сафари и файерфоксе
-				@media not all and (min-resolution:.001dpcm)
-				{ @supports (-webkit-appearance:none) {
-
-					.s2__posters--poster { 
-						position: static;
-					}
-				}}
 		}
 
 		&__button {

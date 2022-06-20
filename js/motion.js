@@ -10,7 +10,7 @@ animate(".preloader",
 	},
 	{ 
 		duration: 0.2,
-		delay: 5
+		delay: 3
 	}
 	).finished.then(() => {
 		enableScroll2()
@@ -22,7 +22,7 @@ animate(".header",
 	},
 	{ 
 		duration: 1,
-		delay: 5.6
+		delay: 3.6
 	}
 )
 animate(".s1__wrapper", 
@@ -31,7 +31,7 @@ animate(".s1__wrapper",
 	},
 	{ 
 		duration: 1,
-		delay: 5
+		delay: 3
 	}
 )
 

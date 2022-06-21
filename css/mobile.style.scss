@@ -921,6 +921,14 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 			--squircle-smooth: 0.8;
 			--squircle-radius: 4px;
 			mask-image: paint(squircle);
+
+			img { 
+				transition: all 0.3s ease;
+			}
+
+			&:hover img {
+				transform: scale(1.2);
+			}
 		}
 
 		&--column {

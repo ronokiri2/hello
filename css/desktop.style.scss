@@ -514,9 +514,16 @@ https://learnui.design/tools/gradient-generator.html
 					height: 33.3333333vw;
 
 					img { 
+						border-radius: 1vw;
 						width: 27.2135417vw; /* 836px */
 						height: 33.3333333vw;
+						transform: scale(1);
+						transition: all 0.3s ease;
 					}
+				}
+
+				&:hover .scene img{
+					transform: scale(1.1);
 				}
 			}
 		}

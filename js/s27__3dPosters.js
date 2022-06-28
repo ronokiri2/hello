@@ -31,6 +31,16 @@ var parallax = new Parallax(scene4, {
 	// scalarX: 5,
 	// scalarY: 5
 });
+var parallax = new Parallax(scene5, {
+	hoverOnly: true,
+	// scalarX: 5,
+	// scalarY: 5
+});
+var parallax = new Parallax(scene6, {
+	hoverOnly: true,
+	// scalarX: 5,
+	// scalarY: 5
+});
 
 if (window.matchMedia("(min-width: 700px)").matches) {  
 	pivot.init({
@@ -57,16 +67,17 @@ if (window.matchMedia("(min-width: 700px)").matches) {
 		// shine: true,
 		perspective: 1500,
 	})
-	//   pivot.init({
-	// 	  selector: '#scene5',
-	// 	  scale: true,
-	// 	  shine: true,
-	//   })
-	//   pivot.init({
-	// 	  selector: '#scene6',
-	// 	  scale: true,
-	// 	  shine: true,
-	//   })
+	pivot.init({
+		selector: '#scene5',
+		scale: true,
+		perspective: 1500,
+	})
+	pivot.init({
+		selector: '#scene6',
+		scale: true,
+		perspective: 1500,
+	})
+	
 	//   pivot.init({
 	// 	  selector: '#scene7',
 	// 	  scale: true,

@@ -24,7 +24,7 @@ if ("paintWorklet" in CSS) {
 		// для больших дисплеев:
 		// console.log(`Big display`);
 
-		let vw = window.innerWidth / 100;
+		vw = window.innerWidth / 100;
 		let videoRaius = 3.25520833 * vw;
 		let s3_imageRadius = 0.651041667 * vw;
 

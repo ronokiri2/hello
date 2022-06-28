@@ -298,6 +298,8 @@ body {
 		--squircle-smooth: 0.8;
 		--squircle-radius: 10px;
 		mask-image: paint(squircle);
+
+		transform: scale(0.4);
 	}
 
 
@@ -684,10 +686,20 @@ body {
 
 
 .s2 {
-	background-color: black;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+
+		&__bg {
+			position: absolute;
+			background-color: black;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			z-index: 0;
+		}
 
 	.overlay1 {
 		display: block;
@@ -759,10 +771,12 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	
 
 		&--logo {
 			margin-top: 24.6875vw; /* 79px */
 			width: 56.25vw;
+			z-index: 1;
 		}
 
 		&--text {
@@ -771,6 +785,7 @@ body {
 			text-align: center;
 			font-size: 4.375vw; /* 14px */
 			line-height: 6.25vw; /* 20px */
+			z-index: 1;
 		}
 	}
 

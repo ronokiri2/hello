@@ -27,7 +27,7 @@ animate(".header",
 )
 animate(".s1__wrapper", 
 	{ 
-		transform: ["scale(0.1)", "scale(1)"],
+		transform: "scale(1)",
 	},
 	{ 
 		duration: 1,
@@ -99,9 +99,9 @@ if (window.matchMedia("(min-width: 700px)").matches) {
 		);
 	}
 
-	document.querySelector(".s2").animate(
+	document.querySelector(".s2__bg").animate(
 		{
-			backgroundColor: ["#000000", "#FFFFFF"],
+			opacity: [1, 0],
 		},
 		{ 
 			duration: 1,
@@ -127,9 +127,9 @@ if (window.matchMedia("(min-width: 700px)").matches) {
 		},
 	);
 
-	document.querySelector(".s2").animate(
+	document.querySelector(".s2__bg").animate(
 		{
-			backgroundColor: ["#000000", "#FFFFFF"],
+			opacity: [1, 0],
 		},
 		{ 
 			fill: "forwards", 
@@ -145,10 +145,6 @@ const s8 = document.querySelector(".s8");
 const s7__logo = document.querySelector(".s7__logo");
 const s7__header = document.querySelector(".s7__header");
 const s7__text = document.querySelector(".s7__text");
-
-
-const hr = document.querySelector('hr');
-const sticky = document.querySelector('.sticky-header');
 
 
 const options = {

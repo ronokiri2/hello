@@ -55,7 +55,7 @@ const s2BgColor = new ScrollTimeline({
 	orientation: 'block',
 	scrollOffsets: [
 		{ target: document.querySelector(".s2__posters"), edge: "end", threshold: 0.1 },
-		{ target: document.querySelector(".s2__posters"), edge: "end", threshold: 0.4 }
+		{ target: document.querySelector(".s2__posters"), edge: "end", threshold: 0.2 }
 	],
 });
 const s2BgColorMobile = new ScrollTimeline({
@@ -63,8 +63,8 @@ const s2BgColorMobile = new ScrollTimeline({
 	scrollSource: document.documentElement, // For legacy implementations
 	orientation: 'block',
 	scrollOffsets: [
-		{ target: document.querySelector(".s2__posters"), edge: "end", threshold: 0.1 },
-		{ target: document.querySelector(".s2__posters"), edge: "end", threshold: 0.2 }
+		{ target: document.querySelector(".s2__posters"), edge: "end", threshold: 0.05 },
+		{ target: document.querySelector(".s2__posters"), edge: "end", threshold: 0.1 }
 	],
 });
 

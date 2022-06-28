@@ -298,7 +298,7 @@ body {
 		--squircle-smooth: 0.8;
 		--squircle-radius: 10px;
 		mask-image: paint(squircle);
-
+		will-change: transform;
 		transform: scale(0.4);
 	}
 
@@ -321,6 +321,7 @@ body {
 		--squircle-smooth: 0.8;
 		--squircle-radius: 10px;
 		mask-image: paint(squircle);
+		will-change: transform;
 
 		source { 
 			object-fit: cover;
@@ -723,22 +724,6 @@ body {
 		contain: layout;
 		pointer-events: none;
 		z-index: 5;
-		// transform: scale(1);
-
-		// will-change: transform;
-		// animation: 1s linear forwards progress;
-		// animation-timeline: progress-timeline;
-
-		// @keyframes progress {
-		// 	to {
-		// 		transform: scale(100);
-		// 	}
-		// }
-		
-		// @scroll-timeline progress-timeline {
-		// 	source: selector(#overlay2);
-		// 	scroll-offsets: 0vh, 90vh;
-		// }
 
 		svg {
 			position: absolute;
@@ -749,23 +734,6 @@ body {
 			transform: translate(-50%, -50%);
 		}
 	}
-
-
-
-
-// Надо изменить скорость увеличения лого для смартфонов
-
-// при скролле 3д постеров, лагает. Нужно проверить отчего
-// 1) из-за огромного лого
-// 2) из-за 3д постеров. Если так, то на смартфонах сделать сайт со слайдером 3д постеров. Так будет отображаться одновременно будет только 1 постер
-
-
-
-
-
-
-
-
 
 	&__header {
 		display: flex;
@@ -823,22 +791,9 @@ body {
 					transform-origin: 50% 50%;
 					will-change: transform;
 				}
-
 			}
 		}
-	
-		
 	}
-
-		// fix bug for safari
-		// @media not all and (min-resolution:.001dpcm)
-		// { @supports (-webkit-appearance:none) {
-		
-		// 	.s2__posters--poster { 
-		// 		position: relative;
-		// 	}
-		// }}
-
 
 	&__button {
 		display: flex;

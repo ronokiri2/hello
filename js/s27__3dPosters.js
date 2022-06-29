@@ -8,48 +8,59 @@ var scene6 = document.getElementById('scene6');
 var scene7 = document.getElementById('scene7');  
 var scene8 = document.getElementById('scene8');
 var scene9 = document.getElementById('scene9'); 
+var scene10 = document.getElementById('scene10'); 
 
 
 
 var parallax = new Parallax(scene1, {
 	hoverOnly: true,
-//   scalarX: 5,
-//   scalarY: 5,
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 var parallax = new Parallax(scene2, {
 	hoverOnly: true,
-	// scalarX: 5,
-	// scalarY: 5
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 var parallax = new Parallax(scene3, {
 	hoverOnly: true,
-	// scalarX: 5,
-	// scalarY: 5
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 var parallax = new Parallax(scene4, {
 	hoverOnly: true,
-	// scalarX: 5,
-	// scalarY: 5
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 var parallax = new Parallax(scene5, {
 	hoverOnly: true,
-	// scalarX: 5,
-	// scalarY: 5
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 var parallax = new Parallax(scene6, {
 	hoverOnly: true,
-	// scalarX: 5,
-	// scalarY: 5
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 var parallax = new Parallax(scene7, {
 	hoverOnly: true,
-	// scalarX: 5,
-	// scalarY: 5
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 var parallax = new Parallax(scene8, {
 	hoverOnly: true,
-	// scalarX: 5,
-	// scalarY: 5
+	frictionX: 0.3,
+	frictionY: 0.3,
+});
+var parallax = new Parallax(scene9, {
+	hoverOnly: true,
+	frictionX: 0.3,
+	frictionY: 0.3,
+});
+var parallax = new Parallax(scene10, {
+	hoverOnly: true,
+	frictionX: 0.3,
+	frictionY: 0.3,
 });
 
 if (window.matchMedia("(min-width: 700px)").matches) {  
@@ -94,6 +105,16 @@ if (window.matchMedia("(min-width: 700px)").matches) {
 	})
 	pivot.init({
 		selector: '#scene8',
+		scale: true,
+		perspective: 1500,
+	})
+	pivot.init({
+		selector: '#scene9',
+		scale: true,
+		perspective: 1500,
+	})
+	pivot.init({
+		selector: '#scene10',
 		scale: true,
 		perspective: 1500,
 	})

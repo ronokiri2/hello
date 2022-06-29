@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ronokiri2/hello#readme",
   "dependencies": {
+    "gsap": "^3.10.4",
     "motion": "^10.11.0"
   }
 }

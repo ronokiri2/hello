@@ -5,6 +5,8 @@
 // возможно, если использовать тут проценты а не переменные, то бага не будет
 // в примерах gsap был способ обновления при ресайзе
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
 gsap.registerPlugin(ScrollTrigger);
 

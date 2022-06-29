@@ -1,4 +1,6 @@
 'use strict';
+
+import { gsap } from "gsap";
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
 var slideDelay = 3.5;

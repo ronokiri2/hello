@@ -1,3 +1,6 @@
+import Parallax from 'parallax-js'
+
+
 // Elements
 var scene1 = document.getElementById('scene1'); 
 var scene2 = document.getElementById('scene2');

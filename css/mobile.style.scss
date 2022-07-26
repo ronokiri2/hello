@@ -917,7 +917,7 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 }
 
 .s4 {
-	height: calc(100vw + 160vw + 205vw + 285vw + 100vh);
+	height: calc(100vw + 100vw + 100vw + 100vw + 100vh);
 	overflow: hidden;
 	background-color: #010516;
 
@@ -954,33 +954,33 @@ _::-webkit-full-page-media, _:future, :root .overlay2 svg {
 			}
 		}
 		&__section2 {
-			width: 160vw;
+			width: 100vw;
 
 			&--image { 
 				border-radius: 1vw;
-				width: 125vw;
-				height: 96.25vw;
+				width: 65vw;
+				height: 46vw;
 				max-height: 70vh;
 				object-fit: cover;
 				box-shadow: 0px 0px 0px 2.5vw #121212, 0px 0px 0px 2.7vw #727272;
 			}
 		}
 		&__section3 {
-			width: 205vw;
+			width: 100vw;
 
 			&--image { 
 				border-radius: 1vw;
-				width: 167vw;
+				width: 80vw;
 				max-height: 80vh;
 				object-fit: scale-down;
 			}
 		}
 		&__section4 {
-			width: 285vw;
+			width: 100vw;
 
 			&--image {
 				border: 1.875vw solid #272C30;
-				width: 222vw;
+				width: 80vw;
 				max-height: 90vh;
 				object-fit: scale-down;
 			}
